@@ -1,0 +1,1659 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.highlight {
+  color: #F2911B;
+}
+
+.peak {
+  color: #1EA4D9;
+}
+
+.bold-56 {
+  font-size: 56px;
+  line-height: 78px;
+  font-weight: bold;
+  font-family: "Nunito", sans-serif;
+}
+@media (max-width: 1350px) {
+  .bold-56 {
+    font-size: 48px;
+    line-height: 75px;
+  }
+}
+@media (max-width: 1200px) {
+  .bold-56 {
+    font-size: 40px;
+    line-height: 75px;
+  }
+}
+@media (max-width: 992px) {
+  .bold-56 {
+    font-size: 36px;
+    line-height: 56px;
+  }
+}
+@media (max-width: 576px) {
+  .bold-56 {
+    font-size: 26px;
+    line-height: 34px;
+  }
+}
+
+.bold-32, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-header h2, .custom-modal .wrapper .content .title h4, .std-32 {
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: bold;
+  font-family: "Nunito", sans-serif;
+}
+@media (max-width: 992px) {
+  .bold-32, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-header h2, .custom-modal .wrapper .content .title h4, .std-32 {
+    font-size: 26px;
+    line-height: 38px;
+  }
+}
+@media (max-width: 768px) {
+  .bold-32, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-header h2, .custom-modal .wrapper .content .title h4, .std-32 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.std-32 {
+  font-weight: normal;
+}
+
+.bold-28, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content .nft-likes span, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content .nft-stats .title, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .nft-status .nft-like span,
+.user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .nft-status .nft-rank span, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.pcuot, .custom-modal .wrapper .content .redirect a {
+  font-size: 28px;
+  line-height: 38px;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+}
+@media (max-width: 1200px) {
+  .bold-28, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content .nft-likes span, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content .nft-stats .title, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .nft-status .nft-like span,
+.user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .nft-status .nft-rank span, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.pcuot, .custom-modal .wrapper .content .redirect a {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+@media (max-width: 992px) {
+  .bold-28, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content .nft-likes span, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content .nft-stats .title, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .nft-status .nft-like span,
+.user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .nft-status .nft-rank span, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.pcuot, .custom-modal .wrapper .content .redirect a {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+@media (max-width: 576px) {
+  .bold-28, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content .nft-likes span, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content .nft-stats .title, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .nft-status .nft-like span,
+.user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .nft-status .nft-rank span, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.pcuot, .custom-modal .wrapper .content .redirect a {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.bold-20, header nav .wrapper .mobile-nav ul li a, header nav .wrapper .nav-links ul li > a, .nft-user-detail-layout .content .nft-stats .item .stat span, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-stats .item .stat span, main .trending-block .carousel .carousel-items .item .content .nft-stats .item .stat span, .btn-layout, .form-layout button.form-btn, .verify-nft .left-block .verify-nft-form form button.form-btn, .admin-userlist .right-block .add-user-form-wrapper form button.form-btn, .submit-nft .nft-container .nft-form form button.form-btn, .admin-container .form-wrapper .login-form form button.form-btn {
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 30px;
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+}
+@media (max-width: 768px) {
+  .bold-20, header nav .wrapper .mobile-nav ul li a, header nav .wrapper .nav-links ul li > a, .nft-user-detail-layout .content .nft-stats .item .stat span, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-stats .item .stat span, main .trending-block .carousel .carousel-items .item .content .nft-stats .item .stat span, .btn-layout, .form-layout button.form-btn, .verify-nft .left-block .verify-nft-form form button.form-btn, .admin-userlist .right-block .add-user-form-wrapper form button.form-btn, .submit-nft .nft-container .nft-form form button.form-btn, .admin-container .form-wrapper .login-form form button.form-btn {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.bold-18, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content .nft-stats .stat, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .user-name span, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.user-col .user-info-block .content .user-name span, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td:first-child, .admin-userlist .left-block .user-list-table-wrapper .user-list-table thead td, main .nft-group-section .new-nft .nft-table-wrapper .nft-table thead td, header nav .wrapper .mobile-nav ul li .dropdown-menu a, header nav .wrapper .nav-links ul li .dropdown-menu a, .form-layout .box-modal .form-group .form-control::placeholder, .verify-nft .left-block .verify-nft-form form .box-modal .form-group .form-control::placeholder, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .form-group .form-control::placeholder, .submit-nft .nft-container .nft-form form .box-modal .form-group .form-control::placeholder, .admin-container .form-wrapper .login-form form .box-modal .form-group .form-control::placeholder, .form-layout .box-modal .form-group .form-control, .verify-nft .left-block .verify-nft-form form .box-modal .form-group .form-control, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .form-group .form-control, .submit-nft .nft-container .nft-form form .box-modal .form-group .form-control, .admin-container .form-wrapper .login-form form .box-modal .form-group .form-control, .form-layout .box-modal .title h3, .verify-nft .left-block .verify-nft-form form .box-modal .title h3, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .title h3, .submit-nft .nft-container .nft-form form .box-modal .title h3, .admin-container .form-wrapper .login-form form .box-modal .title h3, .special-font, .verify-nft .heading h1, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .heading h2, .user-nft-detail .grid-container .left-block .user-detail .heading h1, .admin-userlist .right-block .add-user-form-wrapper .heading h1, .admin-userlist .left-block .user-list-table-wrapper .heading h1, .submit-nft .nft-container .heading h1, main .nft-group-section .right-block .rank-block .heading h2, main .nft-group-section .new-nft .heading h1, main .trending-block .heading h1, .admin-container .form-wrapper .form-header h1, .std-18, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .user-phone a, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .user-email span, .custom-modal .wrapper .content .text p {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+}
+@media (max-width: 768px) {
+  .bold-18, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content .nft-stats .stat, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .user-name span, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.user-col .user-info-block .content .user-name span, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td:first-child, .admin-userlist .left-block .user-list-table-wrapper .user-list-table thead td, main .nft-group-section .new-nft .nft-table-wrapper .nft-table thead td, header nav .wrapper .mobile-nav ul li .dropdown-menu a, header nav .wrapper .nav-links ul li .dropdown-menu a, .form-layout .box-modal .form-group .form-control::placeholder, .verify-nft .left-block .verify-nft-form form .box-modal .form-group .form-control::placeholder, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .form-group .form-control::placeholder, .submit-nft .nft-container .nft-form form .box-modal .form-group .form-control::placeholder, .admin-container .form-wrapper .login-form form .box-modal .form-group .form-control::placeholder, .form-layout .box-modal .form-group .form-control, .verify-nft .left-block .verify-nft-form form .box-modal .form-group .form-control, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .form-group .form-control, .submit-nft .nft-container .nft-form form .box-modal .form-group .form-control, .admin-container .form-wrapper .login-form form .box-modal .form-group .form-control, .form-layout .box-modal .title h3, .verify-nft .left-block .verify-nft-form form .box-modal .title h3, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .title h3, .submit-nft .nft-container .nft-form form .box-modal .title h3, .admin-container .form-wrapper .login-form form .box-modal .title h3, .special-font, .verify-nft .heading h1, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .heading h2, .user-nft-detail .grid-container .left-block .user-detail .heading h1, .admin-userlist .right-block .add-user-form-wrapper .heading h1, .admin-userlist .left-block .user-list-table-wrapper .heading h1, .submit-nft .nft-container .heading h1, main .nft-group-section .right-block .rank-block .heading h2, main .nft-group-section .new-nft .heading h1, main .trending-block .heading h1, .admin-container .form-wrapper .form-header h1, .std-18, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .user-phone a, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .user-email span, .custom-modal .wrapper .content .text p {
+    font-size: 17px;
+    line-height: 23px;
+  }
+}
+@media (max-width: 576px) {
+  .bold-18, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content .nft-stats .stat, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .user-name span, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.user-col .user-info-block .content .user-name span, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td:first-child, .admin-userlist .left-block .user-list-table-wrapper .user-list-table thead td, main .nft-group-section .new-nft .nft-table-wrapper .nft-table thead td, header nav .wrapper .mobile-nav ul li .dropdown-menu a, header nav .wrapper .nav-links ul li .dropdown-menu a, .form-layout .box-modal .form-group .form-control::placeholder, .verify-nft .left-block .verify-nft-form form .box-modal .form-group .form-control::placeholder, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .form-group .form-control::placeholder, .submit-nft .nft-container .nft-form form .box-modal .form-group .form-control::placeholder, .admin-container .form-wrapper .login-form form .box-modal .form-group .form-control::placeholder, .form-layout .box-modal .form-group .form-control, .verify-nft .left-block .verify-nft-form form .box-modal .form-group .form-control, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .form-group .form-control, .submit-nft .nft-container .nft-form form .box-modal .form-group .form-control, .admin-container .form-wrapper .login-form form .box-modal .form-group .form-control, .form-layout .box-modal .title h3, .verify-nft .left-block .verify-nft-form form .box-modal .title h3, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .title h3, .submit-nft .nft-container .nft-form form .box-modal .title h3, .admin-container .form-wrapper .login-form form .box-modal .title h3, .special-font, .verify-nft .heading h1, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .heading h2, .user-nft-detail .grid-container .left-block .user-detail .heading h1, .admin-userlist .right-block .add-user-form-wrapper .heading h1, .admin-userlist .left-block .user-list-table-wrapper .heading h1, .submit-nft .nft-container .heading h1, main .nft-group-section .right-block .rank-block .heading h2, main .nft-group-section .new-nft .heading h1, main .trending-block .heading h1, .admin-container .form-wrapper .form-header h1, .std-18, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .user-phone a, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .user-email span, .custom-modal .wrapper .content .text p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+@media (max-width: 360px) {
+  .bold-18, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content .nft-stats .stat, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .user-name span, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.user-col .user-info-block .content .user-name span, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td:first-child, .admin-userlist .left-block .user-list-table-wrapper .user-list-table thead td, main .nft-group-section .new-nft .nft-table-wrapper .nft-table thead td, header nav .wrapper .mobile-nav ul li .dropdown-menu a, header nav .wrapper .nav-links ul li .dropdown-menu a, .form-layout .box-modal .form-group .form-control::placeholder, .verify-nft .left-block .verify-nft-form form .box-modal .form-group .form-control::placeholder, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .form-group .form-control::placeholder, .submit-nft .nft-container .nft-form form .box-modal .form-group .form-control::placeholder, .admin-container .form-wrapper .login-form form .box-modal .form-group .form-control::placeholder, .form-layout .box-modal .form-group .form-control, .verify-nft .left-block .verify-nft-form form .box-modal .form-group .form-control, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .form-group .form-control, .submit-nft .nft-container .nft-form form .box-modal .form-group .form-control, .admin-container .form-wrapper .login-form form .box-modal .form-group .form-control, .form-layout .box-modal .title h3, .verify-nft .left-block .verify-nft-form form .box-modal .title h3, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .title h3, .submit-nft .nft-container .nft-form form .box-modal .title h3, .admin-container .form-wrapper .login-form form .box-modal .title h3, .special-font, .verify-nft .heading h1, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .heading h2, .user-nft-detail .grid-container .left-block .user-detail .heading h1, .admin-userlist .right-block .add-user-form-wrapper .heading h1, .admin-userlist .left-block .user-list-table-wrapper .heading h1, .submit-nft .nft-container .heading h1, main .nft-group-section .right-block .rank-block .heading h2, main .nft-group-section .new-nft .heading h1, main .trending-block .heading h1, .admin-container .form-wrapper .form-header h1, .std-18, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .user-phone a, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .user-email span, .custom-modal .wrapper .content .text p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+.std-18, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .user-phone a, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .user-email span, .custom-modal .wrapper .content .text p {
+  font-weight: normal;
+}
+
+.bold-16, main .nft-group-section .new-nft .nft-table-wrapper .nft-table .nft-detail .nft-content .nft-name span, footer .gemstool-footer .credits span, .mobile-more-detail, .nft-user-detail-layout .content .nft-info .nft-redirect-btn a, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-info .nft-redirect-btn a, main .trending-block .carousel .carousel-items .item .content .nft-info .nft-redirect-btn a, .nft-user-detail-layout .content .nft-info .nft-title h2, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-info .nft-title h2, main .trending-block .carousel .carousel-items .item .content .nft-info .nft-title h2 {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 21px;
+  font-family: "Nunito", sans-serif;
+}
+@media (max-width: 768px) {
+  .bold-16, main .nft-group-section .new-nft .nft-table-wrapper .nft-table .nft-detail .nft-content .nft-name span, footer .gemstool-footer .credits span, .mobile-more-detail, .nft-user-detail-layout .content .nft-info .nft-redirect-btn a, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-info .nft-redirect-btn a, main .trending-block .carousel .carousel-items .item .content .nft-info .nft-redirect-btn a, .nft-user-detail-layout .content .nft-info .nft-title h2, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-info .nft-title h2, main .trending-block .carousel .carousel-items .item .content .nft-info .nft-title h2 {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .bold-16, main .nft-group-section .new-nft .nft-table-wrapper .nft-table .nft-detail .nft-content .nft-name span, footer .gemstool-footer .credits span, .mobile-more-detail, .nft-user-detail-layout .content .nft-info .nft-redirect-btn a, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-info .nft-redirect-btn a, main .trending-block .carousel .carousel-items .item .content .nft-info .nft-redirect-btn a, .nft-user-detail-layout .content .nft-info .nft-title h2, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-info .nft-title h2, main .trending-block .carousel .carousel-items .item .content .nft-info .nft-title h2 {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+@media (max-width: 360px) {
+  .bold-16, main .nft-group-section .new-nft .nft-table-wrapper .nft-table .nft-detail .nft-content .nft-name span, footer .gemstool-footer .credits span, .mobile-more-detail, .nft-user-detail-layout .content .nft-info .nft-redirect-btn a, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-info .nft-redirect-btn a, main .trending-block .carousel .carousel-items .item .content .nft-info .nft-redirect-btn a, .nft-user-detail-layout .content .nft-info .nft-title h2, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-info .nft-title h2, main .trending-block .carousel .carousel-items .item .content .nft-info .nft-title h2 {
+    font-size: 12px;
+    line-height: 19px;
+  }
+}
+
+.std-12, .nft-user-detail-layout .content .nft-info .nft-user h3, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-info .nft-user h3, main .trending-block .carousel .carousel-items .item .content .nft-info .nft-user h3 {
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 16px;
+  font-family: "Nunito", sans-serif;
+}
+
+.std-14, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.user-col .user-info-block .content .user-email span, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.user-number, main .nft-group-section .new-nft .nft-table-wrapper .nft-table .nft-detail .nft-content .nft-user-name span, .bold-14, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.action-col .action-btns button, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.user-col .nft-block .view-now-btn a, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.view-more a, .action-btns button, main .nft-group-section .new-nft .nft-table-wrapper .nft-table .nft-detail .nft-content .nft-detail-btn a, .submit-nft-text-message, .nft-user-detail-layout .content .nft-stats .item .text span, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-stats .item .text span, main .trending-block .carousel .carousel-items .item .content .nft-stats .item .text span {
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: normal;
+  font-family: "Nunito", sans-serif;
+}
+@media (max-width: 768px) {
+  .std-14, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.user-col .user-info-block .content .user-email span, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.user-number, main .nft-group-section .new-nft .nft-table-wrapper .nft-table .nft-detail .nft-content .nft-user-name span, .bold-14, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.action-col .action-btns button, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.user-col .nft-block .view-now-btn a, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.view-more a, .action-btns button, main .nft-group-section .new-nft .nft-table-wrapper .nft-table .nft-detail .nft-content .nft-detail-btn a, .submit-nft-text-message, .nft-user-detail-layout .content .nft-stats .item .text span, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-stats .item .text span, main .trending-block .carousel .carousel-items .item .content .nft-stats .item .text span {
+    font-size: 13px;
+    line-height: 18px;
+  }
+}
+@media (max-width: 360px) {
+  .std-14, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.user-col .user-info-block .content .user-email span, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.user-number, main .nft-group-section .new-nft .nft-table-wrapper .nft-table .nft-detail .nft-content .nft-user-name span, .bold-14, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.action-col .action-btns button, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.user-col .nft-block .view-now-btn a, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.view-more a, .action-btns button, main .nft-group-section .new-nft .nft-table-wrapper .nft-table .nft-detail .nft-content .nft-detail-btn a, .submit-nft-text-message, .nft-user-detail-layout .content .nft-stats .item .text span, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-stats .item .text span, main .trending-block .carousel .carousel-items .item .content .nft-stats .item .text span {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.bold-14, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.action-col .action-btns button, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.user-col .nft-block .view-now-btn a, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.view-more a, .action-btns button, main .nft-group-section .new-nft .nft-table-wrapper .nft-table .nft-detail .nft-content .nft-detail-btn a, .submit-nft-text-message, .nft-user-detail-layout .content .nft-stats .item .text span, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-stats .item .text span, main .trending-block .carousel .carousel-items .item .content .nft-stats .item .text span {
+  font-weight: bold;
+}
+
+.special-font, .verify-nft .heading h1, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .heading h2, .user-nft-detail .grid-container .left-block .user-detail .heading h1, .admin-userlist .right-block .add-user-form-wrapper .heading h1, .admin-userlist .left-block .user-list-table-wrapper .heading h1, .submit-nft .nft-container .heading h1, main .nft-group-section .right-block .rank-block .heading h2, main .nft-group-section .new-nft .heading h1, main .trending-block .heading h1, .admin-container .form-wrapper .form-header h1 {
+  position: relative;
+}
+.special-font::before, .verify-nft .heading h1::before, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .heading h2::before, .user-nft-detail .grid-container .left-block .user-detail .heading h1::before, .admin-userlist .right-block .add-user-form-wrapper .heading h1::before, .admin-userlist .left-block .user-list-table-wrapper .heading h1::before, .submit-nft .nft-container .heading h1::before, main .nft-group-section .right-block .rank-block .heading h2::before, main .nft-group-section .new-nft .heading h1::before, main .trending-block .heading h1::before, .admin-container .form-wrapper .form-header h1::before, .special-font::after, .verify-nft .heading h1::after, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .heading h2::after, .user-nft-detail .grid-container .left-block .user-detail .heading h1::after, .admin-userlist .right-block .add-user-form-wrapper .heading h1::after, .admin-userlist .left-block .user-list-table-wrapper .heading h1::after, .submit-nft .nft-container .heading h1::after, main .nft-group-section .right-block .rank-block .heading h2::after, main .nft-group-section .new-nft .heading h1::after, main .trending-block .heading h1::after, .admin-container .form-wrapper .form-header h1::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height: 1px;
+  background-color: #fff;
+}
+.special-font::before, .verify-nft .heading h1::before, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .heading h2::before, .user-nft-detail .grid-container .left-block .user-detail .heading h1::before, .admin-userlist .right-block .add-user-form-wrapper .heading h1::before, .admin-userlist .left-block .user-list-table-wrapper .heading h1::before, .submit-nft .nft-container .heading h1::before, main .nft-group-section .right-block .rank-block .heading h2::before, main .nft-group-section .new-nft .heading h1::before, main .trending-block .heading h1::before, .admin-container .form-wrapper .form-header h1::before {
+  width: 30px;
+  left: 0;
+}
+.special-font::after, .verify-nft .heading h1::after, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .heading h2::after, .user-nft-detail .grid-container .left-block .user-detail .heading h1::after, .admin-userlist .right-block .add-user-form-wrapper .heading h1::after, .admin-userlist .left-block .user-list-table-wrapper .heading h1::after, .submit-nft .nft-container .heading h1::after, main .nft-group-section .right-block .rank-block .heading h2::after, main .nft-group-section .new-nft .heading h1::after, main .trending-block .heading h1::after, .admin-container .form-wrapper .form-header h1::after {
+  left: 33px;
+  width: 15px;
+}
+.special-font .highlight, .verify-nft .heading h1 .highlight, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .heading h2 .highlight, .user-nft-detail .grid-container .left-block .user-detail .heading h1 .highlight, .admin-userlist .right-block .add-user-form-wrapper .heading h1 .highlight, .admin-userlist .left-block .user-list-table-wrapper .heading h1 .highlight, .submit-nft .nft-container .heading h1 .highlight, main .nft-group-section .right-block .rank-block .heading h2 .highlight, main .nft-group-section .new-nft .heading h1 .highlight, main .trending-block .heading h1 .highlight, .admin-container .form-wrapper .form-header h1 .highlight {
+  color: #F2911B;
+}
+.special-font .highlight::before, .verify-nft .heading h1 .highlight::before, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .heading h2 .highlight::before, .user-nft-detail .grid-container .left-block .user-detail .heading h1 .highlight::before, .admin-userlist .right-block .add-user-form-wrapper .heading h1 .highlight::before, .admin-userlist .left-block .user-list-table-wrapper .heading h1 .highlight::before, .submit-nft .nft-container .heading h1 .highlight::before, main .nft-group-section .right-block .rank-block .heading h2 .highlight::before, main .nft-group-section .new-nft .heading h1 .highlight::before, main .trending-block .heading h1 .highlight::before, .admin-container .form-wrapper .form-header h1 .highlight::before, .special-font .highlight::after, .verify-nft .heading h1 .highlight::after, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .heading h2 .highlight::after, .user-nft-detail .grid-container .left-block .user-detail .heading h1 .highlight::after, .admin-userlist .right-block .add-user-form-wrapper .heading h1 .highlight::after, .admin-userlist .left-block .user-list-table-wrapper .heading h1 .highlight::after, .submit-nft .nft-container .heading h1 .highlight::after, main .nft-group-section .right-block .rank-block .heading h2 .highlight::after, main .nft-group-section .new-nft .heading h1 .highlight::after, main .trending-block .heading h1 .highlight::after, .admin-container .form-wrapper .form-header h1 .highlight::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height: 1px;
+  background-color: #fff;
+}
+.special-font .highlight::before, .verify-nft .heading h1 .highlight::before, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .heading h2 .highlight::before, .user-nft-detail .grid-container .left-block .user-detail .heading h1 .highlight::before, .admin-userlist .right-block .add-user-form-wrapper .heading h1 .highlight::before, .admin-userlist .left-block .user-list-table-wrapper .heading h1 .highlight::before, .submit-nft .nft-container .heading h1 .highlight::before, main .nft-group-section .right-block .rank-block .heading h2 .highlight::before, main .nft-group-section .new-nft .heading h1 .highlight::before, main .trending-block .heading h1 .highlight::before, .admin-container .form-wrapper .form-header h1 .highlight::before {
+  width: 8px;
+  left: 51px;
+}
+.special-font .highlight::after, .verify-nft .heading h1 .highlight::after, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .heading h2 .highlight::after, .user-nft-detail .grid-container .left-block .user-detail .heading h1 .highlight::after, .admin-userlist .right-block .add-user-form-wrapper .heading h1 .highlight::after, .admin-userlist .left-block .user-list-table-wrapper .heading h1 .highlight::after, .submit-nft .nft-container .heading h1 .highlight::after, main .nft-group-section .right-block .rank-block .heading h2 .highlight::after, main .nft-group-section .new-nft .heading h1 .highlight::after, main .trending-block .heading h1 .highlight::after, .admin-container .form-wrapper .form-header h1 .highlight::after {
+  width: 4px;
+  left: 62px;
+}
+
+body {
+  color: #fff !important;
+}
+
+.container-lg {
+  transition: max-width 0.2s;
+}
+@media (min-width: 992px) {
+  .container-lg {
+    max-width: 1080px;
+  }
+}
+@media (min-width: 1250px) {
+  .container-lg {
+    max-width: 1200px;
+  }
+}
+@media (min-width: 1350px) {
+  .container-lg {
+    max-width: 1300px;
+  }
+}
+@media (min-width: 1550px) {
+  .container-lg {
+    max-width: 1500px;
+  }
+}
+@media (min-width: 1700px) {
+  .container-lg {
+    max-width: 1600px;
+  }
+}
+
+.btn-layout, .form-layout button.form-btn, .verify-nft .left-block .verify-nft-form form button.form-btn, .admin-userlist .right-block .add-user-form-wrapper form button.form-btn, .submit-nft .nft-container .nft-form form button.form-btn, .admin-container .form-wrapper .login-form form button.form-btn {
+  color: #F2911B;
+  height: 50px;
+  padding: 10px 55px;
+  margin-top: 30px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+@media (max-width: 576px) {
+  .btn-layout, .form-layout button.form-btn, .verify-nft .left-block .verify-nft-form form button.form-btn, .admin-userlist .right-block .add-user-form-wrapper form button.form-btn, .submit-nft .nft-container .nft-form form button.form-btn, .admin-container .form-wrapper .login-form form button.form-btn {
+    height: 40px;
+    padding: 10px 42px;
+    line-height: 21px;
+  }
+}
+
+.body-wrapper {
+  position: relative;
+  min-width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #011126, #011C40);
+  overflow-x: hidden;
+}
+
+section {
+  padding: 20px 0px;
+}
+
+.table-responsive {
+  overflow-x: auto;
+  scrollbar-color: #103462 rgba(0, 0, 0, 0.3);
+  scrollbar-width: thin;
+  border-radius: 10px;
+}
+
+.table-responsive::-webkit-scrollbar {
+  height: 8px;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: #103462;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.rec-slider-container,
+.fPDpuU {
+  overflow: visible !important;
+  margin: 0 !important;
+}
+
+.rec-carousel-item .rec-item-wrapper {
+  overflow: visible !important;
+}
+.rec-carousel-item .rec-item-wrapper > div {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .nft-user-detail-layout, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile, main .trending-block .carousel .carousel-items .item {
+    margin-bottom: 20px;
+  }
+}
+.nft-user-detail-layout .content, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content, main .trending-block .carousel .carousel-items .item .content {
+  background-color: #011C40;
+  padding: 20px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 0px 20px 0px #000;
+}
+@media (max-width: 576px) {
+  .nft-user-detail-layout .content, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content, main .trending-block .carousel .carousel-items .item .content {
+    padding: 15px 5px;
+  }
+}
+.nft-user-detail-layout .content .nft-info-col::after, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-info-col::after, main .trending-block .carousel .carousel-items .item .content .nft-info-col::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 2px;
+  background-image: url(../images/dash-divider.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.nft-user-detail-layout .content .nft-info, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-info, main .trending-block .carousel .carousel-items .item .content .nft-info {
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nft-user-detail-layout .content .nft-info .image, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-info .image, main .trending-block .carousel .carousel-items .item .content .nft-info .image {
+  margin-bottom: 5px;
+}
+.nft-user-detail-layout .content .nft-info .image img, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-info .image img, main .trending-block .carousel .carousel-items .item .content .nft-info .image img {
+  height: 90px;
+  width: 90px;
+  border-radius: 50px;
+  border: 2px solid #011126;
+}
+@media (max-width: 576px) {
+  .nft-user-detail-layout .content .nft-info .image img, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-info .image img, main .trending-block .carousel .carousel-items .item .content .nft-info .image img {
+    height: 50px;
+    width: 50px;
+  }
+}
+.nft-user-detail-layout .content .nft-info .nft-title h2, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-info .nft-title h2, main .trending-block .carousel .carousel-items .item .content .nft-info .nft-title h2 {
+  color: #F2911B;
+  margin: 0;
+}
+.nft-user-detail-layout .content .nft-info .nft-user h3, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-info .nft-user h3, main .trending-block .carousel .carousel-items .item .content .nft-info .nft-user h3 {
+  margin: 0;
+}
+.nft-user-detail-layout .content .nft-info .nft-redirect-btn, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-info .nft-redirect-btn, main .trending-block .carousel .carousel-items .item .content .nft-info .nft-redirect-btn {
+  display: none;
+  margin-top: 15px;
+}
+@media (max-width: 768px) {
+  .nft-user-detail-layout .content .nft-info .nft-redirect-btn, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-info .nft-redirect-btn, main .trending-block .carousel .carousel-items .item .content .nft-info .nft-redirect-btn {
+    display: block;
+    margin-top: 5px;
+  }
+}
+.nft-user-detail-layout .content .nft-info .nft-redirect-btn a, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-info .nft-redirect-btn a, main .trending-block .carousel .carousel-items .item .content .nft-info .nft-redirect-btn a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.nft-user-detail-layout .content .nft-stats, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-stats, main .trending-block .carousel .carousel-items .item .content .nft-stats {
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 5px 0;
+}
+.nft-user-detail-layout .content .nft-stats .item, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-stats .item, main .trending-block .carousel .carousel-items .item .content .nft-stats .item {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  margin-bottom: 0;
+  gap: 0 5px;
+}
+.nft-user-detail-layout .content .nft-stats .item .text span, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-stats .item .text span, main .trending-block .carousel .carousel-items .item .content .nft-stats .item .text span {
+  color: #F2911B;
+}
+.nft-user-detail-layout .content .nft-stats .item:not(:last-child), main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-stats .item:not(:last-child), main .trending-block .carousel .carousel-items .item .content .nft-stats .item:not(:last-child) {
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.13);
+}
+
+@media (min-width: 1024px) {
+  #nft-list-table * {
+    overflow-wrap: break-word;
+  }
+  #nft-list-table td {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .nft-detail-col {
+    width: 220px;
+  }
+}
+.nft-detail-column {
+  width: 200px;
+}
+
+.color-orange {
+  color: #F2911B;
+}
+
+.table-detail-column-data {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+.table-detail-column-data:not(:last-child) {
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.13);
+}
+
+@media (max-width: 1350px) {
+  .custom-newnft-row .col-xl-8, .custom-newnft-row .col-xl-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+.owl-stage-outer {
+  overflow: visible !important;
+}
+
+.carousel-items {
+  padding: 10px;
+}
+
+.owl-item, .custom-carasol-min-height, .carousel-items, .item.nft-block, .item.nft-block .content {
+  min-height: 220px !important;
+}
+
+.total_liks_count {
+  display: inline-block;
+  background-color: #F2911B !important;
+  border-radius: 4px !important;
+  margin-right: 10px;
+  padding: 0px 6px !important;
+  position: relative;
+  height: 26px !important;
+  font-size: 12px !important;
+}
+.total_liks_count::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%) translateX(50%) rotate(45deg);
+  height: 8px;
+  width: 8px;
+  background-color: #F2911B;
+  z-index: 1;
+}
+.total_liks_count .count, .total_liks_count i {
+  position: relative;
+  z-index: 2;
+}
+
+.like {
+  min-width: 65px;
+}
+.like .total_liks_count {
+  color: #158800;
+}
+
+.liked {
+  min-width: 65px;
+}
+.liked .total_liks_count {
+  color: #5f5e5e;
+}
+
+.skeleton {
+  background-repeat: no-repeat;
+  background-image: linear-gradient(90deg, #020024 0%, rgba(185, 185, 185, 0.4) 0%, rgba(255, 255, 255, 0.1) 100%);
+  border-radius: 20px;
+}
+
+.submit-nft-text-message {
+  color: #F2911B;
+}
+
+.user-list-table {
+  overflow-wrap: break-word;
+}
+.user-list-table .user-info-column {
+  width: 300px;
+}
+
+.form-control.textarea {
+  height: 100px !important;
+  border-radius: 20px !important;
+}
+
+.form-control.file-upload {
+  min-height: "60px";
+  height: auto !important;
+  border-radius: 20px !important;
+}
+.form-control.file-upload .selected-file-wrapper {
+  margin-bottom: 10px;
+}
+.form-control.file-upload .selected-file-wrapper .selected-file {
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding: 5px 16px;
+  background-color: #011c40;
+  border-radius: 20px;
+  word-break: break-all;
+}
+.form-control.file-upload input {
+  position: absolute;
+  right: 999999px;
+}
+.form-control.file-upload .file-label {
+  padding-left: 0 !important;
+}
+.form-control.file-upload .file-label .form-btn {
+  margin-top: 0 !important;
+  background: white !important;
+  padding: 10px 20px !important;
+  height: 45px !important;
+  color: #f2911b !important;
+}
+
+.readmore {
+  cursor: pointer;
+}
+
+@media (min-width: 576px) {
+  .page-404-error {
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 0px #000;
+  }
+  .page-404-error .error {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+  }
+}
+.custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  border-color: #389c09;
+  background-color: #389c09;
+}
+
+.custom-control-input ~ .custom-control-label::before {
+  color: #fff;
+  border-color: #b41d12;
+  background-color: #b41d12;
+}
+
+.readmore {
+  font-family: "Nunito", sans-serif;
+}
+
+.swal2-popup h2.swal2-title {
+  font-size: 18px;
+}
+.swal2-popup .swal2-actions button.swal2-confirm {
+  border: 2px solid #011126;
+  border-radius: 0.5rem;
+  background-image: linear-gradient(45deg, #011126, #011C40);
+  padding: 0.6rem 1.1rem;
+  box-shadow: none;
+  outline: none;
+}
+.swal2-popup .swal2-actions button.swal2-confirm:hover {
+  background-color: #011126;
+}
+.swal2-popup .swal2-actions button.swal2-cancel {
+  color: #011C40;
+  border: 2px solid #011C40;
+  border-radius: 0.5rem;
+  padding: 0.6rem 1.1rem;
+  background-color: transparent;
+  transition: background-color 0.3s, color 0.3s;
+  box-shadow: none;
+  outline: none;
+}
+.swal2-popup .swal2-actions button.swal2-cancel:hover {
+  color: #fff;
+  background-color: #011C40;
+}
+
+.timezone-picker {
+  width: 100%;
+}
+
+#timeZoneSelect {
+  appearance: none;
+}
+
+.border-dashed {
+  border-bottom: 2px dashed #133e74;
+}
+
+.highlight.imp {
+  color: #F2911B !important;
+  cursor: pointer;
+}
+
+.highlight.important {
+  color: #F2911B !important;
+}
+
+.discord, .twitter, .facebook {
+  text-decoration: none;
+  font-size: 20px;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.twitter i {
+  color: #1DA1F2;
+}
+
+.discord i {
+  color: #5865F2;
+}
+
+.facebook i {
+  color: #4267B2;
+}
+
+.socialmedia-list {
+  list-style: none;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.socialmedia-list li {
+  padding: 5px 20px;
+  border-radius: 20px;
+  background-color: #011126;
+  margin-bottom: 5px;
+}
+
+.mobile-more-detail {
+  font-family: "Nunito", sans-serif;
+}
+
+@media (max-width: 576px) {
+  .average_text_in_user_detail .average_text_in_user_detail {
+    display: none;
+  }
+}
+
+.form-layout .box-modal, .verify-nft .left-block .verify-nft-form form .box-modal, .admin-userlist .right-block .add-user-form-wrapper form .box-modal, .submit-nft .nft-container .nft-form form .box-modal, .admin-container .form-wrapper .login-form form .box-modal {
+  padding: 30px;
+  border-radius: 20px;
+  background-color: #011C40;
+  box-shadow: 0px 0px 20px 0px #000;
+}
+@media (max-width: 576px) {
+  .form-layout .box-modal, .verify-nft .left-block .verify-nft-form form .box-modal, .admin-userlist .right-block .add-user-form-wrapper form .box-modal, .submit-nft .nft-container .nft-form form .box-modal, .admin-container .form-wrapper .login-form form .box-modal {
+    padding: 20px 15px;
+  }
+}
+.form-layout .box-modal .title h3, .verify-nft .left-block .verify-nft-form form .box-modal .title h3, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .title h3, .submit-nft .nft-container .nft-form form .box-modal .title h3, .admin-container .form-wrapper .login-form form .box-modal .title h3 {
+  font-weight: 900;
+  margin-bottom: 16px;
+}
+@media (min-width: 1200px) {
+  .form-layout .box-modal .full-name, .verify-nft .left-block .verify-nft-form form .box-modal .full-name, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .full-name, .submit-nft .nft-container .nft-form form .box-modal .full-name, .admin-container .form-wrapper .login-form form .box-modal .full-name {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 20px;
+    margin-bottom: 0 !important;
+  }
+  .form-layout .box-modal .full-name .form-group, .verify-nft .left-block .verify-nft-form form .box-modal .full-name .form-group, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .full-name .form-group, .submit-nft .nft-container .nft-form form .box-modal .full-name .form-group, .admin-container .form-wrapper .login-form form .box-modal .full-name .form-group {
+    width: 50%;
+  }
+}
+.form-layout .box-modal .form-collection, .verify-nft .left-block .verify-nft-form form .box-modal .form-collection, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .form-collection, .submit-nft .nft-container .nft-form form .box-modal .form-collection, .admin-container .form-wrapper .login-form form .box-modal .form-collection {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 20px;
+}
+.form-layout .box-modal .form-group, .verify-nft .left-block .verify-nft-form form .box-modal .form-group, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .form-group, .submit-nft .nft-container .nft-form form .box-modal .form-group, .admin-container .form-wrapper .login-form form .box-modal .form-group {
+  margin-bottom: 5px;
+}
+.form-layout .box-modal .form-group:nth-last-child(1), .verify-nft .left-block .verify-nft-form form .box-modal .form-group:nth-last-child(1), .admin-userlist .right-block .add-user-form-wrapper form .box-modal .form-group:nth-last-child(1), .submit-nft .nft-container .nft-form form .box-modal .form-group:nth-last-child(1), .admin-container .form-wrapper .login-form form .box-modal .form-group:nth-last-child(1) {
+  margin-bottom: 0px;
+}
+@media (max-width: 576px) {
+  .form-layout .box-modal .form-group, .verify-nft .left-block .verify-nft-form form .box-modal .form-group, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .form-group, .submit-nft .nft-container .nft-form form .box-modal .form-group, .admin-container .form-wrapper .login-form form .box-modal .form-group {
+    margin-bottom: 5px;
+  }
+}
+.form-layout .box-modal .form-group label, .verify-nft .left-block .verify-nft-form form .box-modal .form-group label, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .form-group label, .submit-nft .nft-container .nft-form form .box-modal .form-group label, .admin-container .form-wrapper .login-form form .box-modal .form-group label {
+  font-family: "Nunito", sans-serif;
+  padding-left: 15px;
+}
+.form-layout .box-modal .form-group .form-control, .verify-nft .left-block .verify-nft-form form .box-modal .form-group .form-control, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .form-group .form-control, .submit-nft .nft-container .nft-form form .box-modal .form-group .form-control, .admin-container .form-wrapper .login-form form .box-modal .form-group .form-control {
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  height: 60px;
+  background-color: #011126;
+  padding: 18px;
+}
+.form-layout .box-modal .form-group .form-control::placeholder, .verify-nft .left-block .verify-nft-form form .box-modal .form-group .form-control::placeholder, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .form-group .form-control::placeholder, .submit-nft .nft-container .nft-form form .box-modal .form-group .form-control::placeholder, .admin-container .form-wrapper .login-form form .box-modal .form-group .form-control::placeholder {
+  color: #b3b3b3;
+}
+@media (max-width: 576px) {
+  .form-layout .box-modal .form-group .form-control, .verify-nft .left-block .verify-nft-form form .box-modal .form-group .form-control, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .form-group .form-control, .submit-nft .nft-container .nft-form form .box-modal .form-group .form-control, .admin-container .form-wrapper .login-form form .box-modal .form-group .form-control {
+    height: 48px;
+  }
+}
+@media (max-width: 576px) {
+  .form-layout .box-modal .form-group .form-control, .verify-nft .left-block .verify-nft-form form .box-modal .form-group .form-control, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .form-group .form-control, .submit-nft .nft-container .nft-form form .box-modal .form-group .form-control, .admin-container .form-wrapper .login-form form .box-modal .form-group .form-control {
+    padding: 12px;
+  }
+}
+.form-layout .box-modal .form-group input[type=time]::-webkit-calendar-picker-indicator, .verify-nft .left-block .verify-nft-form form .box-modal .form-group input[type=time]::-webkit-calendar-picker-indicator, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .form-group input[type=time]::-webkit-calendar-picker-indicator, .submit-nft .nft-container .nft-form form .box-modal .form-group input[type=time]::-webkit-calendar-picker-indicator, .admin-container .form-wrapper .login-form form .box-modal .form-group input[type=time]::-webkit-calendar-picker-indicator {
+  background-color: #1e416e;
+  border-radius: 6px;
+}
+.form-layout .box-modal .form-group input[type=date]::-webkit-calendar-picker-indicator, .verify-nft .left-block .verify-nft-form form .box-modal .form-group input[type=date]::-webkit-calendar-picker-indicator, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .form-group input[type=date]::-webkit-calendar-picker-indicator, .submit-nft .nft-container .nft-form form .box-modal .form-group input[type=date]::-webkit-calendar-picker-indicator, .admin-container .form-wrapper .login-form form .box-modal .form-group input[type=date]::-webkit-calendar-picker-indicator {
+  background-color: #1e416e;
+  border-radius: 6px;
+}
+.form-layout .box-modal .form-group .file-label, .verify-nft .left-block .verify-nft-form form .box-modal .form-group .file-label, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .form-group .file-label, .submit-nft .nft-container .nft-form form .box-modal .form-group .file-label, .admin-container .form-wrapper .login-form form .box-modal .form-group .file-label {
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 0;
+  word-wrap: break-word;
+  height: auto;
+}
+.form-layout .box-modal .form-group.select-group, .verify-nft .left-block .verify-nft-form form .box-modal .form-group.select-group, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .form-group.select-group, .submit-nft .nft-container .nft-form form .box-modal .form-group.select-group, .admin-container .form-wrapper .login-form form .box-modal .form-group.select-group {
+  position: relative;
+}
+.form-layout .box-modal .form-group.select-group select, .verify-nft .left-block .verify-nft-form form .box-modal .form-group.select-group select, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .form-group.select-group select, .submit-nft .nft-container .nft-form form .box-modal .form-group.select-group select, .admin-container .form-wrapper .login-form form .box-modal .form-group.select-group select {
+  -webkit-appearance: none;
+  appearance: none;
+  padding: 0 !important;
+  padding-left: 18px !important;
+}
+.form-layout .box-modal .form-group .error-message, .verify-nft .left-block .verify-nft-form form .box-modal .form-group .error-message, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .form-group .error-message, .submit-nft .nft-container .nft-form form .box-modal .form-group .error-message, .admin-container .form-wrapper .login-form form .box-modal .form-group .error-message {
+  color: red;
+  padding-left: 10px;
+  font-size: 12px;
+  font-family: "Nunito", sans-serif;
+  min-height: 15px;
+}
+.form-layout .box-modal .form-group select.form-control, .verify-nft .left-block .verify-nft-form form .box-modal .form-group select.form-control, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .form-group select.form-control, .submit-nft .nft-container .nft-form form .box-modal .form-group select.form-control, .admin-container .form-wrapper .login-form form .box-modal .form-group select.form-control {
+  appearance: none;
+  background-image: url(../images/chevron-down.svg);
+  background-repeat: no-repeat;
+  background-position: 95%;
+}
+.form-layout button.form-btn, .verify-nft .left-block .verify-nft-form form button.form-btn, .admin-userlist .right-block .add-user-form-wrapper form button.form-btn, .submit-nft .nft-container .nft-form form button.form-btn, .admin-container .form-wrapper .login-form form button.form-btn {
+  margin-top: 40px;
+}
+@media (max-width: 768px) {
+  .form-layout button.form-btn, .verify-nft .left-block .verify-nft-form form button.form-btn, .admin-userlist .right-block .add-user-form-wrapper form button.form-btn, .submit-nft .nft-container .nft-form form button.form-btn, .admin-container .form-wrapper .login-form form button.form-btn {
+    margin-top: 35px;
+  }
+}
+@media (max-width: 576px) {
+  .form-layout button.form-btn, .verify-nft .left-block .verify-nft-form form button.form-btn, .admin-userlist .right-block .add-user-form-wrapper form button.form-btn, .submit-nft .nft-container .nft-form form button.form-btn, .admin-container .form-wrapper .login-form form button.form-btn {
+    margin-top: 25px;
+  }
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background: linear-gradient(68deg, #011126, #011C40);
+}
+header nav {
+  padding: 20px 0px;
+  transition: padding 0.3s;
+}
+@media (max-width: 992px) {
+  header nav {
+    padding: 20px 0px;
+  }
+}
+@media (max-width: 768px) {
+  header nav {
+    padding: 0;
+  }
+  header nav .container-lg {
+    transition: padding 0.3s;
+    padding: 0;
+  }
+}
+header nav .wrapper {
+  position: relative;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(68deg, #011C40, #011126);
+  border-radius: 50px;
+  transition: height 0.3s border-radius 0.3s;
+}
+@media (max-width: 992px) {
+  header nav .wrapper {
+    height: 90px;
+  }
+}
+@media (max-width: 768px) {
+  header nav .wrapper {
+    border-radius: 0;
+  }
+}
+@media (max-width: 576px) {
+  header nav .wrapper {
+    height: 65px;
+  }
+}
+header nav .wrapper .brand-logo {
+  margin-left: 35px;
+}
+@media (max-width: 576px) {
+  header nav .wrapper .brand-logo {
+    margin-left: 0px;
+  }
+}
+header nav .wrapper .brand-logo img {
+  height: 70px;
+  width: auto;
+}
+@media (max-width: 576px) {
+  header nav .wrapper .brand-logo img {
+    margin-left: 15px;
+    height: 60px;
+    width: auto;
+  }
+}
+header nav .wrapper .nav-links {
+  margin-right: 35px;
+  position: relative;
+}
+@media (max-width: 576px) {
+  header nav .wrapper .nav-links {
+    margin-right: 15px;
+  }
+}
+header nav .wrapper .nav-links .hemburger {
+  display: none;
+}
+@media (max-width: 660px) {
+  header nav .wrapper .nav-links .hemburger {
+    display: block;
+  }
+}
+header nav .wrapper .nav-links .hemburger button {
+  display: block;
+  background-color: transparent;
+  width: 26px;
+  border: none;
+  outline: none;
+}
+header nav .wrapper .nav-links .hemburger button span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin-bottom: 6px;
+  background-color: #fff;
+}
+header nav .wrapper .nav-links .hemburger button span:nth-last-child(1) {
+  margin-bottom: 0px;
+}
+@media (max-width: 660px) {
+  header nav .wrapper .nav-links .admin-list, header nav .wrapper .nav-links .user-list {
+    display: none;
+  }
+}
+header nav .wrapper .nav-links ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+header nav .wrapper .nav-links ul li {
+  line-height: 50px;
+  margin: 0px 5px;
+  position: relative;
+}
+header nav .wrapper .nav-links ul li:nth-last-child(1) {
+  margin-right: 0;
+}
+header nav .wrapper .nav-links ul li:nth-last-child(1) a {
+  padding-right: 0;
+}
+header nav .wrapper .nav-links ul li > a {
+  display: inline-block;
+  margin-left: 18px;
+  text-decoration: none;
+  position: relative;
+}
+header nav .wrapper .nav-links ul li > a::after {
+  content: "";
+  display: inline-block;
+  width: 0%;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+  transition: width 0.3s;
+}
+header nav .wrapper .nav-links ul li > a:hover::after {
+  width: 100%;
+}
+header nav .wrapper .nav-links ul li .dropdown-menu {
+  margin: 0;
+  padding: 0;
+  right: -10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 20px 0px #000;
+}
+header nav .wrapper .nav-links ul li .dropdown-menu::after {
+  content: "";
+  display: block;
+  border: 10px solid;
+  border-color: transparent transparent #fff;
+  position: absolute;
+  top: -20px;
+  right: 10px;
+}
+header nav .wrapper .nav-links ul li .dropdown-menu a {
+  border-radius: 15px;
+  color: #000;
+  padding: 15px;
+}
+header nav .wrapper .nav-links ul li .dropdown-menu a i {
+  transform: scale(0);
+  transition: transform 0.3s;
+}
+header nav .wrapper .nav-links ul li .dropdown-menu a span {
+  margin-left: -18px;
+  transition: margin-left 0.3s;
+}
+header nav .wrapper .nav-links ul li .dropdown-menu a:hover span {
+  margin-left: 0px;
+}
+header nav .wrapper .nav-links ul li .dropdown-menu a:hover i {
+  transform: scale(1);
+}
+header nav .wrapper .mobile-nav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(-68deg, #011126, #011C40);
+  z-index: -1;
+  box-shadow: 0px 0px 20px 0px #000;
+}
+header nav .wrapper .mobile-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+header nav .wrapper .mobile-nav ul li {
+  position: relative;
+}
+header nav .wrapper .mobile-nav ul li:not(:nth-last-child(1))::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-image: url(../images/horizontal-divider.png);
+  background-repeat: no-repeat;
+}
+header nav .wrapper .mobile-nav ul li a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  padding: 20px;
+}
+header nav .wrapper .mobile-nav ul li .dropdown-menu {
+  margin: 0;
+  padding: 0;
+  left: 49%;
+  right: unset;
+  transform: translateX(-50%);
+  top: 95%;
+  color: #fff;
+  box-shadow: 0px 0px 20px 0px #000;
+}
+header nav .wrapper .mobile-nav ul li .dropdown-menu::after {
+  content: "";
+  display: block;
+  border: 10px solid;
+  border-color: transparent transparent #fff;
+  position: absolute;
+  top: -20px;
+  right: 10px;
+}
+header nav .wrapper .mobile-nav ul li .dropdown-menu a {
+  border-radius: 15px;
+  color: #000;
+  padding: 15px;
+}
+@media (max-width: 660px) {
+  header nav .wrapper .mobile-nav {
+    display: none;
+  }
+}
+@media (min-width: 660px) {
+  header nav .wrapper .mobile-nav {
+    display: none !important;
+  }
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+footer .gemstool-footer .credits {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  footer .gemstool-footer .credits {
+    flex-direction: column;
+    justify-content: center;
+  }
+  footer .gemstool-footer .credits .developed span {
+    font-size: 12px;
+    line-height: 19px;
+    color: #707070;
+  }
+}
+footer .gemstool-footer .credits span {
+  font-size: 13px;
+}
+
+.admin-container {
+  width: 100vw;
+  height: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.admin-container .form-wrapper {
+  max-width: 550px;
+  margin: auto;
+}
+.admin-container .form-wrapper .form-header h1 {
+  margin-bottom: 20px;
+}
+main {
+  position: relative;
+}
+main.main-spacing {
+  padding-top: 130px;
+  padding-bottom: 60px;
+  transition: padding-top 0.3s;
+}
+@media (max-width: 992px) {
+  main.main-spacing {
+    padding-top: 130px;
+  }
+}
+@media (max-width: 768px) {
+  main.main-spacing {
+    padding-top: 90px;
+  }
+}
+@media (max-width: 576px) {
+  main.main-spacing {
+    padding-top: 65px;
+  }
+}
+main .trending-block .carousel {
+  margin-top: 20px;
+}
+main .nft-group-section .new-nft .heading h1 {
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  main .nft-group-section .new-nft .nft-table-wrapper {
+    display: none;
+  }
+}
+main .nft-group-section .new-nft .nft-table-wrapper .nft-table {
+  text-align: center;
+}
+main .nft-group-section .new-nft .nft-table-wrapper .nft-table tr {
+  border-bottom: 1px solid #a0a0a0;
+}
+main .nft-group-section .new-nft .nft-table-wrapper .nft-table td {
+  vertical-align: middle;
+}
+main .nft-group-section .new-nft .nft-table-wrapper .nft-table tbody td:not(.nft-col):not(.action-col) {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+}
+@media (max-width: 768px) {
+  main .nft-group-section .new-nft .nft-table-wrapper .nft-table tbody td:not(.nft-col):not(.action-col) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media (max-width: 576px) {
+  main .nft-group-section .new-nft .nft-table-wrapper .nft-table tbody td:not(.nft-col):not(.action-col) {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+main .nft-group-section .new-nft .nft-table-wrapper .nft-table .nft-detail {
+  display: flex;
+  align-items: center;
+}
+main .nft-group-section .new-nft .nft-table-wrapper .nft-table .nft-detail .image {
+  margin-right: 20px;
+  width: 60px;
+}
+main .nft-group-section .new-nft .nft-table-wrapper .nft-table .nft-detail .image img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border: 2px solid #011126;
+  border-radius: 50px;
+}
+@media (max-width: 768px) {
+  main .nft-group-section .new-nft .nft-table-wrapper .nft-table .nft-detail .image img {
+    width: 60px;
+    height: 60px;
+  }
+}
+main .nft-group-section .new-nft .nft-table-wrapper .nft-table .nft-detail .nft-content {
+  text-align: left;
+}
+main .nft-group-section .new-nft .nft-table-wrapper .nft-table .nft-detail .nft-content .nft-name span {
+  color: #F2911B;
+}
+main .nft-group-section .new-nft .nft-table-wrapper .nft-table .nft-detail .nft-content .nft-user-name span {
+  color: #1EA4D9;
+}
+main .nft-group-section .new-nft .nft-table-wrapper .nft-table .nft-detail .nft-content .nft-detail-btn {
+  margin-top: 8px;
+}
+@media (max-width: 768px) {
+  main .nft-group-section .new-nft .nft-table-wrapper .nft-table .nft-detail .nft-content .nft-detail-btn {
+    margin-top: 8px;
+  }
+}
+main .nft-group-section .new-nft .nft-table-wrapper .nft-table .nft-detail .nft-content .nft-detail-btn a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+@media (max-width: 992px) {
+  main .nft-group-section .new-nft .nft-table-wrapper .nft-table .nft-detail {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+main .nft-group-section .new-nft .mobile-nft-list {
+  display: none;
+}
+@media (max-width: 768px) {
+  main .nft-group-section .new-nft .mobile-nft-list {
+    display: block;
+  }
+}
+@media (max-width: 992px) {
+  main .nft-group-section .right-block {
+    margin-top: 40px;
+  }
+}
+main .nft-group-section .right-block .rank-block .heading h2 {
+  margin-bottom: 20px;
+}
+main .nft-group-section .right-block .rank-block .bar-graph {
+  text-align: center;
+  box-shadow: 0px 0px 20px 0px #000;
+  border-radius: 25px;
+  padding: 15px;
+}
+main .nft-group-section .right-block .rank-block .bar-graph img {
+  width: 500px;
+  height: 400px;
+  max-width: 100%;
+  height: auto;
+}
+main .nft-group-section .right-block .gooogle-ads {
+  text-align: center;
+  margin-top: 45px;
+}
+main .nft-group-section .right-block .gooogle-ads img {
+  margin-bottom: 30px;
+  max-width: 100%;
+  height: auto;
+}
+
+.action-btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.action-btns button {
+  border: none;
+  background-color: transparent;
+  border-radius: 23px;
+  height: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0px 8px;
+  white-space: nowrap;
+  outline: none;
+}
+.action-btns button.like {
+  background-color: #158800;
+  color: #c1ffc0;
+}
+.action-btns button.liked {
+  background-color: #c4c4c4;
+  color: #5f5e5e;
+  cursor: not-allowed;
+}
+.action-btns button.liked .shadow {
+  transform: translate(-50%, -50%) scale(5) !important;
+  opacity: 0 !important;
+  pointer-events: none;
+}
+.action-btns button.dislike {
+  background-color: #830101;
+  color: #ffadad;
+}
+.action-btns button.like, .action-btns button.liked {
+  position: relative;
+  font-size: 12px;
+}
+.action-btns button.like .shadow, .action-btns button.liked .shadow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(0);
+  transition: all 0.5s;
+  color: green;
+}
+
+.submit-nft .nft-container .heading h1 {
+  margin-bottom: 20px;
+}
+.submit-nft .nft-container .left-block {
+  padding-left: 0;
+}
+@media (max-width: 768px) {
+  .submit-nft .nft-container .left-block {
+    padding-right: 0;
+  }
+}
+.submit-nft .nft-container .right-block {
+  padding-right: 0;
+}
+@media (max-width: 992px) {
+  .submit-nft .nft-container .right-block {
+    padding-left: 0;
+  }
+}
+@media (max-width: 992px) {
+  .submit-nft .nft-container .nft-form form .col-lg-6 {
+    padding-left: 0;
+  }
+  .submit-nft .nft-container .nft-form form .col-lg-6:nth-last-child(1) {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .submit-nft .nft-container .nft-form form .right-box, .submit-nft .nft-container .nft-form form .left-box {
+    padding: 0;
+  }
+}
+.submit-nft .nft-container .image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(153, 153, 153, 0.541);
+  z-index: 9998;
+}
+
+.custom-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+.custom-modal .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.custom-modal .wrapper .content {
+  max-width: 500px;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+}
+.custom-modal .wrapper .content .title h4 {
+  color: #011C40;
+  margin-bottom: 20px;
+}
+.custom-modal .wrapper .content .icon img {
+  width: 130px;
+  height: 130px;
+}
+.custom-modal .wrapper .content .text p {
+  margin: 20px 0px 40px 0px;
+  font-size: 18px;
+  color: #000;
+}
+.custom-modal .wrapper .content .redirect a {
+  text-decoration: none;
+  color: #011C40;
+}
+
+.admin-userlist .left-block .user-list-table-wrapper .heading {
+  margin-bottom: 20px;
+}
+.admin-userlist .left-block .user-list-table-wrapper .user-list-table tr {
+  border-bottom: 1px solid #a0a0a0;
+}
+.admin-userlist .left-block .user-list-table-wrapper .user-list-table td {
+  vertical-align: middle;
+}
+.admin-userlist .left-block .user-list-table-wrapper .user-list-table thead td {
+  white-space: nowrap;
+}
+.admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.view-more a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.user-col .user-info-block {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.user-col .user-info-block .image {
+  margin-right: 15px;
+}
+.admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.user-col .user-info-block .image img {
+  width: 50px;
+  height: 50px;
+}
+.admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.user-col .user-info-block .content .user-name span {
+  color: #F2911B;
+  white-space: nowrap;
+}
+.admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.user-col .user-info-block .content .user-email span {
+  color: #1EA4D9;
+}
+.admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.user-col .nft-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.user-col .nft-block .wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.user-col .nft-block .view-now-btn {
+  margin-top: 15px;
+}
+.admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.user-col .nft-block .view-now-btn a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+.admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.action-col .action-btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.action-col .action-btns button {
+  border: none;
+  background-color: transparent;
+  border-radius: 23px;
+  height: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0px 10px;
+  white-space: nowrap;
+  outline: none;
+}
+.admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.action-col .action-btns button.edit {
+  background-color: #157EBF;
+}
+.admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.action-col .action-btns button.delete {
+  margin-top: 8px;
+  background-color: #BF1515;
+}
+@media (max-width: 992px) {
+  .admin-userlist .right-block {
+    padding-top: 40px;
+  }
+}
+.admin-userlist .right-block .add-user-form-wrapper .heading h1 {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .admin-userlist .right-block .add-user-form-wrapper form .full-name {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 20px;
+    margin-bottom: 0 !important;
+  }
+}
+
+.user-nft-detail .grid-container .left-block .user-detail .heading h1 {
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab {
+    min-width: 290px;
+    max-width: 360px;
+    margin: auto;
+  }
+}
+.user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper {
+  border-radius: 25px;
+  box-shadow: 0px 0px 20px 0px #000;
+  background-color: #011C40;
+}
+.user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content {
+  text-align: center;
+  padding: 30px;
+}
+.user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content > div > span {
+  display: block;
+}
+@media (max-width: 576px) {
+  .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content > div > span {
+    line-height: 18px !important;
+  }
+}
+.user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .image img {
+  width: 90px;
+  height: 90px;
+}
+.user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .user-name span {
+  color: #F2911B;
+}
+.user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .user-email span {
+  color: #1EA4D9;
+}
+.user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .user-phone {
+  margin-top: 5px;
+}
+.user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .user-phone a {
+  text-decoration: none;
+  color: #fff;
+}
+.user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .nft-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+}
+@media (max-width: 768px) {
+  .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .nft-status {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 576px) {
+  .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .nft-status {
+    margin-top: 20px;
+  }
+}
+.user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .nft-status .nft-like span,
+.user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .nft-status .nft-rank span {
+  color: #fff;
+}
+.user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .nft-status .nft-like .icon {
+  color: #AFFFA0;
+}
+.user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .nft-status .nft-rank .rank {
+  color: #1EA4D9;
+}
+@media (max-width: 768px) {
+  .user-nft-detail .grid-container .right-block {
+    margin-top: 40px;
+  }
+}
+.user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .heading h2 {
+  margin-bottom: 20px;
+}
+.user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft {
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-header h2 {
+  color: #1EA4D9;
+}
+.user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content {
+  display: flex;
+  min-width: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+.user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-image: url(../images/horizontal-divider.png);
+  background-repeat: no-repeat;
+}
+.user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content .nft-stats {
+  display: flex;
+  margin-bottom: 8px;
+}
+.user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content .nft-stats > div {
+  margin-right: 15px;
+}
+.user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content .nft-stats .title {
+  color: #F2911B;
+}
+.user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content .nft-stats .stat {
+  color: #fff;
+}
+.user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content .nft-likes {
+  white-space: nowrap;
+}
+.user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content .nft-likes span.icon {
+  color: #AFFFA0;
+}
+
+.verify-nft .heading h1 {
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  .verify-nft .left-block .verify-nft-form form .right-box {
+    margin-top: 30px;
+  }
+}
+.verify-nft .left-block .verify-nft-form form .image {
+  text-align: center;
+}
+.verify-nft .left-block .verify-nft-form form .image img {
+  width: 130px;
+  height: 130px;
+}
+@media (max-width: 992px) {
+  .verify-nft .left-block .verify-nft-form form .image img {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

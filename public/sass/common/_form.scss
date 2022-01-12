@@ -1,0 +1,43 @@
+.form-layout {
+    .box-modal {
+        padding: 30px;
+        border-radius: 20px;
+        background-color: $darkblue2;
+        box-shadow: 0px 0px 20px 0px $black;
+
+        .title {
+            h3 {
+                @extend .bold-18;
+                font-weight: 900;
+                margin-bottom: 16px;
+            }
+        }
+
+        .form-group {
+            margin-bottom: 30px;
+
+            &:nth-last-child(1) {
+                margin-bottom: 0px;
+            }
+
+            .form-control {
+                border-radius: 50px;
+                border: none;
+                outline: none;
+                box-shadow: none;
+                height: 60px;
+                background-color: $darkblue1;
+                padding: 18px;
+                @extend .bold-18;
+
+                &::placeholder {
+                    @extend .bold-18;
+                }
+            }
+        }
+    }
+    button {
+        @extend .btn-layout;
+        margin-top: 40px;
+    }
+}

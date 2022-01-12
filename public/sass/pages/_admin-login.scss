@@ -1,0 +1,24 @@
+.admin-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .form-wrapper {
+        max-width: 550px;
+        margin: auto;
+        
+        .form-header {
+            h1 {
+                @extend .special-font;
+                margin-bottom: 20px;
+            }
+        }
+        .login-form {
+            form {
+                @extend .form-layout;
+            }
+        }
+    }
+}

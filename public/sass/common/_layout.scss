@@ -1,0 +1,102 @@
+//  Overiding container layout
+.container-lg {
+    @include min-media($xl-1) {
+        max-width: 1200px;
+    }
+    @include min-media($xl-2) {
+        max-width: 1300px;
+    }
+    @include min-media($xl-3) {
+        max-width: 1500px;
+    }
+    @include min-media($xl-4) {
+        max-width: 1600px;
+    }
+}
+
+// Common layout for buttons
+.btn-layout {
+    @extend .bold-20;
+    color: $saffron;
+    height: 50px;
+    padding: 10px 55px;
+    margin-top: 30px;
+    background-color: $white;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+// Common layout for body
+.body-wrapper {
+    position: relative;
+    min-width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(45deg, $darkblue1, $darkblue2);
+}
+
+section {
+    padding: 15px 0px;
+}
+
+.nft-user-detail-layout {
+    .content {
+        background-color: $darkblue2;
+        padding: 20px;
+        border-radius: 25px;
+        @include boxshadow;
+
+        .nft-info {
+            text-align: center;
+            .image {
+                img {
+                    height: 50px;
+                    width: 50px;
+                }
+            }
+            .nft-title {
+                h2 {
+                    @extend .bold-18;
+                    color: $saffron;
+                    margin: 0
+                }
+            }
+            .nft-user {
+                h3 {
+                    @extend .std-14;
+                    margin: 0
+                }
+            }
+            .nft-redirect-btn {
+                margin-top: 15px;
+                a {
+                    text-decoration: none;
+                    @extend .bold-16;
+                    color: $white;
+                }
+            }
+        }
+
+        .nft-stats {
+            display:  grid;
+            grid-template-columns: auto auto;
+            gap: 19px 27px;
+
+            .item {
+                .text {
+                    span {
+                        @extend .bold-14;
+                        color: $saffron;
+                    }
+                }
+                .stat {
+                    span {
+                        @extend .bold-28;
+                    }
+                }
+            }
+        }
+    }
+}

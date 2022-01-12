@@ -1,0 +1,44 @@
+.bold-28 {
+    font-size: 28px;
+    line-height: 38px;
+    font-weight: 900;
+    color: $white;
+}
+.bold-20 {
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 30px;
+    color: $white;
+    font-family: $nunito-fonts;
+}
+.bold-18 {
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 24px;
+    color: $white;
+    font-family: $nunito-fonts;
+}
+.bold-16 {
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 21px;
+    font-family: $nunito-fonts;
+}
+.std-14 {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 19px;
+    font-family: $nunito-fonts;
+}
+.bold-14 {
+    @extend .std-14;
+    font-weight: bold; 
+}
+
+
+.special-font {
+    @extend .bold-18;
+    .highlight {
+        color: $saffron;
+    }
+}

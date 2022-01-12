@@ -1,0 +1,17 @@
+// Media query 
+
+@mixin max-media($size) {
+    @media (max-width: $size) {
+        @content;
+    }
+}
+
+@mixin min-media($size) {
+    @media (min-width: $size) {
+        @content;
+    }
+}
+
+@mixin boxshadow() {
+    box-shadow: 0px 0px 20px 0px $black;
+}

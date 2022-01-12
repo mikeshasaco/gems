@@ -1,0 +1,19 @@
+main {
+    margin-top: 190px;
+    .trending-block {
+        .heading {
+            h1 {
+                @extend .special-font;
+            }
+        }
+        .carousel {
+            .carousel-items {
+                max-width: 380px;
+
+                .item {
+                    @extend .nft-user-detail-layout;
+                }
+            }
+        }
+    }
+}
