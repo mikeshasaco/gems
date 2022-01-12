@@ -75,7 +75,7 @@
                                                 <h3>About your NFT</h3>
                                             </div>
                                             <div class="form-group">
-                                                <input type="text" name="nft_name" id="nft_name" class="form-control" placeholder="Name"  value="{{ old('nft_name') != '' ? old('nft_name') : $nfeDetail->nft_name }}" >
+                                                <input type="text" name="nft_name" id="nft_name" class="form-control" placeholder="Project Name"  value="{{ old('nft_name') != '' ? old('nft_name') : $nfeDetail->nft_name }}" >
                                                 <div class="error-message">{{$errors->first('nft_name')}}</div>
                                             </div>
                                             <div class="form-group">
