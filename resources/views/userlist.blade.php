@@ -106,12 +106,12 @@
                                         <div class="error-message">{{$errors->first('email')}}</div>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" name="opensea_link" id="opensea_link" class="form-control" placeholder="OpenSea Link (Important)" value="{{ $selectedUser->opensea_link ?? old('opensea_link') }}">
+                                        <input type="text" name="opensea_link" id="opensea_link" class="form-control" placeholder="Collection Link (Important)" value="{{ $selectedUser->opensea_link ?? old('opensea_link') }}">
                                         <div class="error-message">{{ $errors->first('opensea_link') }}</div>
                                      </div>
                                      <div class="form-group">
-                                        <input type="text" name="website" id="website" class="form-control" placeholder="Website Url" value="{{ $selectedUser->website ?? old('website') }}">
-                                        <div class="error-message">{{ $errors->first('website') }}</div>
+                                        <input type="text" name="wallet_address" id="wallet_address" class="form-control" placeholder="Wallet address (sent ETH from)" value="{{ $selectedUser->wallet_address ?? old('wallet_address') }}">
+                                        <div class="error-message">{{ $errors->first('wallet_address') }}</div>
                                      </div>
                                      <div class="form-group">
                                         <input type="text" name="twitter_link" id="twitter_link" class="form-control" placeholder="Project's Official Twitter" value="{{ $selectedUser->twitter_link ?? old('twitter_link') }}">

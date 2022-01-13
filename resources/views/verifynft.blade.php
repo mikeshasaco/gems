@@ -31,12 +31,12 @@
                                                 <div class="error-message">{{$errors->first('email')}}</div>
                                             </div>
                                             <div class="form-group">
-                                                <input type="text" readonly name="opensea_link" id="opensea_link" class="form-control" placeholder="OpenSea Link (Important)" value="{{ old('opensea_link') != '' ? old('opensea_link') : $nfeDetail->opensea_link }}">
+                                                <input type="text" readonly name="opensea_link" id="opensea_link" class="form-control" placeholder="Collection Link (Important)" value="{{ old('opensea_link') != '' ? old('opensea_link') : $nfeDetail->opensea_link }}">
                                                 <div class="error-message">{{ $errors->first('opensea_link') }}</div>
                                              </div>
                                              <div class="form-group">
-                                                <input type="text" readonly name="website" id="website" class="form-control" placeholder="Website Url" value="{{ old('website') != '' ? old('website') : $nfeDetail->website }}">
-                                                <div class="error-message">{{ $errors->first('website') }}</div>
+                                                <input type="text" readonly name="wallet_address" id="wallet_address" class="form-control" placeholder="Wallet address (sent ETH from)" value="{{ old('wallet_address') != '' ? old('wallet_address') : $nfeDetail->wallet_address }}">
+                                                <div class="error-message">{{ $errors->first('wallet_address') }}</div>
                                              </div>
                                              <div class="form-group">
                                                 <input type="text" readonly name="twitter_link" id="twitter_link" class="form-control" placeholder="Project's Official Twitter" value="{{ old('twitter_link') != '' ? old('twitter_link') : $nfeDetail->twitter_link }}">
@@ -75,7 +75,7 @@
                                                 <h3>About your NFT</h3>
                                             </div>
                                             <div class="form-group">
-                                                <input type="text" name="nft_name" id="nft_name" class="form-control" placeholder="Project Name"  value="{{ old('nft_name') != '' ? old('nft_name') : $nfeDetail->nft_name }}" >
+                                                <input type="text" name="nft_name" id="nft_name" class="form-control" placeholder="Name"  value="{{ old('nft_name') != '' ? old('nft_name') : $nfeDetail->nft_name }}" >
                                                 <div class="error-message">{{$errors->first('nft_name')}}</div>
                                             </div>
                                             <div class="form-group">

@@ -66,7 +66,8 @@ class NftuserController extends Controller{
             'nft_image' => 'required',
             'nft_image.*' => 'required|mimes:jpg,jpeg,png|max:5120',
             'nft_name' => 'required',
-            'nft_link' => 'required'
+            'nft_link' => 'required',
+            'wallet_address' => 'required',
         ])
         ->setAttributeNames(
             ['nft_image.*' => 'Nft image'],
@@ -82,7 +83,7 @@ class NftuserController extends Controller{
             $data['email'] = $request->email ?? null;
             $data['project_name'] = $request->project_name ?? null;
             $data['opensea_link'] = $request->opensea_link ?? null;
-            $data['website'] = $request->website_url ?? null;
+            $data['wallet_address'] = $request->wallet_address ?? null;
             $data['twitter_link'] = $request->twitter_link;
             $data['discord_link'] = $request->discord_link ?? null;
             $data['maximum_number_in_collection'] = $request->maximum_number_in_collection;
@@ -195,7 +196,8 @@ class NftuserController extends Controller{
                 'discord_link' => 'nullable|url',
                 'maximum_number_in_collection' => 'required',
                 'email' => 'email|unique:nftusers,email,'.$request->id,
-                'collection_blockchain' => 'required'
+                'collection_blockchain' => 'required',
+                'wallet_address' => 'required',
             ]);
         }else{
             $validator = Validator::make($request->all(), [
@@ -203,7 +205,8 @@ class NftuserController extends Controller{
                 'discord_link' => 'nullable|url',
                 'maximum_number_in_collection' => 'required',
                 'email' => 'nullable|email|unique:nftusers',
-                'collection_blockchain' => 'required'
+                'collection_blockchain' => 'required',
+                'wallet_address' => 'required',
             ]);
         }
         
