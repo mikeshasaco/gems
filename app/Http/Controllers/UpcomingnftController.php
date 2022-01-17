@@ -35,7 +35,7 @@ class UpcomingnftController extends Controller{
             'timeZoneSelect' => 'required',
             'network' => 'required',
             'upcoming_nft_images' => 'required',
-            'upcoming_nft_images.*' => 'required|file|mimes:jpg,jpeg,png|max:5120',
+            'upcoming_nft_images.*' => 'required|file|mimes:jpg,jpeg,png|max:51200',
             'briefdescription' => 'required',
             'socialMediaData' => 'required',
         ])
