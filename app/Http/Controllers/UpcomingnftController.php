@@ -195,7 +195,7 @@ class UpcomingnftController extends Controller{
                 return redirect()->back()->with('error', 'Sorry! NFT not found.');
             }
         }
-        $data['upcomingnftdata'] = Upcomingnft::get()->toArray();
+        $data['upcomingnftdata'] = Upcomingnft::where('verify',1)->get()->toArray();
         return view('upcomingnft',$data);
     }
 
