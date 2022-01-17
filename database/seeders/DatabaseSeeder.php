@@ -14,8 +14,8 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         \App\Models\User::factory(1)->create();
-        // \App\Models\Nftdetail::factory(10)->create();
-        // \App\Models\Nftuser::factory(10)->create();
-        // \App\Models\Upcomingnft::factory(10)->create();
+        \App\Models\Nftdetail::factory(10)->create();
+        \App\Models\Nftuser::factory(10)->create();
+        \App\Models\Upcomingnft::factory(10)->create();
     }
 }

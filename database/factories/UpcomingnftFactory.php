@@ -21,7 +21,8 @@ class UpcomingnftFactory extends Factory
             'socialmedia' => '[{"media":"twitter","media_link":"http://twitter.com"},{"media":"discord","media_link":"http://discord.com"},{"media":"facebook","media_link":"http://facebook.com"}]',
             'briefdescription' => $this->faker->text,
             'network' => $this->faker->word,
-            'verify' => 1
+            'verify' => 1,
+            'images' => '["1641986867-1634915066449.png"]'
         ];
     }
 }

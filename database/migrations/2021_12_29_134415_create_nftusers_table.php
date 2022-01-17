@@ -18,10 +18,9 @@ class CreateNftusersTable extends Migration
             $table->string('project_name')->nullable();
             $table->string('email')->nullable();
             $table->string('opensea_link')->nullable();
-            $table->string('website')->nullable();
+            $table->string('wallet_address')->nullable();
             $table->string('twitter_link')->nullable();
             $table->string('discord_link')->nullable();
-            
             
             $table->string('maximum_number_in_collection')->nullable();
             $table->string('collection_blockchain')->nullable();

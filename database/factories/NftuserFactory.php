@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
 
 class NftuserFactory extends Factory
 {
@@ -17,7 +18,7 @@ class NftuserFactory extends Factory
             'project_name' => $this->faker->userName,
             'email' => $this->faker->email,
             'opensea_link' => $this->faker->url,
-            'website' => $this->faker->url,
+            'wallet_address' => Str::random(10),
             'twitter_link' => $this->faker->url,
             'discord_link' => $this->faker->url,
         ];
