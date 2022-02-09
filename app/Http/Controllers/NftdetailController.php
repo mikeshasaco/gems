@@ -100,7 +100,7 @@ class NftdetailController extends Controller{
 
     public function verifynft(Request $request){
         $checkToken = Nftdetail::join('nftusers','nftdetails.user_id','=','nftusers.id')
-                                ->select('nftdetails.*','project_name','email','opensea_link','wallet_address','twitter_link','discord_link','maximum_number_in_collection','collection_blockchain','collection_contract_address','item_sold')
+                                ->select('nftdetails.*','project_name','email','opensea_link','twitter_link','discord_link','maximum_number_in_collection','collection_blockchain','collection_contract_address','item_sold')
                                 ->where('verify_token',$request->token)
                                 ->where('verify',0)
                                 ->first();
@@ -175,7 +175,7 @@ class NftdetailController extends Controller{
             }
         }
         $data['nftdata'] = Nftdetail::join('nftusers','nftdetails.user_id','=','nftusers.id')
-                                      ->select('nftdetails.*','project_name','email','opensea_link','wallet_address','twitter_link','discord_link','maximum_number_in_collection','collection_blockchain','collection_contract_address','item_sold')
+                                      ->select('nftdetails.*','project_name','email','opensea_link','twitter_link','discord_link','maximum_number_in_collection','collection_blockchain','collection_contract_address','item_sold')
                                       ->where('verify',1)
                                       ->get()
                                       ->toArray();

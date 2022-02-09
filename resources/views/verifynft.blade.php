@@ -34,10 +34,10 @@
                                                 <input type="text" readonly name="opensea_link" id="opensea_link" class="form-control" placeholder="Collection Link (Important)" value="{{ old('opensea_link') != '' ? old('opensea_link') : $nfeDetail->opensea_link }}">
                                                 <div class="error-message">{{ $errors->first('opensea_link') }}</div>
                                              </div>
-                                             <div class="form-group">
+                                             {{-- <div class="form-group">
                                                 <input type="text" readonly name="wallet_address" id="wallet_address" class="form-control" placeholder="Wallet address (sent ETH from)" value="{{ old('wallet_address') != '' ? old('wallet_address') : $nfeDetail->wallet_address }}">
                                                 <div class="error-message">{{ $errors->first('wallet_address') }}</div>
-                                             </div>
+                                             </div> --}}
                                              <div class="form-group">
                                                 <input type="text" readonly name="twitter_link" id="twitter_link" class="form-control" placeholder="Project's Official Twitter" value="{{ old('twitter_link') != '' ? old('twitter_link') : $nfeDetail->twitter_link }}">
                                                 <div class="error-message">{{ $errors->first('twitter_link') }}</div>
