@@ -13,6 +13,16 @@
     <link rel="stylesheet" href="{{ asset('css/toast-plugin.min.css') }}">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" id="theme-styles">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-220531499-1">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-220531499-1');
+</script>
     <title>{{ config('app.name', 'Laravel') }}</title>
 </head>
 
