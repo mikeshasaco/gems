@@ -451,7 +451,7 @@ section {
   }
 }
 .nft-detail-column {
-  width: 200px;
+  min-width: 280px;
 }
 
 .color-orange {
@@ -483,7 +483,12 @@ section {
 }
 
 .owl-item, .custom-carasol-min-height, .carousel-items, .item.nft-block, .item.nft-block .content {
-  min-height: 220px !important;
+  min-height: 350px !important;
+}
+@media (max-width: 576px) {
+  .owl-item, .custom-carasol-min-height, .carousel-items, .item.nft-block, .item.nft-block .content {
+    min-height: 300px !important;
+  }
 }
 
 .total_liks_count {
@@ -709,6 +714,41 @@ section {
   .average_text_in_user_detail .average_text_in_user_detail {
     display: none;
   }
+}
+
+.potential-blue-chip-graph .dot-container .dot {
+  display: inline-block;
+  margin-right: 5px;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  position: relative;
+}
+.potential-blue-chip-graph .dot-container .dot.std {
+  background-color: #5f5e5e;
+}
+.potential-blue-chip-graph .dot-container .dot.std::before {
+  filter: none !important;
+}
+.potential-blue-chip-graph .dot-container .dot.red {
+  background-color: #e74c3c;
+}
+.potential-blue-chip-graph .dot-container .dot.yellow {
+  background-color: #F2911B;
+}
+.potential-blue-chip-graph .dot-container .dot.green {
+  background-color: #158800;
+}
+.potential-blue-chip-graph .dot-container .dot::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: inherit;
+  border-radius: 50%;
+  filter: blur(5px);
 }
 
 .form-layout .box-modal, .verify-nft .left-block .verify-nft-form form .box-modal, .admin-userlist .right-block .add-user-form-wrapper form .box-modal, .submit-nft .nft-container .nft-form form .box-modal, .admin-container .form-wrapper .login-form form .box-modal {
@@ -974,6 +1014,9 @@ header nav .wrapper .nav-links ul li > a::after {
   left: 0;
   bottom: -12px;
   transition: width 0.3s;
+}
+header nav .wrapper .nav-links ul li > a.active::after {
+  width: 100%;
 }
 header nav .wrapper .nav-links ul li > a:hover::after {
   width: 100%;
