@@ -185,7 +185,8 @@ class NftdetailController extends Controller{
                                       ->where('verify',1)
                                       ->get()
                                       ->toArray();
-        $data['users'] = Nftuser::get()->toArray();                              
+        $data['users'] = Nftuser::get()->toArray();     
+        pre($data);                         
         return view('nftlist',$data);
     }
 

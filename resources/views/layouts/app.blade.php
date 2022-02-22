@@ -40,13 +40,13 @@
                             @auth
                                 <ul class="admin-list">
                                     <li class="hide-at-mobile">
-                                        <a href="{{ route('upcoming-nft') }}">Upcoming Nft</a>
+                                        <a href="{{ route('upcoming-nft') }}" class="{{Request::is('admin/upcoming-nft') ? 'active' : ''}}">Upcoming Nft</a>
                                     </li>
                                     <li class="hide-at-mobile">
-                                        <a href="{{ route('userlist') }}">User List</a>
+                                        <a href="{{ route('userlist') }}" class="{{Request::is('admin/userlist') ? 'active' : ''}}">User List</a>
                                     </li>
                                     <li class="hide-at-mobile">
-                                        <a href="{{ route('nftlist') }}">NFTs List</a>
+                                        <a href="{{ route('nftlist') }}" class="{{Request::is('admin/nftlist') ? 'active' : ''}}">NFTs List</a>
                                     </li>
                                     <li class="position-relative">
                                         <a id="logout-user" href="#">{{ Auth::user()->name }}
@@ -196,18 +196,6 @@
             });
         @endif
     </script>
-
- 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-220531499-1">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-220531499-1');
-</script>
 </body>
 
 </html>
