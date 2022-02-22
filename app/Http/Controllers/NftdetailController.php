@@ -125,6 +125,9 @@ class NftdetailController extends Controller{
             'nft_link' => 'required|url',
             'popularity' => 'required',
             'community' => 'required',
+            'growth_evaluation' => 'required',
+            'resell_evaluation' => 'required',
+            'potential_blue_chip' => 'required',
             'originality' => 'required',
             'utility' => 'required',
             'total' => 'required'
@@ -143,6 +146,9 @@ class NftdetailController extends Controller{
             "community" => $request->community,
             "utility" => $request->utility,
             "originality" => $request->originality,
+            "growth_evaluation" => $request->growth_evaluation,
+            "resell_evaluation" => $request->resell_evaluation,
+            "potential_blue_chip" => $request->potential_blue_chip,
             "total" => $request->total,
             "verify" => ($request->verify ?? false),
             "verify_token"=> null
@@ -192,6 +198,9 @@ class NftdetailController extends Controller{
                 'popularity' => 'required',
                 'community' => 'required',
                 'originality' => 'required',
+                'growth_evaluation' => 'required',
+                'resell_evaluation' => 'required',
+                'potential_blue_chip' => 'required',
                 'total' => 'required',
                 'utility' => 'required',
             ]);
@@ -204,6 +213,9 @@ class NftdetailController extends Controller{
                 'popularity' => 'required',
                 'community' => 'required',
                 'originality' => 'required',
+                'growth_evaluation' => 'required',
+                'resell_evaluation' => 'required',
+                'potential_blue_chip' => 'required',
                 'total' => 'required',
                 'utility' => 'required',
                 'nft_image' => 'required',
@@ -226,6 +238,9 @@ class NftdetailController extends Controller{
         $data['popularity'] = $request->popularity;
         $data['community'] = $request->community;
         $data['originality'] = $request->originality;
+        $data['growth_evaluation'] = $request->growth_evaluation;
+        $data['resell_evaluation'] = $request->resell_evaluation;
+        $data['potential_blue_chip'] = $request->potential_blue_chip;
         $data['total'] = $request->total;
         $data['utility'] = $request->utility;
         $data['verify'] = 1;
@@ -254,6 +269,7 @@ class NftdetailController extends Controller{
             }
         }else{
             $data['image'] = !empty($newimages) ? json_encode($newimages) : null;
+            
             if(Nftdetail::insert($data)){
                 Session::flash('success', 'New NFT Added Successfully.');
             }else{

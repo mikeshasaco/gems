@@ -84,16 +84,29 @@
                                             </div>
                                             <div class="form-collection">
                                                 <div class="form-group">
-                                                    <input type="tel" name="popularity" id="popularity" class="form-control" placeholder="Popularity" value="{{ old('popularity') }}">
+                                                    <input min="1" max="100" type="tel" name="popularity" id="popularity" class="form-control" placeholder="Popularity" value="{{ old('popularity') }}">
                                                     <div class="error-message">{{$errors->first('popularity')}}</div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <input type="tel" name="community" id="community" class="form-control" placeholder="Community"  value="{{ old('community') }}">
+                                                    <input min="1" max="100" type="tel" name="community" id="community" class="form-control" placeholder="Community"  value="{{ old('community') }}">
                                                     <div class="error-message">{{$errors->first('community')}}</div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <input type="tel" name="originality" id="originality" class="form-control" placeholder="Originality"  value="{{ old('originality') }}">
+                                                    <input min="1" max="100" type="tel" name="originality" id="originality" class="form-control" placeholder="Originality"  value="{{ old('originality') }}">
                                                     <div class="error-message">{{$errors->first('originality')}}</div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <input min="1" max="100" type="tel" name="growth_evaluation" id="growth_evaluation" class="form-control" placeholder="Growth Evaluation"  value="{{ old('growth_evaluation') }}">
+                                                    <div class="error-message">{{$errors->first('growth_evaluation')}}</div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input min="1" max="100" type="tel" name="resell_evaluation" id="resell_evaluation" class="form-control" placeholder="Resell Evaluation"  value="{{ old('resell_evaluation') }}">
+                                                    <div class="error-message">{{$errors->first('resell_evaluation')}}</div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input min="1" max="10" type="tel" name="potential_blue_chip" id="potential_blue_chip" class="form-control" placeholder="Potential blue chip"  value="{{ old('potential_blue_chip') }}">
+                                                    <div class="error-message">{{$errors->first('potential_blue_chip')}}</div>
                                                 </div>
                                                 <div class="form-group">
                                                     <input type="tel" name="total" id="total" class="form-control" placeholder="total" readonly  value="{{ old('total') }}">
@@ -142,11 +155,14 @@
 </main>
 <script>
     $(document).ready(function () {
-        $('#popularity,#community,#originality').on('change, blur, keyup', function () {
+        $('#popularity,#community,#originality,#growth_evaluation,#resell_evaluation,#potential_blue_chip').on('change, blur, keyup', function () {
             var popularity = parseInt($("#popularity").val() != '' ? $("#popularity").val() : 0);
             var community = parseInt($("#community").val() != '' ? $("#community").val() : 0);
             var originality = parseInt($("#originality").val() != '' ? $("#originality").val() : 0);
-            var total = popularity + community + originality;
+            var growth_evaluation = parseInt($("#growth_evaluation").val() != '' ? $("#growth_evaluation").val() : 0);
+            var resell_evaluation = parseInt($("#resell_evaluation").val() != '' ? $("#resell_evaluation").val() : 0);
+            var potential_blue_chip = parseInt($("#potential_blue_chip").val() != '' ? $("#potential_blue_chip").val() : 0);
+             var total = popularity + community + originality + growth_evaluation + resell_evaluation + potential_blue_chip;
             $("#total").val(total);
         });
     });

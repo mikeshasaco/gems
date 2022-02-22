@@ -66,19 +66,59 @@
                                                     <div>
                                                         <div class="table-detail-column-data">
                                                             <span class="text-left">% NFT sold</span>
-                                                            <span class="color-orange">20</span>
+                                                            <span class="color-orange">{{calculate_grade($nft['popularity']) }}</span>
                                                         </div>
                                                         <div class="table-detail-column-data">
                                                             <span class="text-left">Social media</span>
-                                                            <span class="color-orange">25</span>
+                                                            <span class="color-orange">{{ calculate_grade($nft['community']) }}</span>
                                                         </div>
                                                         <div class="table-detail-column-data">
                                                             <span class="text-left">Design</span>
-                                                            <span class="color-orange">30</span>
+                                                            <span class="color-orange">{{ calculate_grade($nft['originality']) }}</span>
+                                                        </div>
+
+                                                        <div class="table-detail-column-data">
+                                                            <span class="text-left">NFTs Growth Evaluation</span>
+                                                            <span class="color-orange">{{ $nft['growth_evaluation'] ?? 0 }}</span>
+                                                        </div>
+                                                        <div class="table-detail-column-data">
+                                                            <span class="text-left">NFTs Resell Evaluation</span>
+                                                            <span class="color-orange">{{ $nft['resell_evaluation'] ?? 0 }}</span>
+                                                        </div>
+                                                        <div class="table-detail-column-data d-block">
+                                                            <div class="text-left">Potential Blue Chip</div>
+                                                            {{-- <span class="color-orange">{{ $nft['potential_blue_chip'] ?? 0 }}</span> --}}
+                                                            <div class="potential-blue-chip-graph text-left">
+                                                                <div class="dot-container">
+                                                                    @php
+                                                                        $color = 'grey';
+                                                                        $item_fill = 0;;
+                                                                        if($nft['potential_blue_chip'] > 0 && $nft['potential_blue_chip'] <= 3){
+                                                                            $color = 'red';
+                                                                            $item_fill = 3;
+                                                                        }
+                                                                        else if($nft['potential_blue_chip'] > 3 && $nft['potential_blue_chip']  <= 7){
+                                                                            $color = 'yellow';
+                                                                            $item_fill = 3;
+                                                                        }
+                                                                        else if($nft['potential_blue_chip'] > 7 && $nft['potential_blue_chip'] <= 10){
+                                                                            $color = 'green';
+                                                                            $item_fill = 5;
+                                                                        }
+                                                                    @endphp
+                                                                    @for ($i = 0; $i < 5; $i++)
+                                                                        @if ($i < $item_fill)
+                                                                            <span class="{{$color." dot"}}"></span>
+                                                                        @else
+                                                                            <span class="std dot"></span>
+                                                                        @endif
+                                                                    @endfor
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </td>
-                                                <td class="pcuot">{{ number_format((float)(($nft['popularity'] + $nft['community'] + $nft['originality']) / 3), 2, '.', '') }}</td>
+                                                <td class="pcuot">{{ number_format((float)(($nft['popularity'] + $nft['community'] + $nft['originality'] + ($nft['growth_evaluation'] ?? 0) + ($nft['resell_evaluation'] ?? 0) + ($nft['potential_blue_chip']*10)) / 6), 2, '.', '') }}</td>
                                                 <td class="action-col">
                                                     <div class="action-btns">
                                                         <a href="{{ route('nftlist', [$nft['id']]) }}">
@@ -166,19 +206,35 @@
                                     </div>
                                     <div class="form-collection">
                                         <div class="form-group">
-                                            <input type="tel" name="popularity" id="popularity" class="form-control"
+                                            <input type="tel" min="1" max="100" name="popularity" id="popularity" class="form-control"
                                                 placeholder="Popularity" value="{{ $selectedNFT->popularity ?? old('popularity') }}">
                                             <div class="error-message">{{ $errors->first('popularity') }}</div>
                                         </div>
                                         <div class="form-group">
-                                            <input type="tel" name="community" id="community" class="form-control"
+                                            <input type="tel" min="1" max="100" name="community" id="community" class="form-control"
                                                 placeholder="Community" value="{{ $selectedNFT->community ?? old('community') }}">
                                             <div class="error-message">{{ $errors->first('community') }}</div>
                                         </div>
                                         <div class="form-group">
-                                            <input type="tel" name="originality" id="originality" class="form-control"
+                                            <input type="tel" min="1" max="100" name="originality" id="originality" class="form-control"
                                                 placeholder="Originality" value="{{ $selectedNFT->originality ?? old('originality') }}">
                                             <div class="error-message">{{ $errors->first('originality') }}</div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="tel" min="1" max="100" name="growth_evaluation" id="growth_evaluation" class="form-control"
+                                                placeholder="Growth Evaluation" value="{{ $selectedNFT->growth_evaluation ?? old('growth_evaluation') }}">
+                                            <div class="error-message">{{ $errors->first('growth_evaluation') }}</div>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="tel" min="1" max="100" name="resell_evaluation" id="resell_evaluation" class="form-control"
+                                                placeholder="Resell Evaluation" value="{{ $selectedNFT->resell_evaluation ?? old('resell_evaluation') }}">
+                                            <div class="error-message">{{ $errors->first('resell_evaluation') }}</div>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="tel" min="1" max="10" name="potential_blue_chip" id="potential_blue_chip" class="form-control"
+                                                placeholder="Potential blue chip" value="{{ $selectedNFT->potential_blue_chip ?? old('potential_blue_chip') }}">
+                                            <div class="error-message">{{ $errors->first('potential_blue_chip') }}</div>
                                         </div>
                                         <div class="form-group">
                                             <input type="tel" name="total" id="total" class="form-control"
@@ -243,11 +299,14 @@
     </main>
     <script>
         $(document).ready(function() {
-            $('#popularity,#community,#originality').on('change, blur, keyup', function() {
+            $('#popularity,#community,#originality,#growth_evaluation,#resell_evaluation,#potential_blue_chip').on('change, blur, keyup', function() {
                 var popularity = parseInt($("#popularity").val() != '' ? $("#popularity").val() : 0);
                 var community = parseInt($("#community").val() != '' ? $("#community").val() : 0);
                 var originality = parseInt($("#originality").val() != '' ? $("#originality").val() : 0);
-                var total = popularity + community + originality;
+                var growth_evaluation = parseInt($("#growth_evaluation").val() != '' ? $("#growth_evaluation").val() : 0);
+                var resell_evaluation = parseInt($("#resell_evaluation").val() != '' ? $("#resell_evaluation").val() : 0);
+                var potential_blue_chip = parseInt($("#potential_blue_chip").val() != '' ? $("#potential_blue_chip").val() : 0);
+                var total = popularity + community + originality + growth_evaluation + resell_evaluation + potential_blue_chip;
                 $("#total").val(total);
             });
             $(".delete").click(function() {
