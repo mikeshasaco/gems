@@ -66,15 +66,15 @@
                                                     <div>
                                                         <div class="table-detail-column-data">
                                                             <span class="text-left">% NFT sold</span>
-                                                            <span class="color-orange">{{calculate_grade($nft['popularity']) }}</span>
+                                                            <span class="color-orange">{{calculate_grade($nft['popularity'] ?? 0) }}</span>
                                                         </div>
                                                         <div class="table-detail-column-data">
                                                             <span class="text-left">Social media</span>
-                                                            <span class="color-orange">{{ calculate_grade($nft['community']) }}</span>
+                                                            <span class="color-orange">{{ calculate_grade($nft['community'] ?? 0) }}</span>
                                                         </div>
                                                         <div class="table-detail-column-data">
                                                             <span class="text-left">Design</span>
-                                                            <span class="color-orange">{{ calculate_grade($nft['originality']) }}</span>
+                                                            <span class="color-orange">{{ calculate_grade($nft['originality'] ?? 0) }}</span>
                                                         </div>
 
                                                         <div class="table-detail-column-data">
