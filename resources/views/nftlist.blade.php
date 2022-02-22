@@ -91,17 +91,18 @@
                                                             <div class="potential-blue-chip-graph text-left">
                                                                 <div class="dot-container">
                                                                     @php
+                                                                        $score = $nft['potential_blue_chip'] ?? 0;
                                                                         $color = 'grey';
-                                                                        $item_fill = 0;;
-                                                                        if($nft['potential_blue_chip'] > 0 && $nft['potential_blue_chip'] <= 3){
+                                                                        $item_fill = 0;
+                                                                        if($score > 0 && $score <= 3){
                                                                             $color = 'red';
                                                                             $item_fill = 3;
                                                                         }
-                                                                        else if($nft['potential_blue_chip'] > 3 && $nft['potential_blue_chip']  <= 7){
+                                                                        else if($score > 3 && $score  <= 7){
                                                                             $color = 'yellow';
                                                                             $item_fill = 3;
                                                                         }
-                                                                        else if($nft['potential_blue_chip'] > 7 && $nft['potential_blue_chip'] <= 10){
+                                                                        else if($score > 7 && $score <= 10){
                                                                             $color = 'green';
                                                                             $item_fill = 5;
                                                                         }
