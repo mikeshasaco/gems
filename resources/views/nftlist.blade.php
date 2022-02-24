@@ -119,7 +119,7 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                                <td class="pcuot">{{ number_format((float)(($nft['popularity'] + $nft['community'] + $nft['originality'] + ($nft['growth_evaluation'] ?? 0) + ($nft['resell_evaluation'] ?? 0) + ($nft['potential_blue_chip']*10)) / 6), 2, '.', '') }}</td>
+                                                <td class="pcuot">{{ number_format((float)((($nft['popularity']??0) + ($nft['community']??0) + ($nft['originality']??0) + ($nft['growth_evaluation'] ?? 0) + ($nft['resell_evaluation'] ?? 0) + ($nft['potential_blue_chip']*10)) / 6), 2, '.', '') }}</td>
                                                 <td class="action-col">
                                                     <div class="action-btns">
                                                         <a href="{{ route('nftlist', [$nft['id']]) }}">
@@ -363,7 +363,15 @@
     <script>
         $(document).ready(function () {
             $(".highlight").click(function (){
-                $(this).closest('tr').next('tr').find('.more-detail').slideToggle();
+                
+                if($(this).html() == "Read more"){
+                    $(this).html("Read less");
+                    $(this).closest('tr').next('tr').find('.more-detail').slideDown('fast');
+                }
+                else{
+                    $(this).html("Read more");
+                    $(this).closest('tr').next('tr').find('.more-detail').slideUp('fast');
+                }
             });
         });
         @isset($selectedNFT->id)

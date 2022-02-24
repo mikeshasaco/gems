@@ -320,7 +320,15 @@
 
             $(".readmore").click(function (){
                 var listId = $(this).attr('rel');
-                $(".readmore-element-"+listId).slideToggle();
+                if($(this).html() == "Read more"){
+                    $(this).html("Read less");
+                    $(".readmore-element-"+listId).slideDown('fast');
+                }
+                else{
+                    
+                    $(this).html("Read more");
+                    $(".readmore-element-"+listId).slideUp('fast');
+                }
             });
             // $('#upcoming_nft_image').change(function (e) { 
             //     e.preventDefault();

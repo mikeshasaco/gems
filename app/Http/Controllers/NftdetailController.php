@@ -70,13 +70,16 @@ class NftdetailController extends Controller{
                     $tempresult[$dtCollection[1]]['likes'][] =  $results[$j]->likes ?? 0;
 
                     if(isset($results[$j]->popularity) && $results[$j]->popularity != ''){
-                        $average = ((int)$results[$j]->popularity + (int)$results[$j]->community + (int)$results[$j]->originality)/3;
-                        $tooltip_html = 'Name: '.$results[$j]->nft_name."<br/> Like: ".$results[$j]->likes."<br/> Average: ".$average;
+                        $average = ((int)$results[$j]->popularity + (int)$results[$j]->community + (int)$results[$j]->originality + 
+                        (int)($results[$j]->growth_evaluation ?? 0) + (int)($results[$j]->resell_evaluation ?? 0) + ($results[$j]->potential_blue_chip ?  (int)$results[$j]->potential_blue_chip * 10 : 0)
+                        )/6;
+                        $tooltip_html = 'Name: '.$results[$j]->nft_name."<br/> Like: ".$results[$j]->likes."<br/> Average: ".number_format($average, 2);
                         $tempresult[$dtCollection[1]]['tooltip_html'][] =  $tooltip_html;
                     }else{
                         $tempresult[$dtCollection[1]]['tooltip_html'][] =  '';
                     }
                 }
+                
             }
             
 
@@ -96,6 +99,18 @@ class NftdetailController extends Controller{
             return Response::json(['status'=>'error', 'message'=>$e->getMessage()],422);
         }
         
+    }
+
+    // get utility for search
+    public function api_getutility(Request $request)
+    {
+        try {
+            $data = Nftdetail::distinct()->where('utility','!=', null)->get(['utility'])->toArray();
+            $data = array_column($data, 'utility');
+            return Response::json(['status'=>'success', 'data'=>$data],200);
+        } catch (Exception $e) {
+            return Response::json(['status'=>'error', 'message'=>$e->getMessage()],422);
+        }
     }
 
     public function verifynft(Request $request){

@@ -42,6 +42,61 @@ class NftuserController extends Controller{
         }
     }
 
+    // filter NftList
+    public function filter_nftlists(Request $request)
+    {
+        try {
+            $userdata = Nftdetail::join('nftusers','nftdetails.user_id','=','nftusers.id')
+                                      ->select('nftdetails.*','nftusers.*','nftdetails.id as id')
+                                      ->selectRaw('(
+                                          (nftdetails.popularity + 
+                                          nftdetails.community + 
+                                          nftdetails.originality + 
+                                          IFNULL(nftdetails.growth_evaluation, 0) + 
+                                          IFNULL(nftdetails.resell_evaluation, 0) + 
+                                          (IFNULL(nftdetails.potential_blue_chip, 0) * 10)) / 6)
+
+                                          as average')
+                                      ->where('verify',1);
+            if($request->name && $request->name != ''){
+                $name = clean($request->name);
+                $userdata->where(function($query) use ($name){
+                    $query->where('nft_name', 'like', '%'.$name.'%');
+                    $query->orWhere('nft_link', 'like', '%'.$name.'%');
+                });
+            }
+            // return Response::json(['status'=>'success', 'data'=>$request->utility],200);
+
+            if($request->utility && $request->utility != '' && is_array($request->utility)){
+                $userdata->where(function($query) use ($request){
+                    $query->whereIn('utility', $request->utility);
+                });
+            }
+            
+            if($request->average && !empty($request->average)){
+                $userdata->havingRaw('average BETWEEN ? AND ?',  $request->average);
+            }
+
+            if($request->average_sort){
+                if($request->average_sort == 'high_to_low'){
+                    $userdata->orderBy('average', 'DESC');
+                }
+                else{
+                    $userdata->orderBy('average', 'ASC');
+                }
+            }
+            else{
+                $userdata->orderBy('nftdetails.id', 'ASC');
+            }
+
+
+            $userdata =   $userdata->get()->toArray();
+            return Response::json(['status'=>'success', 'data'=>$userdata],200);
+        } catch (Exception $e) {
+            return Response::json(['status'=>'error', 'message'=>$e->getMessage()],422);
+        }
+    }
+
     public function api_checkemail(Request $request){
         if(!isset($request->email) || $request->email == ''){
             return Response::json(['status'=>'error', 'message'=>'please enter email.'],422);

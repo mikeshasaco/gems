@@ -17,13 +17,13 @@ use App\Http\Controllers\UpcomingnftController;
 |
 */
 
-/*Route::get('/', function () {
-    return view('welcome');
-});*/
-
 Route::get('/', function () {
-    return redirect('/userlist');
+    return view('welcome');
 });
+
+// Route::get('/', function () {
+//     return redirect('/userlist');
+// });
 
 Auth::routes();
 
