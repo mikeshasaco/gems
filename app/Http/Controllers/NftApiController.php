@@ -211,6 +211,7 @@ class NftApiController extends Controller
 
         $response = curl_exec($curl);
         $info = curl_getinfo($curl);
+        pre([$info, $response]);
         curl_close($curl);
 
         if($info['http_code'] == 200){
