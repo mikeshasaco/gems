@@ -48,7 +48,7 @@ Route::group([
     Route::get('/delete-upcomingnft', [UpcomingnftController::class, 'deleteupcomingnft'])->name('delete-upcomingnft');
     Route::get('/verify-upcoming-nft/{token}', [UpcomingnftController::class, 'verifyupcomingnft'])->name('verify-upcoming-nft');
     Route::post('/verifysubmitupcomingnft', [UpcomingnftController::class, 'verifysubmitupcomingnft'])->name('verifysubmitupcomingnft');
-    Route::get('/ccc', [NftApiController::class, 'get_nft_detail_by_address']);
+    Route::get('/ccc', [NftApiController::class, 'get_nft_history_by_address']);
 });
 
 Route::get('{any}', function () {
