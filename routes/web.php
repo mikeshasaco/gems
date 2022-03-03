@@ -5,6 +5,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\NftuserController;
 use App\Http\Controllers\NftdetailController;
 use App\Http\Controllers\UpcomingnftController;
+use App\Http\Controllers\NftApiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -47,7 +48,7 @@ Route::group([
     Route::get('/delete-upcomingnft', [UpcomingnftController::class, 'deleteupcomingnft'])->name('delete-upcomingnft');
     Route::get('/verify-upcoming-nft/{token}', [UpcomingnftController::class, 'verifyupcomingnft'])->name('verify-upcoming-nft');
     Route::post('/verifysubmitupcomingnft', [UpcomingnftController::class, 'verifysubmitupcomingnft'])->name('verifysubmitupcomingnft');
-    Route::get('/ccc', [NftuserController::class, 'ccc']);
+    Route::get('/ccc', [NftApiController::class, 'get_nft_detail_by_address']);
 });
 
 Route::get('{any}', function () {
