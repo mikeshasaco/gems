@@ -6,6 +6,7 @@ use App\Http\Controllers\NftuserController;
 use App\Http\Controllers\NftdetailController;
 use App\Http\Controllers\UpcomingnftController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\NftApiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,3 +36,8 @@ Route::post('add-upcoming-nft', [UpcomingnftController::class, 'api_addupcomingn
 Route::get('filter_nftlists', [NftuserController::class, 'filter_nftlists']);
 
 Route::post('login', [UserController::class, 'api_index']);
+
+// nft api datas (third party)
+Route::post('search-nft', [NftApiController::class, 'get_nft_list_by_name']);
+Route::post('get-nft-detail', [NftApiController::class, 'get_nft_detail_by_address']);
+Route::post('get-nft-history', [NftApiController::class, 'get_nft_history_by_address']);

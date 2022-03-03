@@ -105,7 +105,7 @@ html {
   font-weight: normal;
 }
 
-.bold-28, .compare-nft .nft-container .compare-nft-form form .diff-result .result-containers .result-box .box-wrapper .body .stats .item .number, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content .nft-likes span, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content .nft-stats .title, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .nft-status .nft-like span,
+.bold-28, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content .nft-likes span, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content .nft-stats .title, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .nft-status .nft-like span,
 .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .nft-status .nft-rank span, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.pcuot, .custom-modal .wrapper .content .redirect a {
   font-size: 28px;
   line-height: 38px;
@@ -114,28 +114,28 @@ html {
   font-family: "Nunito", sans-serif;
 }
 @media (max-width: 1200px) {
-  .bold-28, .compare-nft .nft-container .compare-nft-form form .diff-result .result-containers .result-box .box-wrapper .body .stats .item .number, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content .nft-likes span, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content .nft-stats .title, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .nft-status .nft-like span,
+  .bold-28, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content .nft-likes span, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content .nft-stats .title, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .nft-status .nft-like span,
 .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .nft-status .nft-rank span, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.pcuot, .custom-modal .wrapper .content .redirect a {
     font-size: 24px;
     line-height: 32px;
   }
 }
 @media (max-width: 992px) {
-  .bold-28, .compare-nft .nft-container .compare-nft-form form .diff-result .result-containers .result-box .box-wrapper .body .stats .item .number, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content .nft-likes span, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content .nft-stats .title, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .nft-status .nft-like span,
+  .bold-28, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content .nft-likes span, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content .nft-stats .title, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .nft-status .nft-like span,
 .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .nft-status .nft-rank span, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.pcuot, .custom-modal .wrapper .content .redirect a {
     font-size: 20px;
     line-height: 28px;
   }
 }
 @media (max-width: 576px) {
-  .bold-28, .compare-nft .nft-container .compare-nft-form form .diff-result .result-containers .result-box .box-wrapper .body .stats .item .number, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content .nft-likes span, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content .nft-stats .title, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .nft-status .nft-like span,
+  .bold-28, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content .nft-likes span, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content .nft-stats .title, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .nft-status .nft-like span,
 .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .nft-status .nft-rank span, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.pcuot, .custom-modal .wrapper .content .redirect a {
     font-size: 18px;
     line-height: 30px;
   }
 }
 
-.bold-20, .compare-nft .nft-container .compare-nft-form form .diff-result .result-containers .result-box .box-wrapper .header.diff-head .heading, header nav .wrapper .mobile-nav ul li a, header nav .wrapper .nav-links ul li > a, .nft-user-detail-layout .content .nft-stats .item .stat span, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-stats .item .stat span, main .trending-block .carousel .carousel-items .item .content .nft-stats .item .stat span, .btn-layout, .form-layout button.form-btn, .compare-nft .nft-container .compare-nft-form form button.form-btn, .verify-nft .left-block .verify-nft-form form button.form-btn, .admin-userlist .right-block .add-user-form-wrapper form button.form-btn, .submit-nft .nft-container .nft-form form button.form-btn, .admin-container .form-wrapper .login-form form button.form-btn {
+.bold-20, .compare-nft .nft-container .compare-nft-form form .diff-result .result-containers .result-box .box-wrapper .body .stats .item .number, header nav .wrapper .mobile-nav ul li a, .nft-user-detail-layout .content .nft-stats .item .stat span, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-stats .item .stat span, main .trending-block .carousel .carousel-items .item .content .nft-stats .item .stat span, .btn-layout, .form-layout button.form-btn, .compare-nft .nft-container .compare-nft-form form button.form-btn, .verify-nft .left-block .verify-nft-form form button.form-btn, .admin-userlist .right-block .add-user-form-wrapper form button.form-btn, .submit-nft .nft-container .nft-form form button.form-btn, .admin-container .form-wrapper .login-form form button.form-btn {
   font-size: 20px;
   font-weight: 900;
   line-height: 30px;
@@ -143,13 +143,13 @@ html {
   font-family: "Nunito", sans-serif;
 }
 @media (max-width: 768px) {
-  .bold-20, .compare-nft .nft-container .compare-nft-form form .diff-result .result-containers .result-box .box-wrapper .header.diff-head .heading, header nav .wrapper .mobile-nav ul li a, header nav .wrapper .nav-links ul li > a, .nft-user-detail-layout .content .nft-stats .item .stat span, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-stats .item .stat span, main .trending-block .carousel .carousel-items .item .content .nft-stats .item .stat span, .btn-layout, .form-layout button.form-btn, .compare-nft .nft-container .compare-nft-form form button.form-btn, .verify-nft .left-block .verify-nft-form form button.form-btn, .admin-userlist .right-block .add-user-form-wrapper form button.form-btn, .submit-nft .nft-container .nft-form form button.form-btn, .admin-container .form-wrapper .login-form form button.form-btn {
+  .bold-20, .compare-nft .nft-container .compare-nft-form form .diff-result .result-containers .result-box .box-wrapper .body .stats .item .number, header nav .wrapper .mobile-nav ul li a, .nft-user-detail-layout .content .nft-stats .item .stat span, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-stats .item .stat span, main .trending-block .carousel .carousel-items .item .content .nft-stats .item .stat span, .btn-layout, .form-layout button.form-btn, .compare-nft .nft-container .compare-nft-form form button.form-btn, .verify-nft .left-block .verify-nft-form form button.form-btn, .admin-userlist .right-block .add-user-form-wrapper form button.form-btn, .submit-nft .nft-container .nft-form form button.form-btn, .admin-container .form-wrapper .login-form form button.form-btn {
     font-size: 18px;
     line-height: 24px;
   }
 }
 
-.bold-18, .compare-nft .nft-container .compare-nft-form form .diff-result .result-containers .result-box .box-wrapper .header h3, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content .nft-stats .stat, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .user-name span, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.user-col .user-info-block .content .user-name span, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td:first-child, .admin-userlist .left-block .user-list-table-wrapper .user-list-table thead td, main .nft-group-section .new-nft .nft-table-wrapper .nft-table thead td, header nav .wrapper .mobile-nav ul li .dropdown-menu a, header nav .wrapper .nav-links ul li .dropdown-menu a, .form-layout .box-modal .form-group .form-control::placeholder, .compare-nft .nft-container .compare-nft-form form .box-modal .form-group .form-control::placeholder, .verify-nft .left-block .verify-nft-form form .box-modal .form-group .form-control::placeholder, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .form-group .form-control::placeholder, .submit-nft .nft-container .nft-form form .box-modal .form-group .form-control::placeholder, .admin-container .form-wrapper .login-form form .box-modal .form-group .form-control::placeholder, .form-layout .box-modal .form-group .form-control, .compare-nft .nft-container .compare-nft-form form .box-modal .form-group .form-control, .verify-nft .left-block .verify-nft-form form .box-modal .form-group .form-control, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .form-group .form-control, .submit-nft .nft-container .nft-form form .box-modal .form-group .form-control, .admin-container .form-wrapper .login-form form .box-modal .form-group .form-control, .form-layout .box-modal .title h3, .compare-nft .nft-container .compare-nft-form form .box-modal .title h3, .verify-nft .left-block .verify-nft-form form .box-modal .title h3, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .title h3, .submit-nft .nft-container .nft-form form .box-modal .title h3, .admin-container .form-wrapper .login-form form .box-modal .title h3, .special-font, .compare-nft .nft-container .heading h1, .verify-nft .heading h1, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .heading h2, .user-nft-detail .grid-container .left-block .user-detail .heading h1, .admin-userlist .right-block .add-user-form-wrapper .heading h1, .admin-userlist .left-block .user-list-table-wrapper .heading h1, .submit-nft .nft-container .heading h1, main .nft-group-section .right-block .rank-block .heading h2, main .nft-group-section .new-nft .heading h1, main .trending-block .heading h1, .admin-container .form-wrapper .form-header h1, .std-18, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .user-phone a, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .user-email span, .custom-modal .wrapper .content .text p {
+.bold-18, .compare-nft .nft-container .compare-nft-form form .diff-result .result-containers .result-box .box-wrapper .header h3, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content .nft-stats .stat, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .user-name span, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.user-col .user-info-block .content .user-name span, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td:first-child, .admin-userlist .left-block .user-list-table-wrapper .user-list-table thead td, main .nft-group-section .new-nft .nft-table-wrapper .nft-table thead td, header nav .wrapper .mobile-nav ul li .dropdown-menu a, header nav .wrapper .nav-links ul li .dropdown-menu a, header nav .wrapper .nav-links ul li > a, .form-layout .box-modal .form-group .form-control::placeholder, .compare-nft .nft-container .compare-nft-form form .box-modal .form-group .form-control::placeholder, .verify-nft .left-block .verify-nft-form form .box-modal .form-group .form-control::placeholder, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .form-group .form-control::placeholder, .submit-nft .nft-container .nft-form form .box-modal .form-group .form-control::placeholder, .admin-container .form-wrapper .login-form form .box-modal .form-group .form-control::placeholder, .form-layout .box-modal .form-group .form-control, .compare-nft .nft-container .compare-nft-form form .box-modal .form-group .form-control, .verify-nft .left-block .verify-nft-form form .box-modal .form-group .form-control, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .form-group .form-control, .submit-nft .nft-container .nft-form form .box-modal .form-group .form-control, .admin-container .form-wrapper .login-form form .box-modal .form-group .form-control, .form-layout .box-modal .title h3, .compare-nft .nft-container .compare-nft-form form .box-modal .title h3, .verify-nft .left-block .verify-nft-form form .box-modal .title h3, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .title h3, .submit-nft .nft-container .nft-form form .box-modal .title h3, .admin-container .form-wrapper .login-form form .box-modal .title h3, .special-font, .compare-nft .nft-container .heading h1, .verify-nft .heading h1, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .heading h2, .user-nft-detail .grid-container .left-block .user-detail .heading h1, .admin-userlist .right-block .add-user-form-wrapper .heading h1, .admin-userlist .left-block .user-list-table-wrapper .heading h1, .submit-nft .nft-container .heading h1, main .nft-group-section .right-block .rank-block .heading h2, main .nft-group-section .new-nft .heading h1, main .trending-block .heading h1, .admin-container .form-wrapper .form-header h1, .std-18, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .user-phone a, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .user-email span, .custom-modal .wrapper .content .text p {
   font-size: 18px;
   font-weight: bold;
   line-height: 24px;
@@ -157,19 +157,19 @@ html {
   font-family: "Nunito", sans-serif;
 }
 @media (max-width: 768px) {
-  .bold-18, .compare-nft .nft-container .compare-nft-form form .diff-result .result-containers .result-box .box-wrapper .header h3, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content .nft-stats .stat, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .user-name span, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.user-col .user-info-block .content .user-name span, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td:first-child, .admin-userlist .left-block .user-list-table-wrapper .user-list-table thead td, main .nft-group-section .new-nft .nft-table-wrapper .nft-table thead td, header nav .wrapper .mobile-nav ul li .dropdown-menu a, header nav .wrapper .nav-links ul li .dropdown-menu a, .form-layout .box-modal .form-group .form-control::placeholder, .compare-nft .nft-container .compare-nft-form form .box-modal .form-group .form-control::placeholder, .verify-nft .left-block .verify-nft-form form .box-modal .form-group .form-control::placeholder, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .form-group .form-control::placeholder, .submit-nft .nft-container .nft-form form .box-modal .form-group .form-control::placeholder, .admin-container .form-wrapper .login-form form .box-modal .form-group .form-control::placeholder, .form-layout .box-modal .form-group .form-control, .compare-nft .nft-container .compare-nft-form form .box-modal .form-group .form-control, .verify-nft .left-block .verify-nft-form form .box-modal .form-group .form-control, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .form-group .form-control, .submit-nft .nft-container .nft-form form .box-modal .form-group .form-control, .admin-container .form-wrapper .login-form form .box-modal .form-group .form-control, .form-layout .box-modal .title h3, .compare-nft .nft-container .compare-nft-form form .box-modal .title h3, .verify-nft .left-block .verify-nft-form form .box-modal .title h3, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .title h3, .submit-nft .nft-container .nft-form form .box-modal .title h3, .admin-container .form-wrapper .login-form form .box-modal .title h3, .special-font, .compare-nft .nft-container .heading h1, .verify-nft .heading h1, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .heading h2, .user-nft-detail .grid-container .left-block .user-detail .heading h1, .admin-userlist .right-block .add-user-form-wrapper .heading h1, .admin-userlist .left-block .user-list-table-wrapper .heading h1, .submit-nft .nft-container .heading h1, main .nft-group-section .right-block .rank-block .heading h2, main .nft-group-section .new-nft .heading h1, main .trending-block .heading h1, .admin-container .form-wrapper .form-header h1, .std-18, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .user-phone a, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .user-email span, .custom-modal .wrapper .content .text p {
+  .bold-18, .compare-nft .nft-container .compare-nft-form form .diff-result .result-containers .result-box .box-wrapper .header h3, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content .nft-stats .stat, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .user-name span, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.user-col .user-info-block .content .user-name span, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td:first-child, .admin-userlist .left-block .user-list-table-wrapper .user-list-table thead td, main .nft-group-section .new-nft .nft-table-wrapper .nft-table thead td, header nav .wrapper .mobile-nav ul li .dropdown-menu a, header nav .wrapper .nav-links ul li .dropdown-menu a, header nav .wrapper .nav-links ul li > a, .form-layout .box-modal .form-group .form-control::placeholder, .compare-nft .nft-container .compare-nft-form form .box-modal .form-group .form-control::placeholder, .verify-nft .left-block .verify-nft-form form .box-modal .form-group .form-control::placeholder, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .form-group .form-control::placeholder, .submit-nft .nft-container .nft-form form .box-modal .form-group .form-control::placeholder, .admin-container .form-wrapper .login-form form .box-modal .form-group .form-control::placeholder, .form-layout .box-modal .form-group .form-control, .compare-nft .nft-container .compare-nft-form form .box-modal .form-group .form-control, .verify-nft .left-block .verify-nft-form form .box-modal .form-group .form-control, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .form-group .form-control, .submit-nft .nft-container .nft-form form .box-modal .form-group .form-control, .admin-container .form-wrapper .login-form form .box-modal .form-group .form-control, .form-layout .box-modal .title h3, .compare-nft .nft-container .compare-nft-form form .box-modal .title h3, .verify-nft .left-block .verify-nft-form form .box-modal .title h3, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .title h3, .submit-nft .nft-container .nft-form form .box-modal .title h3, .admin-container .form-wrapper .login-form form .box-modal .title h3, .special-font, .compare-nft .nft-container .heading h1, .verify-nft .heading h1, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .heading h2, .user-nft-detail .grid-container .left-block .user-detail .heading h1, .admin-userlist .right-block .add-user-form-wrapper .heading h1, .admin-userlist .left-block .user-list-table-wrapper .heading h1, .submit-nft .nft-container .heading h1, main .nft-group-section .right-block .rank-block .heading h2, main .nft-group-section .new-nft .heading h1, main .trending-block .heading h1, .admin-container .form-wrapper .form-header h1, .std-18, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .user-phone a, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .user-email span, .custom-modal .wrapper .content .text p {
     font-size: 17px;
     line-height: 23px;
   }
 }
 @media (max-width: 576px) {
-  .bold-18, .compare-nft .nft-container .compare-nft-form form .diff-result .result-containers .result-box .box-wrapper .header h3, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content .nft-stats .stat, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .user-name span, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.user-col .user-info-block .content .user-name span, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td:first-child, .admin-userlist .left-block .user-list-table-wrapper .user-list-table thead td, main .nft-group-section .new-nft .nft-table-wrapper .nft-table thead td, header nav .wrapper .mobile-nav ul li .dropdown-menu a, header nav .wrapper .nav-links ul li .dropdown-menu a, .form-layout .box-modal .form-group .form-control::placeholder, .compare-nft .nft-container .compare-nft-form form .box-modal .form-group .form-control::placeholder, .verify-nft .left-block .verify-nft-form form .box-modal .form-group .form-control::placeholder, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .form-group .form-control::placeholder, .submit-nft .nft-container .nft-form form .box-modal .form-group .form-control::placeholder, .admin-container .form-wrapper .login-form form .box-modal .form-group .form-control::placeholder, .form-layout .box-modal .form-group .form-control, .compare-nft .nft-container .compare-nft-form form .box-modal .form-group .form-control, .verify-nft .left-block .verify-nft-form form .box-modal .form-group .form-control, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .form-group .form-control, .submit-nft .nft-container .nft-form form .box-modal .form-group .form-control, .admin-container .form-wrapper .login-form form .box-modal .form-group .form-control, .form-layout .box-modal .title h3, .compare-nft .nft-container .compare-nft-form form .box-modal .title h3, .verify-nft .left-block .verify-nft-form form .box-modal .title h3, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .title h3, .submit-nft .nft-container .nft-form form .box-modal .title h3, .admin-container .form-wrapper .login-form form .box-modal .title h3, .special-font, .compare-nft .nft-container .heading h1, .verify-nft .heading h1, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .heading h2, .user-nft-detail .grid-container .left-block .user-detail .heading h1, .admin-userlist .right-block .add-user-form-wrapper .heading h1, .admin-userlist .left-block .user-list-table-wrapper .heading h1, .submit-nft .nft-container .heading h1, main .nft-group-section .right-block .rank-block .heading h2, main .nft-group-section .new-nft .heading h1, main .trending-block .heading h1, .admin-container .form-wrapper .form-header h1, .std-18, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .user-phone a, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .user-email span, .custom-modal .wrapper .content .text p {
+  .bold-18, .compare-nft .nft-container .compare-nft-form form .diff-result .result-containers .result-box .box-wrapper .header h3, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content .nft-stats .stat, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .user-name span, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.user-col .user-info-block .content .user-name span, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td:first-child, .admin-userlist .left-block .user-list-table-wrapper .user-list-table thead td, main .nft-group-section .new-nft .nft-table-wrapper .nft-table thead td, header nav .wrapper .mobile-nav ul li .dropdown-menu a, header nav .wrapper .nav-links ul li .dropdown-menu a, header nav .wrapper .nav-links ul li > a, .form-layout .box-modal .form-group .form-control::placeholder, .compare-nft .nft-container .compare-nft-form form .box-modal .form-group .form-control::placeholder, .verify-nft .left-block .verify-nft-form form .box-modal .form-group .form-control::placeholder, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .form-group .form-control::placeholder, .submit-nft .nft-container .nft-form form .box-modal .form-group .form-control::placeholder, .admin-container .form-wrapper .login-form form .box-modal .form-group .form-control::placeholder, .form-layout .box-modal .form-group .form-control, .compare-nft .nft-container .compare-nft-form form .box-modal .form-group .form-control, .verify-nft .left-block .verify-nft-form form .box-modal .form-group .form-control, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .form-group .form-control, .submit-nft .nft-container .nft-form form .box-modal .form-group .form-control, .admin-container .form-wrapper .login-form form .box-modal .form-group .form-control, .form-layout .box-modal .title h3, .compare-nft .nft-container .compare-nft-form form .box-modal .title h3, .verify-nft .left-block .verify-nft-form form .box-modal .title h3, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .title h3, .submit-nft .nft-container .nft-form form .box-modal .title h3, .admin-container .form-wrapper .login-form form .box-modal .title h3, .special-font, .compare-nft .nft-container .heading h1, .verify-nft .heading h1, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .heading h2, .user-nft-detail .grid-container .left-block .user-detail .heading h1, .admin-userlist .right-block .add-user-form-wrapper .heading h1, .admin-userlist .left-block .user-list-table-wrapper .heading h1, .submit-nft .nft-container .heading h1, main .nft-group-section .right-block .rank-block .heading h2, main .nft-group-section .new-nft .heading h1, main .trending-block .heading h1, .admin-container .form-wrapper .form-header h1, .std-18, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .user-phone a, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .user-email span, .custom-modal .wrapper .content .text p {
     font-size: 16px;
     line-height: 22px;
   }
 }
 @media (max-width: 360px) {
-  .bold-18, .compare-nft .nft-container .compare-nft-form form .diff-result .result-containers .result-box .box-wrapper .header h3, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content .nft-stats .stat, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .user-name span, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.user-col .user-info-block .content .user-name span, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td:first-child, .admin-userlist .left-block .user-list-table-wrapper .user-list-table thead td, main .nft-group-section .new-nft .nft-table-wrapper .nft-table thead td, header nav .wrapper .mobile-nav ul li .dropdown-menu a, header nav .wrapper .nav-links ul li .dropdown-menu a, .form-layout .box-modal .form-group .form-control::placeholder, .compare-nft .nft-container .compare-nft-form form .box-modal .form-group .form-control::placeholder, .verify-nft .left-block .verify-nft-form form .box-modal .form-group .form-control::placeholder, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .form-group .form-control::placeholder, .submit-nft .nft-container .nft-form form .box-modal .form-group .form-control::placeholder, .admin-container .form-wrapper .login-form form .box-modal .form-group .form-control::placeholder, .form-layout .box-modal .form-group .form-control, .compare-nft .nft-container .compare-nft-form form .box-modal .form-group .form-control, .verify-nft .left-block .verify-nft-form form .box-modal .form-group .form-control, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .form-group .form-control, .submit-nft .nft-container .nft-form form .box-modal .form-group .form-control, .admin-container .form-wrapper .login-form form .box-modal .form-group .form-control, .form-layout .box-modal .title h3, .compare-nft .nft-container .compare-nft-form form .box-modal .title h3, .verify-nft .left-block .verify-nft-form form .box-modal .title h3, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .title h3, .submit-nft .nft-container .nft-form form .box-modal .title h3, .admin-container .form-wrapper .login-form form .box-modal .title h3, .special-font, .compare-nft .nft-container .heading h1, .verify-nft .heading h1, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .heading h2, .user-nft-detail .grid-container .left-block .user-detail .heading h1, .admin-userlist .right-block .add-user-form-wrapper .heading h1, .admin-userlist .left-block .user-list-table-wrapper .heading h1, .submit-nft .nft-container .heading h1, main .nft-group-section .right-block .rank-block .heading h2, main .nft-group-section .new-nft .heading h1, main .trending-block .heading h1, .admin-container .form-wrapper .form-header h1, .std-18, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .user-phone a, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .user-email span, .custom-modal .wrapper .content .text p {
+  .bold-18, .compare-nft .nft-container .compare-nft-form form .diff-result .result-containers .result-box .box-wrapper .header h3, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content .nft-stats .stat, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .user-name span, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.user-col .user-info-block .content .user-name span, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td:first-child, .admin-userlist .left-block .user-list-table-wrapper .user-list-table thead td, main .nft-group-section .new-nft .nft-table-wrapper .nft-table thead td, header nav .wrapper .mobile-nav ul li .dropdown-menu a, header nav .wrapper .nav-links ul li .dropdown-menu a, header nav .wrapper .nav-links ul li > a, .form-layout .box-modal .form-group .form-control::placeholder, .compare-nft .nft-container .compare-nft-form form .box-modal .form-group .form-control::placeholder, .verify-nft .left-block .verify-nft-form form .box-modal .form-group .form-control::placeholder, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .form-group .form-control::placeholder, .submit-nft .nft-container .nft-form form .box-modal .form-group .form-control::placeholder, .admin-container .form-wrapper .login-form form .box-modal .form-group .form-control::placeholder, .form-layout .box-modal .form-group .form-control, .compare-nft .nft-container .compare-nft-form form .box-modal .form-group .form-control, .verify-nft .left-block .verify-nft-form form .box-modal .form-group .form-control, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .form-group .form-control, .submit-nft .nft-container .nft-form form .box-modal .form-group .form-control, .admin-container .form-wrapper .login-form form .box-modal .form-group .form-control, .form-layout .box-modal .title h3, .compare-nft .nft-container .compare-nft-form form .box-modal .title h3, .verify-nft .left-block .verify-nft-form form .box-modal .title h3, .admin-userlist .right-block .add-user-form-wrapper form .box-modal .title h3, .submit-nft .nft-container .nft-form form .box-modal .title h3, .admin-container .form-wrapper .login-form form .box-modal .title h3, .special-font, .compare-nft .nft-container .heading h1, .verify-nft .heading h1, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .heading h2, .user-nft-detail .grid-container .left-block .user-detail .heading h1, .admin-userlist .right-block .add-user-form-wrapper .heading h1, .admin-userlist .left-block .user-list-table-wrapper .heading h1, .submit-nft .nft-container .heading h1, main .nft-group-section .right-block .rank-block .heading h2, main .nft-group-section .new-nft .heading h1, main .trending-block .heading h1, .admin-container .form-wrapper .form-header h1, .std-18, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .user-phone a, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .user-email span, .custom-modal .wrapper .content .text p {
     font-size: 14px;
     line-height: 22px;
   }
@@ -179,26 +179,26 @@ html {
   font-weight: normal;
 }
 
-.bold-16, main .nft-group-section .new-nft .nft-table-wrapper .nft-table .nft-detail .nft-content .nft-name span, footer .gemstool-footer .credits span, .mobile-more-detail, .nft-user-detail-layout .content .nft-info .nft-redirect-btn a, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-info .nft-redirect-btn a, main .trending-block .carousel .carousel-items .item .content .nft-info .nft-redirect-btn a, .nft-user-detail-layout .content .nft-info .nft-title h2, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-info .nft-title h2, main .trending-block .carousel .carousel-items .item .content .nft-info .nft-title h2 {
+.bold-16, .compare-nft .nft-container .compare-nft-form form .diff-result .result-containers .result-box .box-wrapper .header.diff-head .heading, main .nft-group-section .new-nft .nft-table-wrapper .nft-table .nft-detail .nft-content .nft-name span, footer .gemstool-footer .credits span, .mobile-more-detail, .nft-user-detail-layout .content .nft-info .nft-redirect-btn a, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-info .nft-redirect-btn a, main .trending-block .carousel .carousel-items .item .content .nft-info .nft-redirect-btn a, .nft-user-detail-layout .content .nft-info .nft-title h2, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-info .nft-title h2, main .trending-block .carousel .carousel-items .item .content .nft-info .nft-title h2 {
   font-size: 16px;
   font-weight: bold;
   line-height: 21px;
   font-family: "Nunito", sans-serif;
 }
 @media (max-width: 768px) {
-  .bold-16, main .nft-group-section .new-nft .nft-table-wrapper .nft-table .nft-detail .nft-content .nft-name span, footer .gemstool-footer .credits span, .mobile-more-detail, .nft-user-detail-layout .content .nft-info .nft-redirect-btn a, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-info .nft-redirect-btn a, main .trending-block .carousel .carousel-items .item .content .nft-info .nft-redirect-btn a, .nft-user-detail-layout .content .nft-info .nft-title h2, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-info .nft-title h2, main .trending-block .carousel .carousel-items .item .content .nft-info .nft-title h2 {
+  .bold-16, .compare-nft .nft-container .compare-nft-form form .diff-result .result-containers .result-box .box-wrapper .header.diff-head .heading, main .nft-group-section .new-nft .nft-table-wrapper .nft-table .nft-detail .nft-content .nft-name span, footer .gemstool-footer .credits span, .mobile-more-detail, .nft-user-detail-layout .content .nft-info .nft-redirect-btn a, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-info .nft-redirect-btn a, main .trending-block .carousel .carousel-items .item .content .nft-info .nft-redirect-btn a, .nft-user-detail-layout .content .nft-info .nft-title h2, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-info .nft-title h2, main .trending-block .carousel .carousel-items .item .content .nft-info .nft-title h2 {
     font-size: 15px;
     line-height: 20px;
   }
 }
 @media (max-width: 576px) {
-  .bold-16, main .nft-group-section .new-nft .nft-table-wrapper .nft-table .nft-detail .nft-content .nft-name span, footer .gemstool-footer .credits span, .mobile-more-detail, .nft-user-detail-layout .content .nft-info .nft-redirect-btn a, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-info .nft-redirect-btn a, main .trending-block .carousel .carousel-items .item .content .nft-info .nft-redirect-btn a, .nft-user-detail-layout .content .nft-info .nft-title h2, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-info .nft-title h2, main .trending-block .carousel .carousel-items .item .content .nft-info .nft-title h2 {
+  .bold-16, .compare-nft .nft-container .compare-nft-form form .diff-result .result-containers .result-box .box-wrapper .header.diff-head .heading, main .nft-group-section .new-nft .nft-table-wrapper .nft-table .nft-detail .nft-content .nft-name span, footer .gemstool-footer .credits span, .mobile-more-detail, .nft-user-detail-layout .content .nft-info .nft-redirect-btn a, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-info .nft-redirect-btn a, main .trending-block .carousel .carousel-items .item .content .nft-info .nft-redirect-btn a, .nft-user-detail-layout .content .nft-info .nft-title h2, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-info .nft-title h2, main .trending-block .carousel .carousel-items .item .content .nft-info .nft-title h2 {
     font-size: 14px;
     line-height: 19px;
   }
 }
 @media (max-width: 360px) {
-  .bold-16, main .nft-group-section .new-nft .nft-table-wrapper .nft-table .nft-detail .nft-content .nft-name span, footer .gemstool-footer .credits span, .mobile-more-detail, .nft-user-detail-layout .content .nft-info .nft-redirect-btn a, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-info .nft-redirect-btn a, main .trending-block .carousel .carousel-items .item .content .nft-info .nft-redirect-btn a, .nft-user-detail-layout .content .nft-info .nft-title h2, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-info .nft-title h2, main .trending-block .carousel .carousel-items .item .content .nft-info .nft-title h2 {
+  .bold-16, .compare-nft .nft-container .compare-nft-form form .diff-result .result-containers .result-box .box-wrapper .header.diff-head .heading, main .nft-group-section .new-nft .nft-table-wrapper .nft-table .nft-detail .nft-content .nft-name span, footer .gemstool-footer .credits span, .mobile-more-detail, .nft-user-detail-layout .content .nft-info .nft-redirect-btn a, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-info .nft-redirect-btn a, main .trending-block .carousel .carousel-items .item .content .nft-info .nft-redirect-btn a, .nft-user-detail-layout .content .nft-info .nft-title h2, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-info .nft-title h2, main .trending-block .carousel .carousel-items .item .content .nft-info .nft-title h2 {
     font-size: 12px;
     line-height: 19px;
   }
@@ -779,6 +779,35 @@ section {
   filter: blur(5px);
 }
 
+@keyframes loading_nft_detail_amimation {
+  from {
+    transform: rotate(45deg) translateX(-150%);
+  }
+  to {
+    transform: rotate(45deg) translateX(250%);
+  }
+}
+.std-loading-design, .compare-nft .nft-container .compare-nft-form form .diff-result .result-containers .result-box .box-wrapper .nftdetail-loading {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(90deg, #020024 0%, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.std-loading-design:after, .compare-nft .nft-container .compare-nft-form form .diff-result .result-containers .result-box .box-wrapper .nftdetail-loading:after {
+  content: "";
+  top: -50vw;
+  left: -20vw;
+  position: absolute;
+  width: 50%;
+  height: 200vw;
+  background-repeat: no-repeat;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(209, 209, 209, 0.116) 50%, rgba(255, 255, 255, 0));
+  transform: rotate(45deg) translateX(-150%);
+  animation: loading_nft_detail_amimation 0.5s linear infinite;
+}
+
 .form-layout .box-modal, .compare-nft .nft-container .compare-nft-form form .box-modal, .verify-nft .left-block .verify-nft-form form .box-modal, .admin-userlist .right-block .add-user-form-wrapper form .box-modal, .submit-nft .nft-container .nft-form form .box-modal, .admin-container .form-wrapper .login-form form .box-modal {
   padding: 30px;
   border-radius: 20px;
@@ -969,7 +998,7 @@ header nav .wrapper .brand-logo img {
   }
 }
 header nav .wrapper .nav-links {
-  margin-right: 35px;
+  margin-right: 20px;
   position: relative;
 }
 @media (max-width: 576px) {
@@ -980,7 +1009,7 @@ header nav .wrapper .nav-links {
 header nav .wrapper .nav-links .hemburger {
   display: none;
 }
-@media (max-width: 660px) {
+@media (max-width: 767px) {
   header nav .wrapper .nav-links .hemburger {
     display: block;
   }
@@ -1002,7 +1031,7 @@ header nav .wrapper .nav-links .hemburger button span {
 header nav .wrapper .nav-links .hemburger button span:nth-last-child(1) {
   margin-bottom: 0px;
 }
-@media (max-width: 660px) {
+@media (max-width: 767px) {
   header nav .wrapper .nav-links .admin-list, header nav .wrapper .nav-links .user-list {
     display: none;
   }
@@ -1028,7 +1057,7 @@ header nav .wrapper .nav-links ul li:nth-last-child(1) a {
 }
 header nav .wrapper .nav-links ul li > a {
   display: inline-block;
-  margin-left: 18px;
+  margin-left: 12px;
   text-decoration: none;
   position: relative;
 }
@@ -1143,12 +1172,12 @@ header nav .wrapper .mobile-nav ul li .dropdown-menu a {
   color: #000;
   padding: 15px;
 }
-@media (max-width: 660px) {
+@media (max-width: 767px) {
   header nav .wrapper .mobile-nav {
     display: none;
   }
 }
-@media (min-width: 660px) {
+@media (min-width: 767px) {
   header nav .wrapper .mobile-nav {
     display: none !important;
   }
@@ -1938,7 +1967,6 @@ main .nft-group-section .right-block .gooogle-ads img {
   justify-content: center;
 }
 .compare-nft .nft-container .compare-nft-form form .diff-result .result-containers .result-box {
-  margin-top: 30px;
   max-width: 33.33%;
   flex: 0 0 33.33%;
   padding: 0px 15px;
@@ -1948,6 +1976,15 @@ main .nft-group-section .right-block .gooogle-ads img {
     max-width: 50%;
     flex: 0 0 50%;
     padding: 0px 20px;
+  }
+  .compare-nft .nft-container .compare-nft-form form .diff-result .result-containers .result-box:nth-child(1) {
+    order: 1;
+  }
+  .compare-nft .nft-container .compare-nft-form form .diff-result .result-containers .result-box:nth-child(2) {
+    order: 3;
+  }
+  .compare-nft .nft-container .compare-nft-form form .diff-result .result-containers .result-box:nth-child(3) {
+    order: 2;
   }
 }
 @media (max-width: 660px) {
@@ -1960,6 +1997,7 @@ main .nft-group-section .right-block .gooogle-ads img {
   height: 100%;
   background-color: #fff;
   border-radius: 30px;
+  overflow: hidden;
 }
 .compare-nft .nft-container .compare-nft-form form .diff-result .result-containers .result-box .box-wrapper .header {
   display: flex;
@@ -1969,17 +2007,25 @@ main .nft-group-section .right-block .gooogle-ads img {
   height: 90px;
 }
 .compare-nft .nft-container .compare-nft-form form .diff-result .result-containers .result-box .box-wrapper .header .image {
+  min-width: 62px;
   width: 62px;
   height: 62px;
   margin-right: 15px;
+  overflow: hidden;
 }
 .compare-nft .nft-container .compare-nft-form form .diff-result .result-containers .result-box .box-wrapper .header .image img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
 }
 .compare-nft .nft-container .compare-nft-form form .diff-result .result-containers .result-box .box-wrapper .header h3 {
   color: #000;
   margin: 0;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .compare-nft .nft-container .compare-nft-form form .diff-result .result-containers .result-box .box-wrapper .header.diff-head {
   flex-direction: column;
@@ -1991,6 +2037,23 @@ main .nft-group-section .right-block .gooogle-ads img {
 }
 .compare-nft .nft-container .compare-nft-form form .diff-result .result-containers .result-box .box-wrapper .header.diff-head .heading {
   color: #000;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.compare-nft .nft-container .compare-nft-form form .diff-result .result-containers .result-box .box-wrapper .header.diff-head .heading span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+.compare-nft .nft-container .compare-nft-form form .diff-result .result-containers .result-box .box-wrapper .header.diff-head .heading .nft-name {
+  width: 40%;
+  height: 50px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .compare-nft .nft-container .compare-nft-form form .diff-result .result-containers .result-box .box-wrapper .body .stats {
   width: 100%;
@@ -2018,9 +2081,18 @@ main .nft-group-section .right-block .gooogle-ads img {
 .compare-nft .nft-container .compare-nft-form form .diff-result .result-containers .result-box .box-wrapper .body .stats .item .number {
   color: #F2911B;
 }
+.compare-nft .nft-container .compare-nft-form form .diff-result .result-containers .result-box .box-wrapper .body .stats .item .number .plus-val small {
+  color: green;
+}
+.compare-nft .nft-container .compare-nft-form form .diff-result .result-containers .result-box .box-wrapper .body .stats .item .number .minus-val small {
+  color: red;
+}
 .compare-nft .nft-container .compare-nft-form form .diff-result .result-containers .result-box .box-wrapper .body .stats.diff-stats .item {
   flex: 0 0 50%;
   max-width: 50%;
+}
+.compare-nft .nft-container .compare-nft-form form .diff-result .result-containers .result-box .box-wrapper .nftdetail-loading {
+  min-height: 250px;
 }
 .compare-nft .nft-container .comparison-graph {
   margin-top: 50px;
@@ -2042,6 +2114,52 @@ main .nft-group-section .right-block .gooogle-ads img {
 .compare-nft .nft-container .image img {
   max-width: 100%;
   height: auto;
+}
+
+.nft-search-container {
+  position: relative;
+}
+.nft-search-container .nft-search-result-container {
+  position: absolute;
+  left: 0%;
+  top: 100%;
+  z-index: 99;
+  background-color: #011c40;
+  border: 2px solid #011126;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.nft-search-container .nft-search-result-container ul {
+  list-style: none;
+  margin: 0;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.nft-search-container .nft-search-result-container ul li {
+  display: block;
+  padding: 6px 12px;
+  text-align: left;
+  display: flex;
+  cursor: pointer;
+  transition: 0.1s;
+  font-family: "Nunito", sans-serif;
+}
+.nft-search-container .nft-search-result-container ul li:hover {
+  background-color: #011126;
+}
+.nft-search-container .nft-search-result-container ul li .counter {
+  font-size: 14px;
+  display: inline-block;
+  margin-right: 10px;
+  min-width: 25px;
+  text-align: center;
+}
+.nft-search-container .nft-search-result-container ul li .detail {
+  display: inline-block;
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=main.css.map */
