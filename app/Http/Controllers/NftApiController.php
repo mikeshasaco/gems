@@ -142,7 +142,8 @@ class NftApiController extends Controller
     // get Nft history
     public function get_nft_history_by_address(Request $request)
     {
-        $todayData = date('c');
+        try {
+            $todayData = date('c');
         $yesterdayData = date('c', strtotime('-1 day', time()));
         $average_array = [];
         $date_array = [];
@@ -177,6 +178,10 @@ class NftApiController extends Controller
             'tooltip' => $tooltip_array
         ]],200);
 
+        } catch (Exception $e) {
+            return Response::json(['status'=>'success', 'data'=> $e->getMessage()],200);
+        }
+        
     }
 
 
