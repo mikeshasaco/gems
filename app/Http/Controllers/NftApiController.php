@@ -153,7 +153,7 @@ class NftApiController extends Controller
             $toData = date('c', strtotime('-'.($i).' day', time()));
             $result = $this->get_history_by_address($request->address, $fromDate, $toData);
             $date_array[] = date('d-M', strtotime('-'.($i).' day', time()));
-            if($result->stats){
+            if($result && $result->stats){
                 $average_array[] = number_format($result->stats->average, 3);
                 $tooltip_array[] = "Name: {$result->name} <br/> 
                 Average: ".number_format($result->stats->average, 3)." <br/> 
@@ -211,7 +211,6 @@ class NftApiController extends Controller
 
         $response = curl_exec($curl);
         $info = curl_getinfo($curl);
-        pre([$info, $response]);
         curl_close($curl);
 
         if($info['http_code'] == 200){
