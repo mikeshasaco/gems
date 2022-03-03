@@ -116,7 +116,7 @@ class NftApiController extends Controller
             CURLOPT_CUSTOMREQUEST => 'POST',
             CURLOPT_POSTFIELDS =>'{"query":"  query TokenImages($contractAddress: String!, $tokenId: String!) {\\r\\n    token(\\r\\n      contractAddress: $contractAddress,\\r\\n      tokenId: $tokenId,\\r\\n    ) {\\r\\n      ... on ERC721Token {\\r\\n        images {\\r\\n          url\\r\\n          width\\r\\n          height\\r\\n          mimeType\\r\\n        }\\r\\n      }\\r\\n    }\\r\\n  }\\r\\n  ","variables":{"contractAddress":"'.$address.'","tokenId":"1"}}',
             CURLOPT_HTTPHEADER => array(
-                'x-api-key: c28c89b34ed249989d21e7fc6d35e7ab',
+                'x-api-key: '.ICY_API_KEY,
                 'Content-Type: application/json'
             ),
         ));
