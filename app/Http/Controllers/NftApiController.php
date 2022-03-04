@@ -31,7 +31,8 @@ class NftApiController extends Controller
     // get nft list by name (search)
     public function get_nft_list_by_name(Request $request)
     {
-        
+        // pre('d');
+        // $request->name= 'Stuff';
         $curl = curl_init();
 
         curl_setopt_array($curl, array(
@@ -43,7 +44,8 @@ class NftApiController extends Controller
             CURLOPT_FOLLOWLOCATION => true,
             CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
             CURLOPT_CUSTOMREQUEST => 'POST',
-            CURLOPT_POSTFIELDS =>'{"query":"\\r\\n  query SearchCollections($query: String!, $first: Int) {\\r\\n    contracts(filter: { name: { icontains: $query, contains: $query }}, first: $first) {\\r\\n      edges {\\r\\n        node {\\r\\n          address\\r\\n          ... on ERC721Contract {\\r\\n            name\\r\\n            symbol\\r\\n          }\\r\\n        }\\r\\n      }\\r\\n    }\\r\\n  }\\r\\n  ","variables":{"query":"'.$request->name.'","first":10}}',
+            CURLOPT_POSTFIELDS =>'{"query":"query SearchCollections($query: String!, $first: Int) {\\r\\n  contracts(filter: { \\r\\n    name: {\\r\\n      istartswith: $query, \\r\\n    },\\r\\n   }\\r\\n  first: $first\\r\\n  \\r\\n  ) {\\r\\n    edges {\\r\\n      node {\\r\\n        address\\r\\n        ... on ERC721Contract {\\r\\n          name\\r\\n          symbol\\r\\n        }\\r\\n      }\\r\\n    }\\r\\n  }\\r\\n}","variables":{"query":"'.$request->name.'","first":10}}',
+            // CURLOPT_POSTFIELDS =>'{"query":"query SearchCollections($query: String!, $first: Int) {\\r\\n  contracts(filter: { \\r\\n    name: {\\r\\n      istartswith: $query, \\r\\n    },\\r\\n   }\\r\\n  first: $first\\r\\n  \\r\\n  ) {\\r\\n    edges {\\r\\n      node {\\r\\n        address\\r\\n        ... on ERC721Contract {\\r\\n          name\\r\\n          symbol\\r\\n        }\\r\\n      }\\r\\n    }\\r\\n  }\\r\\n}","variables":{"query":"'.$request->name.'","first":10}}',
             CURLOPT_HTTPHEADER => array(
                 'Accept: application/json',
                 'x-api-key: '.ICY_API_KEY,
@@ -55,11 +57,116 @@ class NftApiController extends Controller
         $response = curl_exec($curl);
         $info = curl_getinfo($curl);
         curl_close($curl);
+        $res = json_decode($response);
+        
+        // search from name
+        if(isset($res->data->contracts->edges) && count($res->data->contracts->edges) < 10){
+            $dataRequired = 10 - count($res->data->contracts->edges);
+            $anotherData = $this->get_nftlist_by_param($request->name, $dataRequired, 'name');
+            
+            if($anotherData->data->contracts->edges && count($anotherData->data->contracts->edges) > 0){
+                array_push($res->data->contracts->edges, ...$anotherData->data->contracts->edges);
+            }            
+        }
+        
+
+        // filter data
+        $res->data->contracts->edges = $this->filter_redudent_data_from_nft_search($res->data->contracts->edges);
+
+        
+        
+        // search from symbol
+        if(isset($res->data->contracts->edges) && count($res->data->contracts->edges) < 10){
+            $dataRequired = 10 - count($res->data->contracts->edges);
+            $anotherData = $this->get_nftlist_by_param($request->name, $dataRequired, 'symbol');
+            if($anotherData->data->contracts->edges && count($anotherData->data->contracts->edges) > 0){
+                array_push($res->data->contracts->edges, ...$anotherData->data->contracts->edges);
+            }            
+        }
+
+        // filter data
+        $res->data->contracts->edges = $this->filter_redudent_data_from_nft_search($res->data->contracts->edges);
+
+        $res->data->contracts->edges = array_values($res->data->contracts->edges);
+
+        // remove redunent variable
+        // if($res->data->contracts->edges && count($res->data->contracts->edges) > 0){
+        //     $collect_address = [];
+        //     $collect_name = [];
+        //     $collect_code = [];
+        //     $res->data->contracts->edges = array_filter($res->data->contracts->edges, function($elm) use (&$collect_address, &$collect_name, &$collect_code){
+        //         if((in_array($elm->node->name, $collect_name) && in_array($elm->node->symbol, $collect_code)) || (in_array($elm->node->address, $collect_address) )){
+        //             return false;
+        //         }
+        //         else {
+        //             array_push($collect_address, $elm->node->address);
+        //             array_push($collect_name, $elm->node->name);
+        //             array_push($collect_code, $elm->node->symbol);
+        //             return true;
+        //         }
+        //     });
+        // }
+        
+        
 
         if($info['http_code'] == 200){
-            return Response::json(['status'=>'success', 'data'=> json_decode($response)],200);
+            return Response::json(['status'=>'success', 'data'=> $res],200);
         }
         return Response::json(['status'=>'error', 'data'=> 'Error while fatching data'],200);
+    }
+
+    // get nftlist by both name and code contains query
+    public function get_nftlist_by_param($name, $first, $param)
+    {
+        $curl = curl_init();
+
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => ICY_GRAPHQL_URL,
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => '',
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 0,
+            CURLOPT_FOLLOWLOCATION => true,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => 'POST',
+            CURLOPT_POSTFIELDS =>'{"query":"query SearchCollections($query: String!, $first: Int) {\\r\\n  contracts(filter: { \\r\\n    '.$param.':{\\r\\n      icontains: $query\\r\\n    }\\r\\n  }\\r\\n  first: $first\\r\\n  \\r\\n  ) {\\r\\n    edges {\\r\\n      node {\\r\\n        address\\r\\n        ... on ERC721Contract {\\r\\n          name\\r\\n          symbol\\r\\n        }\\r\\n      }\\r\\n    }\\r\\n  }\\r\\n}","variables":{"query":"'.$name.'","first":'.$first.'}}',
+            CURLOPT_HTTPHEADER => array(
+                'Accept: application/json',
+                'x-api-key: '.ICY_API_KEY,
+                'Host: graphql.icy.tools',
+                'Content-Type: application/json'
+            ),
+        ));
+
+        $response = curl_exec($curl);
+        $info = curl_getinfo($curl);
+        curl_close($curl);
+        $res = json_decode($response);
+        return $res;
+    }
+    // filter redudent data
+    public function filter_redudent_data_from_nft_search($list)
+    {
+        $collect_address = [];
+        $collect_name = [];
+        $collect_code = [];
+
+
+        if($list && count($list) > 0){
+            $list = array_filter($list, function($elm) use (&$collect_address, &$collect_name, &$collect_code){
+                if((in_array($elm->node->name, $collect_name) && in_array($elm->node->symbol, $collect_code)) || (in_array($elm->node->address, $collect_address) )){
+                    return false;
+                }
+                else {
+                    array_push($collect_address, $elm->node->address);
+                    array_push($collect_name, $elm->node->name);
+                    array_push($collect_code, $elm->node->symbol);
+                    return true;
+                }
+            });
+        }
+        return $list;
+        // pre([$list, $collect_name, $collect_code]);
     }
 
     // get nft details by address
