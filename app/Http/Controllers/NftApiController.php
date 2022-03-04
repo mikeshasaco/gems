@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Redirect;
 use Response;
+use Illuminate\Support\Facades\Log;
 
 
 class NftApiController extends Controller
@@ -152,6 +153,9 @@ class NftApiController extends Controller
             $fromDate = date('c', strtotime('-'.($i+1).' day', time()));
             $toData = date('c', strtotime('-'.($i).' day', time()));
             $result = $this->get_history_by_address($request->address, $fromDate, $toData);
+
+            Log::emergency(json_encode($result));
+
             $date_array[] = date('d-M', strtotime('-'.($i).' day', time()));
             if($result && $result->stats){
                 $average_array[] = number_format($result->stats->average, 3);
