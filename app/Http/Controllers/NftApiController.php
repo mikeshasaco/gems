@@ -191,7 +191,7 @@ class NftApiController extends Controller
 
     public function get_history_by_address($address, $fromDate, $toData)
     {
-        sleep(1);
+        usleep(500000);
         $curl = curl_init();
         $todayData = date('c');
         $yesterdayData = date('c', strtotime('-1 day', time()));
