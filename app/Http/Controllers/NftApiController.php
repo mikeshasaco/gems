@@ -154,7 +154,7 @@ class NftApiController extends Controller
             $toData = date('c', strtotime('-'.($i).' day', time()));
             $result = $this->get_history_by_address($request->address, $fromDate, $toData);
 
-            Log::emergency(json_encode($result));
+            // Log::emergency(json_encode($result));
 
             $date_array[] = date('d-M', strtotime('-'.($i).' day', time()));
             if($result && $result->stats){
@@ -219,9 +219,13 @@ class NftApiController extends Controller
 
         if($info['http_code'] == 200){
             $result = json_decode($response);
+            Log::emergency('@@@@@@'.json_encode($result));
             if(isset($result->data->contract) && $result->data->contract != null){
                 return $result->data->contract;
             }
+        }
+        else{
+            Log::emergency('******'.json_encode($info));
         }
         return null;
     }
