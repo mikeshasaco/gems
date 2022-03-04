@@ -226,6 +226,7 @@ class NftApiController extends Controller
         }
         else{
             Log::emergency('******'.json_encode($info));
+            Log::emergency('*************************');
         }
         return null;
     }
