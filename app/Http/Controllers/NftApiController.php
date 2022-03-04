@@ -164,7 +164,7 @@ class NftApiController extends Controller
             }
             else{
                 $average_array[] = 0;
-                $tooltip_array[] = "Name: {$result->name} <br/> 
+                $tooltip_array[] = "
                 Average: 0 <br/> 
                 Floor: 0 <br/> 
                 Volume: 0 <br/> 
@@ -200,7 +200,7 @@ class NftApiController extends Controller
             CURLOPT_FOLLOWLOCATION => true,
             CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
             CURLOPT_CUSTOMREQUEST => 'POST',
-            CURLOPT_POSTFIELDS =>'{"query":"query CollectionStats($address: String!) {\\r\\n    contract(address: $address) {\\r\\n      ... on ERC721Contract {\\r\\n  name \n      stats(\\r\\n          timeRange: {\\r\\n            gte: \\"'.$fromDate.'\\"\\r\\n            lt: \\"'.$toData.'\\"\\r\\n          }\\r\\n        ) {\\r\\n          floor\\r\\n          volume\\r\\n          totalSales\\r\\n          average\\r\\n          ceiling\\r\\n          \\r\\n        }\\r\\n      }\\r\\n    }\\r\\n  }\\r\\n  ","variables":{"address":"0x80d77b4ae7cd0d7a21fd3c1b2da25a4a06b63923"}}',
+            CURLOPT_POSTFIELDS =>'{"query":"query CollectionStats($address: String!) {\\r\\n    contract(address: $address) {\\r\\n      ... on ERC721Contract {\\r\\n  name \n      stats(\\r\\n          timeRange: {\\r\\n            gte: \\"'.$fromDate.'\\"\\r\\n            lt: \\"'.$toData.'\\"\\r\\n          }\\r\\n        ) {\\r\\n          floor\\r\\n          volume\\r\\n          totalSales\\r\\n          average\\r\\n          ceiling\\r\\n          \\r\\n        }\\r\\n      }\\r\\n    }\\r\\n  }\\r\\n  ","variables":{"address":"'.($address ?? '').'"}}',
             CURLOPT_HTTPHEADER => array(
                 'Accept: application/json',
                 'x-api-key: '.ICY_API_KEY,
