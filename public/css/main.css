@@ -2116,6 +2116,62 @@ main .nft-group-section .right-block .gooogle-ads img {
   height: auto;
 }
 
+.graph-duration-container {
+  margin-bottom: 10px;
+}
+.graph-duration-container .graph-duration-content {
+  display: flex;
+  align-items: center;
+  font-family: "Nunito", sans-serif;
+}
+.graph-duration-container .graph-duration-content .title {
+  display: inline-block;
+  margin-right: 5px;
+  font-weight: 400;
+}
+.graph-duration-container .graph-duration-content .graph-duration-wrapper {
+  position: relative;
+  display: inline-block;
+}
+.graph-duration-container .graph-duration-content .graph-duration-wrapper input {
+  background: #072e60;
+  border: none;
+  outline: none;
+  padding: 6px 8px;
+  border-radius: 4px;
+  color: #d7dde6;
+  width: 100px;
+  font-family: "Nunito", sans-serif;
+  text-align: left;
+  cursor: pointer;
+  background-image: url("/images/down.png");
+  background-repeat: no-repeat;
+  background-position: 90% center;
+  background-size: 10px;
+}
+.graph-duration-container .graph-duration-content .graph-duration-wrapper #option-container {
+  display: block;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  display: none;
+  border: 1px solid #011126;
+}
+.graph-duration-container .graph-duration-content .graph-duration-wrapper #option-container .option {
+  font-family: "Nunito", sans-serif;
+  cursor: pointer;
+  display: block;
+  padding: 5px 5px;
+  background-color: #011126;
+  text-align: left;
+  transition: 0.2s;
+}
+.graph-duration-container .graph-duration-content .graph-duration-wrapper #option-container .option:hover {
+  background-color: #041d3d;
+}
+
 .nft-search-container {
   position: relative;
 }

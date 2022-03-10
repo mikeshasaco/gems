@@ -269,7 +269,7 @@ class NftApiController extends Controller
         $tooltip_array = [];
         try {
         
-            $result = $this->get_weekly_history($request->address, $date_array);
+            $result = $this->get_weekly_history($request->address, $date_array, $request->duration);
             if(isset($result) && isset($result->data) && !empty($result->data)){
                 foreach ($result->data as $key => $collection) {
                     if($collection->stats){
@@ -352,23 +352,39 @@ class NftApiController extends Controller
         return null;
     }
 
-    public function get_weekly_history($address = null, &$date_array)
+    public function get_weekly_history($address = null, &$x_axis, $duration)
     {
 
         $graphQuery = '{"query":"query BAYCStats($address: String!) {\\r\\n';  
             // {"query":"query BAYCStats($address: String!) {\\r\\n  day1:contract(address: $address) {\\r\\n    ... on ERC721Contract {\\r\\n      stats(timeRange: {gte: \\"2022-03-09T00:00:00.000Z\\", lt: \\"2022-03-10T00:00:00.000Z\\"}) {\\r\\n        volume\\r\\n        average\\r\\n      }\\r\\n    }\\r\\n  }\\r\\n  day2:contract(address: $address) {\\r\\n    ... on ERC721Contract {\\r\\n      stats(timeRange: {gte: \\"2022-02-21T00:00:00.000Z\\", lt: \\"2022-02-28T00:00:00.000Z\\"}) {\\r\\n        volume\\r\\n        average\\r\\n      }\\r\\n    }\\r\\n  }\\r\\n }","variables":{"address":"0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d"}}
 
+        if($duration == "Month"){
+            $duration_count = 30;
+        }elseif($duration == "Week"){
+            $duration_count = 7;
+        }
+        else{
+            // Hourly
+            $duration_count = 24;
+        }
 
-        for ($i=7; $i >= 0; $i--) { 
-            $fromDate = date('c', strtotime('-'.($i+1).' day', time()));
-            $toDate = date('c', strtotime('-'.($i).' day', time()));
+        for ($i=$duration_count; $i >= 0; $i--) { 
+            if($duration == "Hourly"){
+                $fromDate = date('c', strtotime('-'.($i+1).' hour', time()));
+                $toDate = date('c', strtotime('-'.($i).' hour', time()));
+                $x_axis[] = date('h:00', strtotime('-'.($i).' hour', time()));
+            }
+            else{
+                $fromDate = date('c', strtotime('-'.($i+1).' day', time()));
+                $toDate = date('c', strtotime('-'.($i).' day', time()));
+                $x_axis[] = date('d-M', strtotime('-'.($i).' day', time()));
+            }
             
             $graphQuery .= 'day'.$i.':contract(address: $address) {\\r\\n    ... on ERC721Contract {    name\\r\\n      \\r\\n      stats(timeRange: {gte: \\"'.$fromDate.'\\", lt: \\"'.$toDate.'\\"}) {\\r\\n        volume\\r\\n        average\\r\\n      floor\\r\\n   ceiling\\n\\r    totalSales\\n\\r    }\\r\\n    }\\r\\n  }\\r\\n';
             
             // $result = $this->get_history_by_address($request->address, $fromDate, $toDate);
             // Log::emergency(json_encode($result));
 
-            $date_array[] = date('d-M', strtotime('-'.($i).' day', time()));
             // if($result && $result->stats){
             //     $average_array[] = number_format($result->stats->average, 3);
             //     $tooltip_array[] = "Name: {$result->name} <br/> 
