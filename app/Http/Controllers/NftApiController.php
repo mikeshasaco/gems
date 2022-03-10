@@ -31,8 +31,9 @@ class NftApiController extends Controller
     // get nft list by name (search)
     public function get_nft_list_by_name(Request $request)
     {
-        // pre('d');
         // $request->name= 'Stuff';
+        $yesterdayDate = date('c', strtotime('-1 day', time()));
+
         $curl = curl_init();
 
         curl_setopt_array($curl, array(
@@ -44,7 +45,8 @@ class NftApiController extends Controller
             CURLOPT_FOLLOWLOCATION => true,
             CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
             CURLOPT_CUSTOMREQUEST => 'POST',
-            CURLOPT_POSTFIELDS =>'{"query":"query SearchCollections($query: String!, $first: Int) {\\r\\n  contracts(filter: { \\r\\n    name: {\\r\\n      istartswith: $query, \\r\\n    },\\r\\n   }\\r\\n  first: $first\\r\\n  \\r\\n  ) {\\r\\n    edges {\\r\\n      node {\\r\\n        address\\r\\n        ... on ERC721Contract {\\r\\n          name\\r\\n          symbol\\r\\n        }\\r\\n      }\\r\\n    }\\r\\n  }\\r\\n}","variables":{"query":"'.$request->name.'","first":10}}',
+            CURLOPT_POSTFIELDS =>'{"query":"query BAYCStats($query : String, $first : Int) {\\r\\n    contracts(filter: { name: { \\r\\n      istartswith: $query\\r\\n      }} \\r\\n      orderBy: VOLUME \\r\\n      orderDirection: DESC\\r\\n     first: $first\\r\\n    ) {\\r\\n      edges {\\r\\n        node {\\r\\n          ... on ERC721Contract {\\r\\n            address\\r\\n            name\\r\\n            symbol\\r\\n            unsafeOpenseaImageUrl\\r\\n            \\r\\n            stats(timeRange: { gte: \\"'.$yesterdayDate.'\\"}) {\\r\\n              totalSales\\r\\n              volume\\r\\n            }\\r\\n          }\\r\\n        }\\r\\n      }\\r\\n    }\\r\\n }","variables":{"query":"'.$request->name.'","first":10}}',
+            // CURLOPT_POSTFIELDS =>'{"query":"query SearchCollections($query: String!, $first: Int) {\\r\\n  contracts(filter: { \\r\\n    name: {\\r\\n      istartswith: $query, \\r\\n    },\\r\\n   }\\r\\n  first: $first\\r\\n  \\r\\n  ) {\\r\\n    edges {\\r\\n      node {\\r\\n        address\\r\\n        ... on ERC721Contract {\\r\\n          name\\r\\n          symbol\\r\\n        }\\r\\n      }\\r\\n    }\\r\\n  }\\r\\n}","variables":{"query":"'.$request->name.'","first":10}}',
             // CURLOPT_POSTFIELDS =>'{"query":"query SearchCollections($query: String!, $first: Int) {\\r\\n  contracts(filter: { \\r\\n    name: {\\r\\n      istartswith: $query, \\r\\n    },\\r\\n   }\\r\\n  first: $first\\r\\n  \\r\\n  ) {\\r\\n    edges {\\r\\n      node {\\r\\n        address\\r\\n        ... on ERC721Contract {\\r\\n          name\\r\\n          symbol\\r\\n        }\\r\\n      }\\r\\n    }\\r\\n  }\\r\\n}","variables":{"query":"'.$request->name.'","first":10}}',
             CURLOPT_HTTPHEADER => array(
                 'Accept: application/json',
@@ -58,7 +60,8 @@ class NftApiController extends Controller
         $info = curl_getinfo($curl);
         curl_close($curl);
         $res = json_decode($response);
-        
+
+
         // search from name
         if(isset($res->data->contracts->edges) && count($res->data->contracts->edges) < 10){
             $dataRequired = 10 - count($res->data->contracts->edges);
@@ -119,7 +122,7 @@ class NftApiController extends Controller
     public function get_nftlist_by_param($name, $first, $param)
     {
         $curl = curl_init();
-
+        $yesterdayData = date('c', strtotime('-1 day', time()));
         curl_setopt_array($curl, array(
             CURLOPT_URL => ICY_GRAPHQL_URL,
             CURLOPT_RETURNTRANSFER => true,
@@ -129,7 +132,8 @@ class NftApiController extends Controller
             CURLOPT_FOLLOWLOCATION => true,
             CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
             CURLOPT_CUSTOMREQUEST => 'POST',
-            CURLOPT_POSTFIELDS =>'{"query":"query SearchCollections($query: String!, $first: Int) {\\r\\n  contracts(filter: { \\r\\n    '.$param.':{\\r\\n      icontains: $query\\r\\n    }\\r\\n  }\\r\\n  first: $first\\r\\n  \\r\\n  ) {\\r\\n    edges {\\r\\n      node {\\r\\n        address\\r\\n        ... on ERC721Contract {\\r\\n          name\\r\\n          symbol\\r\\n        }\\r\\n      }\\r\\n    }\\r\\n  }\\r\\n}","variables":{"query":"'.$name.'","first":'.$first.'}}',
+            CURLOPT_POSTFIELDS =>'{"query":"query BAYCStats($query : String, $first : Int) {\\r\\n    contracts(filter: { '.$param.': { \\r\\n      icontains: $query\\r\\n      }} \\r\\n      orderBy: VOLUME \\r\\n      orderDirection: DESC\\r\\n      first: $first\\r\\n    ) {\\r\\n      edges {\\r\\n        node {\\r\\n          ... on ERC721Contract {\\r\\n            address\\r\\n            name\\r\\n            symbol\\r\\n            unsafeOpenseaImageUrl\\r\\n            \\r\\n            stats(timeRange: { gte: \\"'.$yesterdayData.'\\"}) {\\r\\n              totalSales\\r\\n              volume\\r\\n            }\\r\\n          }\\r\\n        }\\r\\n      }\\r\\n    }\\r\\n }","variables":{"query":"'.$name.'","first":'.$first.'}}',
+            // CURLOPT_POSTFIELDS =>'{"query":"query SearchCollections($query: String!, $first: Int) {\\r\\n  contracts(filter: { \\r\\n    '.$param.':{\\r\\n      icontains: $query\\r\\n    }\\r\\n  }\\r\\n  first: $first\\r\\n  \\r\\n  ) {\\r\\n    edges {\\r\\n      node {\\r\\n        address\\r\\n        ... on ERC721Contract {\\r\\n          name\\r\\n          symbol\\r\\n        }\\r\\n      }\\r\\n    }\\r\\n  }\\r\\n}","variables":{"query":"'.$name.'","first":'.$first.'}}',
             CURLOPT_HTTPHEADER => array(
                 'Accept: application/json',
                 'x-api-key: '.ICY_API_KEY,
@@ -172,40 +176,47 @@ class NftApiController extends Controller
     // get nft details by address
     public function get_nft_detail_by_address(Request $request)
     {
-        $curl = curl_init();
-        $todayData = date('c');
-        $yesterdayData = date('c', strtotime('-1 day', time()));
-
-        curl_setopt_array($curl, array(
-            CURLOPT_URL => ICY_GRAPHQL_URL,
-            CURLOPT_RETURNTRANSFER => true,
-            CURLOPT_ENCODING => '',
-            CURLOPT_MAXREDIRS => 10,
-            CURLOPT_TIMEOUT => 0,
-            CURLOPT_FOLLOWLOCATION => true,
-            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-            CURLOPT_CUSTOMREQUEST => 'POST',
-            CURLOPT_POSTFIELDS =>'{"query":"query CollectionStats($address: String!) {\\r\\n    contract(address: $address) {\\r\\n      ... on ERC721Contract {\\r\\n  name \n      stats(\\r\\n          timeRange: {\\r\\n            gte: \\"'.$yesterdayData.'\\"\\r\\n            lt: \\"'.$todayData.'\\"\\r\\n          }\\r\\n        ) {\\r\\n          floor\\r\\n          volume\\r\\n          totalSales\\r\\n          average\\r\\n          ceiling\\r\\n          \\r\\n        }\\r\\n      }\\r\\n    }\\r\\n  }\\r\\n  ","variables":{"address":"'.($request->address ?? null).'"}}',
-            CURLOPT_HTTPHEADER => array(
-                'Accept: application/json',
-                'x-api-key: '.ICY_API_KEY,
-                'Host: graphql.icy.tools',
-                'Content-Type: application/json'
-            ),
-        ));
-
-        $response = curl_exec($curl);
-        $info = curl_getinfo($curl);
-        curl_close($curl);
-
-        if($info['http_code'] == 200){
-            $result = json_decode($response);
-            if(isset($result->data->contract) && $result->data->contract != null){
-                $result->data->contract->images = $this->get_nft_image($request->address);
-                return Response::json(['status'=>'success', 'data'=> $result->data->contract],200);
+        try {
+            //code...
+            $curl = curl_init();
+            $todayData = date('c');
+            $yesterdayData = date('c', strtotime('-1 day', time()));
+    
+            curl_setopt_array($curl, array(
+                CURLOPT_URL => ICY_GRAPHQL_URL,
+                CURLOPT_RETURNTRANSFER => true,
+                CURLOPT_ENCODING => '',
+                CURLOPT_MAXREDIRS => 10,
+                CURLOPT_TIMEOUT => 0,
+                CURLOPT_FOLLOWLOCATION => true,
+                CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                CURLOPT_CUSTOMREQUEST => 'POST',
+                CURLOPT_POSTFIELDS =>'{"query":"query BAYCStats($address: String!) {\\r\\n  contract(address: $address) {\\r\\n    ... on ERC721Contract {\\r\\n      unsafeOpenseaImageUrl\\r\\n      name\\r\\n      address\\r\\n      stats(timeRange: { gte: \\"'.$yesterdayData.'\\"}) {\\r\\n        average\\r\\n        ceiling\\r\\n        floor\\r\\n        totalSales\\r\\n        volume\\r\\n      }\\r\\n    }\\r\\n  }\\r\\n }","variables":{"address":"'.$request->address.'"}}',
+                // CURLOPT_POSTFIELDS =>'{"query":"query CollectionStats($address: String!) {\\r\\n    contract(address: $address) {\\r\\n      ... on ERC721Contract {\\r\\n  name \n      stats(\\r\\n          timeRange: {\\r\\n            gte: \\"'.$yesterdayData.'\\"\\r\\n            lt: \\"'.$todayData.'\\"\\r\\n          }\\r\\n        ) {\\r\\n          floor\\r\\n          volume\\r\\n          totalSales\\r\\n          average\\r\\n          ceiling\\r\\n          \\r\\n        }\\r\\n      }\\r\\n    }\\r\\n  }\\r\\n  ","variables":{"address":"'.($request->address ?? null).'"}}',
+                CURLOPT_HTTPHEADER => array(
+                    'Accept: application/json',
+                    'x-api-key: '.ICY_API_KEY,
+                    'Host: graphql.icy.tools',
+                    'Content-Type: application/json'
+                ),
+            ));
+    
+            $response = curl_exec($curl);
+            $info = curl_getinfo($curl);
+            curl_close($curl);
+    
+            if($info['http_code'] == 200){
+                $result = json_decode($response);
+                if(isset($result->data->contract) && $result->data->contract != null){
+                    // $result->data->contract->images = $this->get_nft_image($request->address);
+                    return Response::json(['status'=>'success', 'data'=> $result->data->contract],200);
+                }
             }
+            return Response::json(['status'=>'error', 'data'=> 'Error while fatching data'],200);
+        } catch (Throwable $th) {
+            //throw $th;
+            return Response::json(['status'=>'error', 'data'=> $th->getMessage()],200);
         }
-        return Response::json(['status'=>'error', 'data'=> 'Error while fatching data'],200);
     }
 
     // get Nft image from token
@@ -250,53 +261,55 @@ class NftApiController extends Controller
     // get Nft history
     public function get_nft_history_by_address(Request $request)
     {
-        try {
-            $todayData = date('c');
+        // $request->address = "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d";
+        $todayData = date('c');
         $yesterdayData = date('c', strtotime('-1 day', time()));
         $average_array = [];
         $date_array = [];
         $tooltip_array = [];
-        for ($i=7; $i >= 0; $i--) { 
-            $fromDate = date('c', strtotime('-'.($i+1).' day', time()));
-            $toData = date('c', strtotime('-'.($i).' day', time()));
-            $result = $this->get_history_by_address($request->address, $fromDate, $toData);
-
-            // Log::emergency(json_encode($result));
-
-            $date_array[] = date('d-M', strtotime('-'.($i).' day', time()));
-            if($result && $result->stats){
-                $average_array[] = number_format($result->stats->average, 3);
-                $tooltip_array[] = "Name: {$result->name} <br/> 
-                Average: ".number_format($result->stats->average, 3)." <br/> 
-                Floor: ".number_format($result->stats->floor, 3)." <br/> 
-                Volume: ".number_format($result->stats->volume, 3)." <br/> 
-                Total Sales: ".$result->stats->totalSales." <br/> 
-                Ceiling: ".number_format($result->stats->ceiling, 3);
+        try {
+        
+            $result = $this->get_weekly_history($request->address, $date_array);
+            if(isset($result) && isset($result->data) && !empty($result->data)){
+                foreach ($result->data as $key => $collection) {
+                    if($collection->stats){
+                        $average_array[] = number_format($collection->stats->average, 3);
+                        $tooltip_array[] = "Name: {$collection->name} <br/> 
+                        Average: ".number_format($collection->stats->average, 3)." <br/> 
+                        Floor: ".number_format($collection->stats->floor, 3)." <br/> 
+                        Volume: ".number_format($collection->stats->volume, 3)." <br/> 
+                        Total Sales: ".$collection->stats->totalSales." <br/> 
+                        Ceiling: ".number_format($collection->stats->ceiling, 3);
+                    }
+                    else{
+                        $average_array[] = 0;
+                        $tooltip_array[] = "
+                        Average: 0 <br/> 
+                        Floor: 0 <br/> 
+                        Volume: 0 <br/> 
+                        Total Sales: 0 <br/> 
+                        Ceiling: 0 ";
+                    }
+                }
             }
             else{
-                $average_array[] = 0;
-                $tooltip_array[] = "
-                Average: 0 <br/> 
-                Floor: 0 <br/> 
-                Volume: 0 <br/> 
-                Total Sales: 0 <br/> 
-                Ceiling: 0 ";
+                throw new Exception("Error while fatching data", 1);
             }
-        }
-        return Response::json(['status'=>'success', 'data'=> [
-            'average' => $average_array,
-            'x_axis' => $date_array,
-            'tooltip' => $tooltip_array
-        ]],200);
+
+            return Response::json(['status'=>'success', 'data'=> [
+                'average' => $average_array,
+                'x_axis' => $date_array,
+                'tooltip' => $tooltip_array
+            ]],200);
 
         } catch (Exception $e) {
-            return Response::json(['status'=>'success', 'data'=> $e->getMessage()],200);
+            return Response::json(['status'=>'error', 'data'=> $e->getMessage()],200);
         }
         
     }
 
 
-    public function get_history_by_address($address, $fromDate, $toData)
+    public function get_history_by_address($address, $fromDate, $toDate)
     {
         usleep(500000);
         $curl = curl_init();
@@ -312,7 +325,7 @@ class NftApiController extends Controller
             CURLOPT_FOLLOWLOCATION => true,
             CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
             CURLOPT_CUSTOMREQUEST => 'POST',
-            CURLOPT_POSTFIELDS =>'{"query":"query CollectionStats($address: String!) {\\r\\n    contract(address: $address) {\\r\\n      ... on ERC721Contract {\\r\\n  name \n      stats(\\r\\n          timeRange: {\\r\\n            gte: \\"'.$fromDate.'\\"\\r\\n            lt: \\"'.$toData.'\\"\\r\\n          }\\r\\n        ) {\\r\\n          floor\\r\\n          volume\\r\\n          totalSales\\r\\n          average\\r\\n          ceiling\\r\\n          \\r\\n        }\\r\\n      }\\r\\n    }\\r\\n  }\\r\\n  ","variables":{"address":"'.($address ?? '').'"}}',
+            CURLOPT_POSTFIELDS =>'{"query":"query CollectionStats($address: String!) {\\r\\n    contract(address: $address) {\\r\\n      ... on ERC721Contract {\\r\\n  name \n      stats(\\r\\n          timeRange: {\\r\\n            gte: \\"'.$fromDate.'\\"\\r\\n            lt: \\"'.$toDate.'\\"\\r\\n          }\\r\\n        ) {\\r\\n          floor\\r\\n          volume\\r\\n          totalSales\\r\\n          average\\r\\n          ceiling\\r\\n          \\r\\n        }\\r\\n      }\\r\\n    }\\r\\n  }\\r\\n  ","variables":{"address":"'.($address ?? '').'"}}',
             CURLOPT_HTTPHEADER => array(
                 'Accept: application/json',
                 'x-api-key: '.ICY_API_KEY,
@@ -337,6 +350,73 @@ class NftApiController extends Controller
             Log::emergency('*************************');
         }
         return null;
+    }
+
+    public function get_weekly_history($address = null, &$date_array)
+    {
+
+        $graphQuery = '{"query":"query BAYCStats($address: String!) {\\r\\n';  
+            // {"query":"query BAYCStats($address: String!) {\\r\\n  day1:contract(address: $address) {\\r\\n    ... on ERC721Contract {\\r\\n      stats(timeRange: {gte: \\"2022-03-09T00:00:00.000Z\\", lt: \\"2022-03-10T00:00:00.000Z\\"}) {\\r\\n        volume\\r\\n        average\\r\\n      }\\r\\n    }\\r\\n  }\\r\\n  day2:contract(address: $address) {\\r\\n    ... on ERC721Contract {\\r\\n      stats(timeRange: {gte: \\"2022-02-21T00:00:00.000Z\\", lt: \\"2022-02-28T00:00:00.000Z\\"}) {\\r\\n        volume\\r\\n        average\\r\\n      }\\r\\n    }\\r\\n  }\\r\\n }","variables":{"address":"0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d"}}
+
+
+        for ($i=7; $i >= 0; $i--) { 
+            $fromDate = date('c', strtotime('-'.($i+1).' day', time()));
+            $toDate = date('c', strtotime('-'.($i).' day', time()));
+            
+            $graphQuery .= 'day'.$i.':contract(address: $address) {\\r\\n    ... on ERC721Contract {    name\\r\\n      \\r\\n      stats(timeRange: {gte: \\"'.$fromDate.'\\", lt: \\"'.$toDate.'\\"}) {\\r\\n        volume\\r\\n        average\\r\\n      floor\\r\\n   ceiling\\n\\r    totalSales\\n\\r    }\\r\\n    }\\r\\n  }\\r\\n';
+            
+            // $result = $this->get_history_by_address($request->address, $fromDate, $toDate);
+            // Log::emergency(json_encode($result));
+
+            $date_array[] = date('d-M', strtotime('-'.($i).' day', time()));
+            // if($result && $result->stats){
+            //     $average_array[] = number_format($result->stats->average, 3);
+            //     $tooltip_array[] = "Name: {$result->name} <br/> 
+            //     Average: ".number_format($result->stats->average, 3)." <br/> 
+            //     Floor: ".number_format($result->stats->floor, 3)." <br/> 
+            //     Volume: ".number_format($result->stats->volume, 3)." <br/> 
+            //     Total Sales: ".$result->stats->totalSales." <br/> 
+            //     Ceiling: ".number_format($result->stats->ceiling, 3);
+            // }
+            // else{
+            //     $average_array[] = 0;
+            //     $tooltip_array[] = "
+            //     Average: 0 <br/> 
+            //     Floor: 0 <br/> 
+            //     Volume: 0 <br/> 
+            //     Total Sales: 0 <br/> 
+            //     Ceiling: 0 ";
+            // }
+        }
+        $graphQuery .= '}","variables":{"address":"'.$address.'"}}';
+
+
+        $curl = curl_init();
+        $todayData = date('c');
+        $yesterdayData = date('c', strtotime('-1 day', time()));
+
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => ICY_GRAPHQL_URL,
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => '',
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 0,
+            CURLOPT_FOLLOWLOCATION => true,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => 'POST',
+            CURLOPT_POSTFIELDS =>$graphQuery,
+            CURLOPT_HTTPHEADER => array(
+                'Accept: application/json',
+                'x-api-key: '.ICY_API_KEY,
+                'Host: graphql.icy.tools',
+                'Content-Type: application/json'
+            ),
+        ));
+
+        $response = curl_exec($curl);
+        $info = curl_getinfo($curl);
+        curl_close($curl);
+        return json_decode($response);
     }
 }
 

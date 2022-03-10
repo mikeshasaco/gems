@@ -2105,7 +2105,7 @@ main .nft-group-section .right-block .gooogle-ads img {
 }
 @media (max-width: 576px) {
   .compare-nft .nft-container .comparison-graph .box-modal {
-    padding: 20px 15px;
+    padding: 20px 0px 10px 0px;
   }
 }
 .compare-nft .nft-container .comparison-graph .box-modal .graph-wrapper img {
@@ -2161,20 +2161,45 @@ main .nft-group-section .right-block .gooogle-ads img {
   text-align: center;
 }
 .nft-search-container .nft-search-result-container ul li .detail {
-  font-size: 15px;
+  font-size: 13px;
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  align-items: center;
+}
+.nft-search-container .nft-search-result-container ul li .detail .image {
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.nft-search-container .nft-search-result-container ul li .detail .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 .nft-search-container .nft-search-result-container ul li .detail .code {
   color: #818181;
-  max-width: 50%;
+  max-width: 30%;
   display: inline-block;
   height: 20px;
   overflow: hidden;
   text-overflow: ellipsis;
   text-align: right;
-  font-size: 14px;
+  font-size: 12px;
+  margin-left: auto;
+}
+@media (max-width: 576px) {
+  .nft-search-container .nft-search-result-container.first {
+    width: calc(100vw - 65px);
+  }
+}
+@media (max-width: 576px) {
+  .nft-search-container .nft-search-result-container.second {
+    width: calc(100vw - 65px);
+    left: calc(-50vw + 10px);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
