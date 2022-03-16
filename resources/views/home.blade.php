@@ -38,10 +38,10 @@
                                     <a href="{{url()}}">NFT Grading</a>
                                 </li>
                                 <li>
-                                    <a href="{{url()}}compare-nft">NFT Compare</a>
+                                    <a href="{{url('app/compare-nft')}}">NFT Compare</a>
                                 </li>
                                 <li>
-                                    <a href="{{url()}}contact-us">Contact</a>
+                                    <a href="{{url('app/contact-us')}}">Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -51,10 +51,10 @@
                                     <a href="{{url()}}">NFT Grading</a>
                                 </li>
                                 <li>
-                                    <a href="{{url()}}compare-nft">NFT Compare</a>
+                                    <a href="{{url('app/compare-nft')}}">NFT Compare</a>
                                 </li>
                                 <li>
-                                    <a href="{{url()}}contact-us">Contact</a>
+                                    <a href="{{url('app/contact-us')}}">Contact</a>
                                 </li>
                             </ul>
                         </div>
