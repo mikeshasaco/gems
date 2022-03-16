@@ -17,9 +17,9 @@ use App\Http\Controllers\NftApiController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+// exit('rrt');
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 // Route::get('/', function () {
@@ -32,6 +32,7 @@ Route::group([
     'prefix' => 'admin',
     'middleware' => 'auth'
 ], function() {
+    Route::get('/', [DashboardController::class, 'index'])->name('dashboard2');
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
     Route::get('/userlist/{id?}', [NftuserController::class, 'userlist'])->name('userlist');
     Route::get('/nftlist/{id?}', [NftdetailController::class, 'nftlist'])->name('nftlist');
@@ -64,5 +65,5 @@ Route::get('{any}/{any2}/{any3}/{any4}', function () {
     return view('welcome');
 });
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
