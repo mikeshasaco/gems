@@ -35,26 +35,26 @@
                             </div>
                             <ul>
                                 <li>
-                                    <a href="https://gems.tools/">NFT Grading</a>
+                                    <a href="{{url()}}">NFT Grading</a>
                                 </li>
                                 <li>
-                                    <a href="https://gems.tools/compare-nft">NFT Compare</a>
+                                    <a href="{{url()}}compare-nft">NFT Compare</a>
                                 </li>
                                 <li>
-                                    <a href="https://gems.tools/contact-us">Contact</a>
+                                    <a href="{{url()}}contact-us">Contact</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="mobile-nav">
                             <ul class="mobile-userlist">
                                 <li>
-                                    <a href="https://gems.tools/">NFT Grading</a>
+                                    <a href="{{url()}}">NFT Grading</a>
                                 </li>
                                 <li>
-                                    <a href="https://gems.tools/compare-nft">NFT Compare</a>
+                                    <a href="{{url()}}compare-nft">NFT Compare</a>
                                 </li>
                                 <li>
-                                    <a href="https://gems.tools/contact-us">Contact</a>
+                                    <a href="{{url()}}contact-us">Contact</a>
                                 </li>
                             </ul>
                         </div>
