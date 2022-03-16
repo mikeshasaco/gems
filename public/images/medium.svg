@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <g id="medium" transform="translate(-405 -5707)">
+    <circle id="Ellipse_22" data-name="Ellipse 22" cx="25" cy="25" r="25" transform="translate(405 5707)" fill="#6a6a6a"/>
+    <path id="medium-2" data-name="medium" d="M0,2.25v20H20v-20ZM16.616,6.987,15.545,8.013a.315.315,0,0,0-.121.3v7.558a.307.307,0,0,0,.121.3L16.594,17.2v.228H11.326v-.219l1.085-1.054c.107-.107.107-.138.107-.3V9.741L9.5,17.4H9.094L5.58,9.741v5.134a.706.706,0,0,0,.2.589l1.411,1.71V17.4H3.179v-.228l1.411-1.71a.683.683,0,0,0,.183-.589V8.938A.51.51,0,0,0,4.6,8.5L3.348,6.987V6.759h3.9l3.009,6.607,2.647-6.6h3.714Z" transform="translate(420 5719.75)" fill="#fff"/>
+  </g>
+</svg>
