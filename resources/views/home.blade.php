@@ -48,7 +48,7 @@
                         <div class="mobile-nav">
                             <ul class="mobile-userlist">
                                 <li>
-                                    <a href="https://gems.tools/">NFT Grading</a>
+                                    <a href="https://gems.tools/app">NFT Grading</a>
                                 </li>
                                 <li>
                                     <a href="https://gems.tools/app/compare-nft">NFT Compare</a>
