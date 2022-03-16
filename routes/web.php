@@ -52,16 +52,19 @@ Route::group([
     Route::get('/ccc', [NftApiController::class, 'get_nft_history_by_address']);
 });
 
-Route::get('{any}', function () {
+Route::get('app/', function () {
     return view('welcome');
 });
-Route::get('{any}/{any2}', function () {
+Route::get('app/{any}', function () {
     return view('welcome');
 });
-Route::get('{any}/{any2}/{any3}', function () {
+Route::get('app/{any}/{any2}', function () {
     return view('welcome');
 });
-Route::get('{any}/{any2}/{any3}/{any4}', function () {
+Route::get('app/{any}/{any2}/{any3}', function () {
+    return view('welcome');
+});
+Route::get('app/{any}/{any2}/{any3}/{any4}', function () {
     return view('welcome');
 });
 Route::get('/', function () {
