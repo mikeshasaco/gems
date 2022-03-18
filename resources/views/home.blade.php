@@ -78,16 +78,18 @@
                                         <div class="left-block">
                                             <div class="hero-header">
                                                 <h1>
-                                                    <span class="text-nowrap"> Boost your </span>
+                                                    <span class="text-nowrap"> Boost Your </span>
                                                     <span class="highlight">
-                                                        <span class="text-nowrap"> exchange </span>
-                                                        <span class="text-nowrap"> experience </span>
+                                                        <span class="text-nowrap"> NFT </span>
+                                                        <span class="text-nowrap"> Experience </span>
                                                     </span> 
                                                 </h1>
                                             </div>
                                             <div class="hero-content">
                                                 <p>
-                                                    Real-time data analysis at the tips of your fingers: Create unique trading strategies, anticipate market movements, search for big spreads, track and copy the most profitable wallets and much more.
+                                                    <!-- Real-time data analysis at the tips of your fingers: Create unique trading strategies, anticipate market movements, search for big spreads, track and copy the most profitable wallets and much more. -->
+                                                    Real-time data analysis at the tips of your fingers: Create unique trading strategies for your favorite projects, Compare growth between your favorite NFT's, track buy opportunities within the market.
+
                                                 </p>
                                             </div>
                                             <div class="hero-actions">
@@ -95,13 +97,13 @@
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="19.423" height="14.57" viewBox="0 0 19.423 14.57">
                                                         <path id="Icon_ionic-logo-youtube" data-name="Icon ionic-logo-youtube" d="M19.3,7.717a2.949,2.949,0,0,0-2.808-3.081c-2.1-.1-4.246-.137-6.435-.137H9.371c-2.185,0-4.333.038-6.435.137a2.956,2.956,0,0,0-2.8,3.088C.038,9.076,0,10.426,0,11.777s.038,2.7.129,4.056a2.959,2.959,0,0,0,2.8,3.092c2.208.1,4.473.148,6.776.144s4.564-.038,6.776-.144a2.96,2.96,0,0,0,2.808-3.092c.091-1.354.133-2.705.129-4.06S19.387,9.072,19.3,7.717ZM7.853,15.5V8.044l5.5,3.726Z" transform="translate(0 -4.5)" fill="#f29125"/>
                                                     </svg>                                                  
-                                                    Watch video
+                                                    Grading NFT App
                                                 </a>
                                                 <a href="javascript:void(0);" class="app">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="15.355" height="15.355" viewBox="0 0 15.355 15.355">
                                                         <path id="Icon_material-launch_-_Outline" data-name="Icon material-launch - Outline" d="M17.26,19.355H6.095A2.1,2.1,0,0,1,4,17.26V6.095A2.1,2.1,0,0,1,6.095,4h6.082V6.595H6.595V16.76H16.76V11.177h2.595V17.26A2.1,2.1,0,0,1,17.26,19.355ZM6.095,5A1.1,1.1,0,0,0,5,6.095V17.26a1.1,1.1,0,0,0,1.095,1.095H17.26a1.1,1.1,0,0,0,1.095-1.095V12.177H17.76V17.76H5.595V5.595h5.582V5ZM9.42,15.766,7.589,13.934l7.339-7.339H12.772V4h6.582v6.582H16.76V8.426ZM9,13.934l.417.417L17.76,6.012v3.57h.595V5H13.772v.595h3.57Z" transform="translate(-4 -4)" fill="#fff"/>
                                                     </svg>
-                                                    Launch App
+                                                    Dual NFT Chart App
                                                 </a>
                                             </div>
                                         </div>
@@ -145,7 +147,8 @@
                     <div class="container-lg">
                         <div class="heading">
                             <h2>
-                                If you are a DEFI user, and you want to be able to anticipate market movements and develop better trading strategies, GEMSTools will help you in a very simple way
+                                If you are into NFT's, and want to compare chart analysis between two projects and develop better buying and selling strategies, GEMSTOOLs will help make investing easier.
+                                <!-- If you are a DEFI user, and you want to be able to anticipate market movements and develop better trading strategies, GEMSTools will help you in a very simple way -->
                             </h2>
                         </div>
                         <div class="body">
@@ -155,7 +158,7 @@
                                         <div class="item">
                                             <div class="wrapper">
                                                 <div class="image">
-                                                    <img src="{{asset('')}}images/responsive.png" alt="Responsive pages image" width="110" height="110" />
+                                                    <img src="{{asset('')}}images/responsivenew.png" alt="Responsive pages image" width="110" height="110" />
                                                 </div>
                                                 <div class="header">
                                                     <h3>
@@ -172,15 +175,15 @@
                                         <div class="item">
                                             <div class="wrapper">
                                                 <div class="image">
-                                                    <img src="{{asset('')}}images/subscription.png" alt="Subscription service image" width="110" height="110" />
+                                                    <img src="{{asset('')}}images/grade.png" alt="Subscription service image" width="110" height="110" />
                                                 </div>
                                                 <div class="header">
                                                     <h3>
-                                                        Subscription
+                                                        NFT Grading
                                                     </h3>
                                                 </div>
                                                 <div class="content">
-                                                    <p>Purchase GEMS via exchanges to enable GEMS subscriptions.</p>
+                                                    <p>View grades given to top NFT projects from Editors.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -189,15 +192,15 @@
                                         <div class="item">
                                             <div class="wrapper">
                                                 <div class="image">
-                                                    <img src="{{asset('')}}images/store-date.png" alt="Storing data service image" width="110" height="110" />
+                                                    <img src="{{asset('')}}images/line-chart.png" alt="Storing data service image" width="110" height="110" />
                                                 </div>
                                                 <div class="header">
                                                     <h3>
-                                                        Store your data
+                                                        Stats
                                                     </h3>
                                                 </div>
                                                 <div class="content">
-                                                    <p>Save your data and access it from any device.</p>
+                                                    <p>Compare stats from top NFT projects.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -206,20 +209,20 @@
                                         <div class="item">
                                             <div class="wrapper">
                                                 <div class="image">
-                                                    <img src="{{asset('')}}images/notification.png" alt="Notification serive image" width="110" height="110" />
+                                                    <img src="{{asset('')}}images/console.png" alt="Notification serive image" width="110" height="110" />
                                                 </div>
                                                 <div class="header">
                                                     <h3>
-                                                        Notifications
+                                                        Gaming
                                                     </h3>
                                                 </div>
                                                 <div class="content">
-                                                    <p>Set-up your live notifications.</p>
+                                                    <p>Coming Soon.</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 col-sm-6">
+                                    <!-- <div class="col-lg-4 col-sm-6">
                                         <div class="item">
                                             <div class="wrapper">
                                                 <div class="image">
@@ -235,20 +238,20 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <div class="col-lg-4 col-sm-6">
                                         <div class="item">
                                             <div class="wrapper">
                                                 <div class="image">
-                                                    <img src="{{asset('')}}images/stats.png" alt="Stats page service image" width="110" height="110" />
+                                                    <img src="{{asset('')}}images/trend.png" alt="Stats page service image" width="110" height="110" />
                                                 </div>
                                                 <div class="header">
                                                     <h3>
-                                                        Stats
+                                                        Trends
                                                     </h3>
                                                 </div>
                                                 <div class="content">
-                                                    <p>Check and watch real time the best DEFI Statistics.</p>
+                                                    <p>Find out which NFT's are trending first.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -281,13 +284,13 @@
                                                 <div class="feature">
                                                     <div class="wrapper">
                                                         <div class="header">
-                                                            <h4> Live New Pairs </h4>
+                                                            <h4> Trends </h4>
                                                         </div>
                                                         <div class="image">
                                                             <img src="{{asset('')}}images/pool_explorer_1.png" alt="Live new pair feature image" width="350" height="175" />
                                                         </div>
                                                         <div class="content">
-                                                            <p>Search for new pools, add or remove liquidity in a pair, find the best gems and avoid the scams.</p>
+                                                            <p>View latest trends in the NFT community, be ahead of </p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -485,9 +488,9 @@
                 </div>
             </section>
 
-            <!-- Gems token section -->
+            <!-- Gems token section
             <section class="token">
-                <!-- Slanted edge at the start of section -->
+                Slanted edge at the start of section
                 <div class="box-edge top">
                     <div class="triangle"></div>
                 </div>
@@ -551,7 +554,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
         </main>
 
         <footer>
