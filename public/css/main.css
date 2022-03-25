@@ -822,9 +822,15 @@ section {
   width: 100px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   width: 130px;
   color: #01193a;
+}
+@media (max-width: 992px) {
+  .sticky-button a {
+    padding: 6px;
+    width: 120px;
+  }
 }
 .sticky-button a .icon {
   background-color: #01193a;
@@ -1010,6 +1016,11 @@ header nav .wrapper {
 header nav .wrapper .brand-logo {
   margin-left: 35px;
 }
+@media (max-width: 992px) {
+  header nav .wrapper .brand-logo {
+    margin-left: 15px;
+  }
+}
 @media (max-width: 576px) {
   header nav .wrapper .brand-logo {
     margin-left: 0px;
@@ -1019,10 +1030,15 @@ header nav .wrapper .brand-logo img {
   height: 70px;
   width: auto;
 }
+@media (max-width: 992px) {
+  header nav .wrapper .brand-logo img {
+    height: 60px;
+  }
+}
 @media (max-width: 576px) {
   header nav .wrapper .brand-logo img {
     margin-left: 15px;
-    height: 60px;
+    height: 55px;
     width: auto;
   }
 }
@@ -1030,9 +1046,9 @@ header nav .wrapper .nav-links {
   margin-right: 20px;
   position: relative;
 }
-@media (max-width: 576px) {
+@media (max-width: 992px) {
   header nav .wrapper .nav-links {
-    margin-right: 15px;
+    margin-right: 10px;
   }
 }
 header nav .wrapper .nav-links .hemburger {
@@ -1075,7 +1091,7 @@ header nav .wrapper .nav-links ul {
 }
 header nav .wrapper .nav-links ul li {
   line-height: 50px;
-  margin: 0px 5px;
+  margin: 0px 10px;
   position: relative;
 }
 header nav .wrapper .nav-links ul li:nth-last-child(1) {
@@ -1086,7 +1102,6 @@ header nav .wrapper .nav-links ul li:nth-last-child(1) a {
 }
 header nav .wrapper .nav-links ul li > a {
   display: inline-block;
-  margin-left: 12px;
   text-decoration: none;
   position: relative;
 }
@@ -1106,6 +1121,11 @@ header nav .wrapper .nav-links ul li > a.active::after {
 }
 header nav .wrapper .nav-links ul li > a:hover::after {
   width: 100%;
+}
+@media (max-width: 992px) {
+  header nav .wrapper .nav-links ul li > a {
+    font-size: 16px;
+  }
 }
 header nav .wrapper .nav-links ul li .dropdown-menu {
   margin: 0;
@@ -1141,6 +1161,11 @@ header nav .wrapper .nav-links ul li .dropdown-menu a:hover span {
 }
 header nav .wrapper .nav-links ul li .dropdown-menu a:hover i {
   transform: scale(1);
+}
+@media (max-width: 992px) {
+  header nav .wrapper .nav-links ul li {
+    margin: 0px 8px;
+  }
 }
 header nav .wrapper .mobile-nav {
   display: none;
