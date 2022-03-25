@@ -1985,6 +1985,9 @@ main .nft-group-section .right-block .gooogle-ads img {
     padding-left: 0;
   }
 }
+.compare-nft .nft-container .right-block .image {
+  display: none;
+}
 .compare-nft .nft-container .compare-nft-form form .select-group {
   display: flex;
   justify-content: space-between;
