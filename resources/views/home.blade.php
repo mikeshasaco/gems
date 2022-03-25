@@ -645,5 +645,16 @@
         /></noscript>
         <!-- End Meta Pixel Code -->
 
+        <!-- Global site tag (gtag.js) - Google Analytics Ads -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-223450759-1">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-223450759-1');
+</script>
+
 </body>
 </html>
