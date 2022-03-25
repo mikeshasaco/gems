@@ -92,13 +92,13 @@
                                                 </p>
                                             </div>
                                             <div class="hero-actions">
-                                                <a href="javascript:void(0);" class="youtube">
+                                                <a href="https://gems.tools/app" class="youtube">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="19.423" height="14.57" viewBox="0 0 19.423 14.57">
                                                         <path id="Icon_ionic-logo-youtube" data-name="Icon ionic-logo-youtube" d="M19.3,7.717a2.949,2.949,0,0,0-2.808-3.081c-2.1-.1-4.246-.137-6.435-.137H9.371c-2.185,0-4.333.038-6.435.137a2.956,2.956,0,0,0-2.8,3.088C.038,9.076,0,10.426,0,11.777s.038,2.7.129,4.056a2.959,2.959,0,0,0,2.8,3.092c2.208.1,4.473.148,6.776.144s4.564-.038,6.776-.144a2.96,2.96,0,0,0,2.808-3.092c.091-1.354.133-2.705.129-4.06S19.387,9.072,19.3,7.717ZM7.853,15.5V8.044l5.5,3.726Z" transform="translate(0 -4.5)" fill="#f29125"/>
                                                     </svg>                                                  
                                                     Grading NFT App
                                                 </a>
-                                                <a href="javascript:void(0);" class="app">
+                                                <a href="https://gems.tools/app/compare-nft" class="app">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="15.355" height="15.355" viewBox="0 0 15.355 15.355">
                                                         <path id="Icon_material-launch_-_Outline" data-name="Icon material-launch - Outline" d="M17.26,19.355H6.095A2.1,2.1,0,0,1,4,17.26V6.095A2.1,2.1,0,0,1,6.095,4h6.082V6.595H6.595V16.76H16.76V11.177h2.595V17.26A2.1,2.1,0,0,1,17.26,19.355ZM6.095,5A1.1,1.1,0,0,0,5,6.095V17.26a1.1,1.1,0,0,0,1.095,1.095H17.26a1.1,1.1,0,0,0,1.095-1.095V12.177H17.76V17.76H5.595V5.595h5.582V5ZM9.42,15.766,7.589,13.934l7.339-7.339H12.772V4h6.582v6.582H16.76V8.426ZM9,13.934l.417.417L17.76,6.012v3.57h.595V5H13.772v.595h3.57Z" transform="translate(-4 -4)" fill="#fff"/>
                                                     </svg>
@@ -627,6 +627,23 @@
         gtag('js', new Date());
         gtag('config', 'G-JXS56GGJV4');
     </script>
+    <!-- Meta Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '500427508152117');
+        fbq('track', 'PageView');
+        </script>
+        <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=500427508152117&ev=PageView&noscript=1"
+        /></noscript>
+        <!-- End Meta Pixel Code -->
 
 </body>
 </html>
