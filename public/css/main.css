@@ -179,26 +179,26 @@ html {
   font-weight: normal;
 }
 
-.bold-16, .compare-nft .nft-container .compare-nft-form form .diff-result .result-containers .result-box .box-wrapper .header.diff-head .heading, main .nft-group-section .new-nft .nft-table-wrapper .nft-table .nft-detail .nft-content .nft-name span, footer .gemstool-footer .credits span, .mobile-more-detail, .nft-user-detail-layout .content .nft-info .nft-redirect-btn a, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-info .nft-redirect-btn a, main .trending-block .carousel .carousel-items .item .content .nft-info .nft-redirect-btn a, .nft-user-detail-layout .content .nft-info .nft-title h2, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-info .nft-title h2, main .trending-block .carousel .carousel-items .item .content .nft-info .nft-title h2 {
+.bold-16, .compare-nft .nft-container .compare-nft-form form .diff-result .result-containers .result-box .box-wrapper .header.diff-head .heading, main .nft-group-section .new-nft .nft-table-wrapper .nft-table .nft-detail .nft-content .nft-name span, footer .gemstool-footer .credits span, .sticky-button a span, .mobile-more-detail, .nft-user-detail-layout .content .nft-info .nft-redirect-btn a, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-info .nft-redirect-btn a, main .trending-block .carousel .carousel-items .item .content .nft-info .nft-redirect-btn a, .nft-user-detail-layout .content .nft-info .nft-title h2, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-info .nft-title h2, main .trending-block .carousel .carousel-items .item .content .nft-info .nft-title h2 {
   font-size: 16px;
   font-weight: bold;
   line-height: 21px;
   font-family: "Nunito", sans-serif;
 }
 @media (max-width: 768px) {
-  .bold-16, .compare-nft .nft-container .compare-nft-form form .diff-result .result-containers .result-box .box-wrapper .header.diff-head .heading, main .nft-group-section .new-nft .nft-table-wrapper .nft-table .nft-detail .nft-content .nft-name span, footer .gemstool-footer .credits span, .mobile-more-detail, .nft-user-detail-layout .content .nft-info .nft-redirect-btn a, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-info .nft-redirect-btn a, main .trending-block .carousel .carousel-items .item .content .nft-info .nft-redirect-btn a, .nft-user-detail-layout .content .nft-info .nft-title h2, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-info .nft-title h2, main .trending-block .carousel .carousel-items .item .content .nft-info .nft-title h2 {
+  .bold-16, .compare-nft .nft-container .compare-nft-form form .diff-result .result-containers .result-box .box-wrapper .header.diff-head .heading, main .nft-group-section .new-nft .nft-table-wrapper .nft-table .nft-detail .nft-content .nft-name span, footer .gemstool-footer .credits span, .sticky-button a span, .mobile-more-detail, .nft-user-detail-layout .content .nft-info .nft-redirect-btn a, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-info .nft-redirect-btn a, main .trending-block .carousel .carousel-items .item .content .nft-info .nft-redirect-btn a, .nft-user-detail-layout .content .nft-info .nft-title h2, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-info .nft-title h2, main .trending-block .carousel .carousel-items .item .content .nft-info .nft-title h2 {
     font-size: 15px;
     line-height: 20px;
   }
 }
 @media (max-width: 576px) {
-  .bold-16, .compare-nft .nft-container .compare-nft-form form .diff-result .result-containers .result-box .box-wrapper .header.diff-head .heading, main .nft-group-section .new-nft .nft-table-wrapper .nft-table .nft-detail .nft-content .nft-name span, footer .gemstool-footer .credits span, .mobile-more-detail, .nft-user-detail-layout .content .nft-info .nft-redirect-btn a, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-info .nft-redirect-btn a, main .trending-block .carousel .carousel-items .item .content .nft-info .nft-redirect-btn a, .nft-user-detail-layout .content .nft-info .nft-title h2, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-info .nft-title h2, main .trending-block .carousel .carousel-items .item .content .nft-info .nft-title h2 {
+  .bold-16, .compare-nft .nft-container .compare-nft-form form .diff-result .result-containers .result-box .box-wrapper .header.diff-head .heading, main .nft-group-section .new-nft .nft-table-wrapper .nft-table .nft-detail .nft-content .nft-name span, footer .gemstool-footer .credits span, .sticky-button a span, .mobile-more-detail, .nft-user-detail-layout .content .nft-info .nft-redirect-btn a, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-info .nft-redirect-btn a, main .trending-block .carousel .carousel-items .item .content .nft-info .nft-redirect-btn a, .nft-user-detail-layout .content .nft-info .nft-title h2, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-info .nft-title h2, main .trending-block .carousel .carousel-items .item .content .nft-info .nft-title h2 {
     font-size: 14px;
     line-height: 19px;
   }
 }
 @media (max-width: 360px) {
-  .bold-16, .compare-nft .nft-container .compare-nft-form form .diff-result .result-containers .result-box .box-wrapper .header.diff-head .heading, main .nft-group-section .new-nft .nft-table-wrapper .nft-table .nft-detail .nft-content .nft-name span, footer .gemstool-footer .credits span, .mobile-more-detail, .nft-user-detail-layout .content .nft-info .nft-redirect-btn a, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-info .nft-redirect-btn a, main .trending-block .carousel .carousel-items .item .content .nft-info .nft-redirect-btn a, .nft-user-detail-layout .content .nft-info .nft-title h2, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-info .nft-title h2, main .trending-block .carousel .carousel-items .item .content .nft-info .nft-title h2 {
+  .bold-16, .compare-nft .nft-container .compare-nft-form form .diff-result .result-containers .result-box .box-wrapper .header.diff-head .heading, main .nft-group-section .new-nft .nft-table-wrapper .nft-table .nft-detail .nft-content .nft-name span, footer .gemstool-footer .credits span, .sticky-button a span, .mobile-more-detail, .nft-user-detail-layout .content .nft-info .nft-redirect-btn a, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-info .nft-redirect-btn a, main .trending-block .carousel .carousel-items .item .content .nft-info .nft-redirect-btn a, .nft-user-detail-layout .content .nft-info .nft-title h2, main .nft-group-section .new-nft .mobile-nft-list .user-nft-block-mobile .content .nft-info .nft-title h2, main .trending-block .carousel .carousel-items .item .content .nft-info .nft-title h2 {
     font-size: 12px;
     line-height: 19px;
   }
@@ -808,6 +808,35 @@ section {
   animation: loading_nft_detail_amimation 0.5s linear infinite;
 }
 
+.sticky-button {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+.sticky-button a {
+  display: inline-block;
+  padding: 10px;
+  background-color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+  color: #01193a;
+}
+.sticky-button a .icon {
+  background-color: #01193a;
+  height: 30px;
+  width: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: white;
+  margin-right: 5px;
+}
 .form-layout .box-modal, .compare-nft .nft-container .compare-nft-form form .box-modal, .verify-nft .left-block .verify-nft-form form .box-modal, .admin-userlist .right-block .add-user-form-wrapper form .box-modal, .submit-nft .nft-container .nft-form form .box-modal, .admin-container .form-wrapper .login-form form .box-modal {
   padding: 30px;
   border-radius: 20px;

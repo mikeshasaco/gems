@@ -35,10 +35,10 @@
                             </div>
                             <ul>
                                 <li>
-                                    <a href="https://gems.tools/app">NFT Grading</a>
+                                    <a href="https://gems.tools/app">NFT Grades</a>
                                 </li>
                                 <li>
-                                    <a href="https://gems.tools/app/compare-nft">NFT Compare</a>
+                                    <a href="https://gems.tools/app/compare-nft">Dual NFT Charts</a>
                                 </li>
                                 <li>
                                     <a href="https://gems.tools/app/contact-us">Contact</a>
@@ -48,10 +48,10 @@
                         <div class="mobile-nav">
                             <ul class="mobile-userlist">
                                 <li>
-                                    <a href="https://gems.tools/app">NFT Grading</a>
+                                    <a href="https://gems.tools/app">NFT Grades</a>
                                 </li>
                                 <li>
-                                    <a href="https://gems.tools/app/compare-nft">NFT Compare</a>
+                                    <a href="https://gems.tools/app/compare-nft">Dual NFT Charts</a>
                                 </li>
                                 <li>
                                     <a href="https://gems.tools/app/contact-us">Contact</a>
@@ -78,18 +78,17 @@
                                         <div class="left-block">
                                             <div class="hero-header">
                                                 <h1>
-                                                    <span class="text-nowrap"> Boost Your </span>
+                                                    <span class="text-nowrap"> Boost your </span>
                                                     <span class="highlight">
                                                         <span class="text-nowrap"> NFT </span>
-                                                        <span class="text-nowrap"> Experience </span>
+                                                        <span class="text-nowrap"> experience </span>
                                                     </span> 
                                                 </h1>
                                             </div>
                                             <div class="hero-content">
                                                 <p>
-                                                    <!-- Real-time data analysis at the tips of your fingers: Create unique trading strategies, anticipate market movements, search for big spreads, track and copy the most profitable wallets and much more. -->
                                                     Real-time data analysis at the tips of your fingers: Create unique trading strategies for your favorite projects, Compare growth between your favorite NFT's, track buy opportunities within the market.
-
+                                                    
                                                 </p>
                                             </div>
                                             <div class="hero-actions">
@@ -103,7 +102,7 @@
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="15.355" height="15.355" viewBox="0 0 15.355 15.355">
                                                         <path id="Icon_material-launch_-_Outline" data-name="Icon material-launch - Outline" d="M17.26,19.355H6.095A2.1,2.1,0,0,1,4,17.26V6.095A2.1,2.1,0,0,1,6.095,4h6.082V6.595H6.595V16.76H16.76V11.177h2.595V17.26A2.1,2.1,0,0,1,17.26,19.355ZM6.095,5A1.1,1.1,0,0,0,5,6.095V17.26a1.1,1.1,0,0,0,1.095,1.095H17.26a1.1,1.1,0,0,0,1.095-1.095V12.177H17.76V17.76H5.595V5.595h5.582V5ZM9.42,15.766,7.589,13.934l7.339-7.339H12.772V4h6.582v6.582H16.76V8.426ZM9,13.934l.417.417L17.76,6.012v3.57h.595V5H13.772v.595h3.57Z" transform="translate(-4 -4)" fill="#fff"/>
                                                     </svg>
-                                                    Dual NFT Chart App
+                                                    Dual NFT Chart App 
                                                 </a>
                                             </div>
                                         </div>
@@ -148,7 +147,6 @@
                         <div class="heading">
                             <h2>
                                 If you are into NFT's, and want to compare chart analysis between two projects and develop better buying and selling strategies, GEMSTOOLs will help make investing easier.
-                                <!-- If you are a DEFI user, and you want to be able to anticipate market movements and develop better trading strategies, GEMSTools will help you in a very simple way -->
                             </h2>
                         </div>
                         <div class="body">
@@ -222,23 +220,23 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- <div class="col-lg-4 col-sm-6">
+                                    <div class="col-lg-4 col-sm-6">
                                         <div class="item">
                                             <div class="wrapper">
                                                 <div class="image">
-                                                    <img src="{{asset('')}}images/bots.png" alt="Bot service image" width="110" height="110" />
+                                                    <img src="{{asset('')}}images/scatterplot.png" alt="Bot service image" width="110" height="110" />
                                                 </div>
                                                 <div class="header">
                                                     <h3>
-                                                        Bots
+                                                        Multiple Charts
                                                     </h3>
                                                 </div>
                                                 <div class="content">
-                                                    <p>Create unique trading strategies for maximum profitability.</p>
+                                                    <p>Examine NFT's using variety of charts.</p>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div> -->
+                                    </div>
                                     <div class="col-lg-4 col-sm-6">
                                         <div class="item">
                                             <div class="wrapper">
@@ -290,12 +288,12 @@
                                                             <img src="{{asset('')}}images/pool_explorer_1.png" alt="Live new pair feature image" width="350" height="175" />
                                                         </div>
                                                         <div class="content">
-                                                            <p>View latest trends in the NFT community, be ahead of </p>
+                                                            <p>View latest trends in the NFT community </p>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-4 col-sm-6">
+                                            <!-- <div class="col-lg-4 col-sm-6">
                                                 <div class="feature">
                                                     <div class="wrapper">
                                                         <div class="header">
@@ -324,23 +322,28 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </div> -->
+
+
+
+
+                                            
                                             <div class="col-lg-4 col-sm-6">
                                                 <div class="feature">
                                                     <div class="wrapper">
                                                         <div class="header">
-                                                            <h4> Multiswap </h4>
+                                                            <h4> Grades </h4>
                                                         </div>
                                                         <div class="image">
                                                             <img src="{{asset('')}}images/pool_explorer_4.png" alt="Multiswap feature image" width="350" height="175" />
                                                         </div>
                                                         <div class="content">
-                                                            <p>View and interact with multiple pairs on a single screen.</p>
+                                                            <p>View latest grades given to top projects.</p>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-4 col-sm-6">
+                                            <!-- <div class="col-lg-4 col-sm-6">
                                                 <div class="feature">
                                                     <div class="wrapper">
                                                         <div class="header">
@@ -354,18 +357,18 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </div> -->
                                             <div class="col-lg-4 col-sm-6">
                                                 <div class="feature">
                                                     <div class="wrapper">
                                                         <div class="header">
-                                                            <h4> Aggregator </h4>
+                                                            <h4> Compare NFT Charts </h4>
                                                         </div>
                                                         <div class="image">
                                                             <img src="{{asset('')}}images/pool_explorer_6.png" alt="Aggregator feature image" width="350" height="175" />
                                                         </div>
                                                         <div class="content">
-                                                            <p>Trade directly within GEMSTools App on several GEMes.</p>
+                                                            <p>Compare favorite NFT and view chart analysis.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -405,18 +408,17 @@
                                                 <div class="heading">
                                                     <h4>
                                                         <span class="highlight">
-                                                            2022 Q1
+                                                            2022 Q2
                                                         </span>
                                                     </h4>
                                                 </div>
                                                 <div class="list">
                                                     <ul>
-                                                        <li>Velas/Oasis chains integration</li>
-                                                        <li>Arbitrum/Optimism/Harmory 
-                                                            chains integration</li>
-                                                        <li>Token explorer</li>
-                                                        <li>New Aggregator</li>
-                                                        <li>Mobile App (IOS & Android)</li>
+                                                        <li>GemsTools Arcade</li>
+                                                        <li>Launching First Game: "Who Wants To Be A Cryptoaire</li>
+                                                        <li>More indepth chart analysis </li>
+                                                        <li>GemsTools NFT</li>
+                                                        <li>GemsTools Token</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -428,15 +430,15 @@
                                                 <div class="heading">
                                                     <h4>
                                                         <span class="highlight">
-                                                            2022 Q2
+                                                            2022 Q3
                                                         </span>
                                                     </h4>
                                                 </div>
                                                 <div class="list">
                                                     <ul>
-                                                        <li>NFT marketing promotion tool</li>
-                                                        <li>Decentraliced info up detector</li>
-                                                        <li>Integration of non EVM</li>
+                                                        <li>GemsTools 2D Game: The Adventures of GemsTools</li>
+                                                        <li>SEO NFT Tool Built on Blockchain</li>
+                                                        <li>Charity Donations</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -448,14 +450,14 @@
                                                 <div class="heading">
                                                     <h4>
                                                         <span class="highlight">
-                                                            2022 Q3
+                                                            2022 Q4
                                                         </span>
                                                     </h4>
                                                 </div>
                                                 <div class="list">
                                                     <ul>
-                                                        <li>Launchpad</li>
-                                                        <li>More chains/dex integration</li>
+                                                        <li>TBA</li>
+                                                        <li>TBA</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -467,15 +469,14 @@
                                                 <div class="heading">
                                                     <h4>
                                                         <span class="highlight">
-                                                            2022 Q4
+                                                            2023 Q1
                                                         </span>
                                                     </h4>
                                                 </div>
                                                 <div class="list">
                                                     <ul>
-                                                        <li>GEMSTools AVM</li>
-                                                        <li>More chains/dex integration</li>
-                                                        <li>Improvments based on</li>
+                                                        <li>TBA</li>
+                                                        <li>TBA</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -488,9 +489,8 @@
                 </div>
             </section>
 
-            <!-- Gems token section
-            <section class="token">
-                Slanted edge at the start of section
+            <!-- <section class="token">
+               
                 <div class="box-edge top">
                     <div class="triangle"></div>
                 </div>
@@ -566,7 +566,7 @@
                     <div class="footer-container">
                         <div class="footer-content">
                             <p class="col-sm-11 p-0">
-                                All content available on our website, on hyperlinked websites, and on applications, forums, blogs, social media accounts and other platforms associated with DEXTools is intended solely to provide you with general information. We make no warranties of any kind with respect to our content, including, but not limited to, the accuracy and currency of the information. None of the content we provide should be construed as financial, legal or any other type of advice on which you may specifically rely for any purpose. Any use or reliance you place on our content is solely at your own risk. What you should do is conduct your own research, review and analysis, and verify our content before relying on it. Trading is a high-risk activity that can result in significant losses, so you should consult with your financial advisor before making any decisions. Nothing on our Site should be considered an invitation or offer to take any action.
+                                All content available on our website, on hyperlinked websites, and on applications, forums, blogs, social media accounts and other platforms associated with GEMSTOOLS is intended solely to provide you with general information. We make no warranties of any kind with respect to our content, including, but not limited to, the accuracy and currency of the information. None of the content we provide should be construed as financial, legal or any other type of advice on which you may specifically rely for any purpose. Any use or reliance you place on our content is solely at your own risk. What you should do is conduct your own research, review and analysis, and verify our content before relying on it. Trading is a high-risk activity that can result in significant losses, so you should consult with your financial advisor before making any decisions. Nothing on our Site should be considered an invitation or offer to take any action.
                             </p>
                         </div>
                         <div class="socials">
