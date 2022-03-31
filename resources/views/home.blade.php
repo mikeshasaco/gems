@@ -2,9 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>GemsTools NFT Analytics</title>
+    <meta property="og:url" content="https://gems.tools" />
+    <meta name="description" content="NFT Analytics Tracking " />
+    <meta property="og:title" content="GemsTools | NFT Analytics" />
+    <meta property="og:description" content="Real-time data analysis at the tips of your fingers: Create unique trading strategies for your favorite projects, Compare growth between your favorite NFT's, track buy opportunities within the market" />
+    <meta property="twitter:title" content="gems.tools | Track and discover trending NFTs with real-time insights" />
+    <meta property="og:type" content="website" />
+
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" href="{{asset('')}}images/gemstool-favicon.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
@@ -12,7 +22,6 @@
 
     <link rel="stylesheet" href="{{asset('')}}css/home.min.css" />
 
-    <title>GemsTools</title>
 </head>
 <body>
     <div class="body-wrapper">
