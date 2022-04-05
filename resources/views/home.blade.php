@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>GemsTools NFT Analytics</title>
+    <meta name="robots" content="noindex,nofollow" />
     <meta property="og:url" content="https://gems.tools" />
     <meta name="description" content="NFT Analytics Tracking " />
     <meta property="og:title" content="GemsTools | NFT Analytics" />
