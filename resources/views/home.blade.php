@@ -2,9 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>GemsTools NFT Analytics</title>
+    <meta property="og:url" content="https://gems.tools" />
+    <meta name="description" content="NFT Analytics Tracking " />
+    <meta property="og:title" content="GemsTools | NFT Analytics" />
+    <meta property="og:description" content="Real-time data analysis at the tips of your fingers: Create unique trading strategies for your favorite projects, Compare growth between your favorite NFT's, track buy opportunities within the market" />
+    <meta property="twitter:title" content="gems.tools | Track and discover trending NFTs with real-time insights" />
+    <meta property="og:type" content="website" />
+
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" href="{{asset('')}}images/gemstool-favicon.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
@@ -12,7 +22,6 @@
 
     <link rel="stylesheet" href="{{asset('')}}css/home.min.css" />
 
-    <title>GemsTools</title>
 </head>
 <body>
     <div class="body-wrapper">
@@ -644,6 +653,28 @@
         src="https://www.facebook.com/tr?id=500427508152117&ev=PageView&noscript=1"
         /></noscript>
         <!-- End Meta Pixel Code -->
+
+        <!-- Global site tag (gtag.js) - Google Analytics Ads -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-223450759-1">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-223450759-1');
+</script>
+
+<!-- Twitter universal website tag code -->
+<script>
+!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+// Insert Twitter Pixel ID and Standard Event data below
+twq('init','o87xb');
+twq('track','PageView');
+</script>
+<!-- End Twitter universal website tag code -->
 
 </body>
 </html>
