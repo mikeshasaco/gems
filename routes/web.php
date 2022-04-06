@@ -55,16 +55,16 @@ Route::group([
 // Route::get('app/', function () {
 //     return view('welcome');
 // });
-Route::get('app/{any}', function () {
+Route::get('/{any}', function () {
     return view('welcome');
 });
-Route::get('app/{any}/{any2}', function () {
+Route::get('/{any}/{any2}', function () {
     return view('welcome');
 });
-Route::get('app/{any}/{any2}/{any3}', function () {
+Route::get('/{any}/{any2}/{any3}', function () {
     return view('welcome');
 });
-Route::get('app/{any}/{any2}/{any3}/{any4}', function () {
+Route::get('/{any}/{any2}/{any3}/{any4}', function () {
     return view('welcome');
 });
 Route::get('/', function () {
