@@ -106,7 +106,7 @@ html {
 }
 
 .bold-28, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content .nft-likes span, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content .nft-stats .title, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .nft-status .nft-like span,
-.user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .nft-status .nft-rank span, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.pcuot, .custom-modal .wrapper .content .redirect a {
+.user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .nft-status .nft-rank span, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.pcuot, .custom-modal .wrapper .content .redirect a, .h1-heading {
   font-size: 28px;
   line-height: 38px;
   font-weight: bold;
@@ -115,21 +115,21 @@ html {
 }
 @media (max-width: 1200px) {
   .bold-28, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content .nft-likes span, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content .nft-stats .title, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .nft-status .nft-like span,
-.user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .nft-status .nft-rank span, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.pcuot, .custom-modal .wrapper .content .redirect a {
+.user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .nft-status .nft-rank span, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.pcuot, .custom-modal .wrapper .content .redirect a, .h1-heading {
     font-size: 24px;
     line-height: 32px;
   }
 }
 @media (max-width: 992px) {
   .bold-28, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content .nft-likes span, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content .nft-stats .title, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .nft-status .nft-like span,
-.user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .nft-status .nft-rank span, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.pcuot, .custom-modal .wrapper .content .redirect a {
+.user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .nft-status .nft-rank span, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.pcuot, .custom-modal .wrapper .content .redirect a, .h1-heading {
     font-size: 20px;
     line-height: 28px;
   }
 }
 @media (max-width: 576px) {
   .bold-28, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content .nft-likes span, .user-nft-detail .grid-container .right-block .user-nft-list .list-wrapper .detail-list .detail-nft .nft-content .nft-stats .title, .user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .nft-status .nft-like span,
-.user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .nft-status .nft-rank span, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.pcuot, .custom-modal .wrapper .content .redirect a {
+.user-nft-detail .grid-container .left-block .user-detail .user-detail-tab .tab-wrapper .content .nft-status .nft-rank span, .admin-userlist .left-block .user-list-table-wrapper .user-list-table tbody td.pcuot, .custom-modal .wrapper .content .redirect a, .h1-heading {
     font-size: 18px;
     line-height: 30px;
   }
@@ -843,6 +843,10 @@ section {
   color: white;
   margin-right: 5px;
 }
+.h1-heading {
+  font-family: "Nunito", sans-serif;
+}
+
 .form-layout .box-modal, .compare-nft .nft-container .compare-nft-form form .box-modal, .verify-nft .left-block .verify-nft-form form .box-modal, .admin-userlist .right-block .add-user-form-wrapper form .box-modal, .submit-nft .nft-container .nft-form form .box-modal, .admin-container .form-wrapper .login-form form .box-modal {
   padding: 30px;
   border-radius: 20px;
