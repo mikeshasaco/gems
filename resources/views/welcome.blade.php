@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link href="/static/css/2.9d919d46.chunk.css" rel="stylesheet">
-    <link href="/static/css/main.9bc9512a.chunk.css" rel="stylesheet">
+    <link href="/static/css/2.33fcb172.chunk.css" rel="stylesheet">
+    <link href="/static/css/main.45ef8d85.chunk.css" rel="stylesheet">
 
 </head>
 
@@ -156,8 +156,8 @@
             l()
         }([])
     </script>
-    <script src="{{ asset('') }}static/js/2.d48112ad.chunk.js"></script>
-    <script src="{{ asset('') }}static/js/main.f9120505.chunk.js"></script>
+    <script src="{{ asset('') }}static/js/2.b1c3a992.chunk.js"></script>
+    <script src="{{ asset('') }}static/js/main.2e754d2b.chunk.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JXS56GGJV4"></script>
