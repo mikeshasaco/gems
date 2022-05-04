@@ -156,8 +156,8 @@
             l()
         }([])
     </script>
-    <script src="{{ asset('') }}static/js/2.b1c3a992.chunk.js"></script>
-    <script src="{{ asset('') }}static/js/main.2e754d2b.chunk.js"></script>
+    <script src="{{ asset('') }}static/js/2.a32ffc12.chunk.js"></script>
+    <script src="{{ asset('') }}static/js/main.12bab7e1.chunk.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JXS56GGJV4"></script>
