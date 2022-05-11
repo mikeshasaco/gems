@@ -180,8 +180,17 @@ class NftApiController extends Controller
             //code...
             $curl = curl_init();
             $todayData = date('c');
-            $yesterdayData = date('c', strtotime('-1 day', time()));
-    
+
+            // dd($request->durationFilter);
+
+            if($request->durationFilter == '1 day'){
+                $yesterdayData = date('c', strtotime('-1 day', time()));
+            }elseif($request->durationFilter == '7 days'){
+                $yesterdayData = date('c', strtotime('-7 day', time()));
+            }else{
+                $yesterdayData = date('c', strtotime('-30 day', time()));
+            }
+
             curl_setopt_array($curl, array(
                 CURLOPT_URL => ICY_GRAPHQL_URL,
                 CURLOPT_RETURNTRANSFER => true,
@@ -200,7 +209,7 @@ class NftApiController extends Controller
                     'Content-Type: application/json'
                 ),
             ));
-    
+
             $response = curl_exec($curl);
             $info = curl_getinfo($curl);
             curl_close($curl);
@@ -265,6 +274,8 @@ class NftApiController extends Controller
         $todayData = date('c');
         $yesterdayData = date('c', strtotime('-1 day', time()));
         $average_array = [];
+        $floor_array = [];
+        $ceiling_array = [];
         $date_array = [];
         $tooltip_array = [];
         try {
@@ -274,6 +285,8 @@ class NftApiController extends Controller
                 foreach ($result->data as $key => $collection) {
                     if($collection->stats){
                         $average_array[] = number_format($collection->stats->average, 3);
+                        $floor_array[] = number_format($collection->stats->floor, 3);
+                        $ceiling_array[] = number_format($collection->stats->ceiling, 3);
                         $tooltip_array[] = "Name: {$collection->name} <br/> 
                         Average: ".number_format($collection->stats->average, 3)." <br/> 
                         Floor: ".number_format($collection->stats->floor, 3)." <br/> 
@@ -283,6 +296,8 @@ class NftApiController extends Controller
                     }
                     else{
                         $average_array[] = 0;
+                        $floor_array[] = 0;
+                        $ceiling_array[] = 0;
                         $tooltip_array[] = "
                         Average: 0 <br/> 
                         Floor: 0 <br/> 
@@ -298,8 +313,11 @@ class NftApiController extends Controller
 
             return Response::json(['status'=>'success', 'data'=> [
                 'average' => $average_array,
+                'floor' => $floor_array,
+                'ceiling' => $ceiling_array,
                 'x_axis' => $date_array,
-                'tooltip' => $tooltip_array
+                'tooltip' => $tooltip_array,
+                'name'=> $collection->name
             ]],200);
 
         } catch (Exception $e) {
@@ -372,7 +390,7 @@ class NftApiController extends Controller
             if($duration == "Hourly"){
                 $fromDate = date('c', strtotime('-'.($i+1).' hour', time()));
                 $toDate = date('c', strtotime('-'.($i).' hour', time()));
-                $x_axis[] = date('h:00', strtotime('-'.($i).' hour', time()));
+                $x_axis[] = date('H:00', strtotime('-'.($i).' hour', time()));
             }
             else{
                 $fromDate = date('c', strtotime('-'.($i+1).' day', time()));
